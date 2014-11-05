@@ -1,5 +1,5 @@
 @extends('layout.master')
 
 @section('content')
-    Hello
+    Hello <strong>Vladi</strong>!
 @stop

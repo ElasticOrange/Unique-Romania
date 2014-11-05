@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('homestead'),
+    'local' => array('homestead'),
 
 ));
 
@@ -58,6 +58,25 @@ $framework = $app['path.base'].
                  '/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
+
+/*
+|--------------------------------------------------------------------------
+| Start the session
+|--------------------------------------------------------------------------
+|
+| Facebook sdk 4 needs session to store stuff and Laravel does not do this.
+*/
+session_start();
+
+/*
+|--------------------------------------------------------------------------
+| Init Facebook application
+|--------------------------------------------------------------------------
+|
+| Init the Facebook application
+*/
+Facebook\FacebookSession::setDefaultApplication(Config::get('facebook.app_id'), Config::get('facebook.secret'));
+
 
 /*
 |--------------------------------------------------------------------------

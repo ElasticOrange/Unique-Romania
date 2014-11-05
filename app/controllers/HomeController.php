@@ -45,6 +45,6 @@ class HomeController extends BaseController {
     {
         $user = Session::get('facebook-user');
 
-        echo $user->getName();
+        print_r($user->asArray());
     }
 }

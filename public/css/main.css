@@ -7,6 +7,13 @@
 	margin-left:auto;
 	margin-right:auto;
 }
+/*
+.margins{
+	margin-left:20px;
+}
+.margins-big{
+	margin-left:50px;
+}*/
 .link-white{
 	color:white;
 }
@@ -32,6 +39,14 @@
 	font-size: 22px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.button-arata-ne{
+	position:relative;
+	border:none;
+	background-color:#cc0000;
+	font-size: 14px;
+	top:110px;
 }
 
 .background-red{
@@ -71,4 +86,8 @@
 
 .align-center{
 	text-align:center;
+}
+
+.header-image{
+	background-image: url(/img/heading.png);
 }

@@ -30,7 +30,7 @@
     </div>
     <div class="row background-red">
         <div class="col-xs-12 align-center">
-            <button type="button" class="btn btn-default btn-lg button-launch text-white">Lanseaza aplicatia</button>
+            <a href="/gallery" class="btn btn-default btn-lg button-launch text-white">Lanseaza aplicatia</a>
         </div>
     </div>
     <div class="row background-red">

@@ -3,16 +3,24 @@
 	font-family: "Century Gothic";
 	width:760px !important;
 }
-/*.line-break{
-	background-color:#adb0b2;
-	height:1px;
-	width: 740px;
-	
-}*/
+
 .input-search{
 width:680px;
 margin-top:40px;
 margin-bottom:40px;
+position:center;
+}
+
+.line-break{
+	background-color:#bec1c3;
+	height:1px;
+	width: 680px;
+	position:absolute;
+	margin-left:40px;
+}
+
+.line-break-space{
+	margin-top:15px;
 }
 
 .center{
@@ -23,9 +31,26 @@ margin-bottom:40px;
 .margins{
 	margin-left:20px;
 }
-
+.margin-full{
+	margin-left:27px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
 .margins-big{
 	margin-left:50px;
+}
+
+.margin-btns{
+	margin-left:100px;
+}
+
+.username-title{
+	padding-top:5px;
+}
+
+.glyph{
+	padding:15px;
+	margin-top:15px;
 }
 
 .link-white{
@@ -64,6 +89,14 @@ margin-bottom:40px;
 	background-color:#d0d3d4;
 }
 
+.background-red{
+	background-color:#cc0000
+}
+
+.background-orange{
+	background-color:#bbbd11
+}
+
 .background-grey-dropdown{
 	background-color:#f0f1f1;
 }
@@ -84,10 +117,6 @@ margin-bottom:40px;
 	top:110px;
 }
 
-.background-red{
-	background-color:#cc0000
-}
-
 .bubble{
 	top:34px;
 	left:0px;
@@ -97,13 +126,14 @@ margin-bottom:40px;
 .title-second{
 	margin-top: 35px;
 	margin-left: 20px;
+	margin-bottom:40px;
 }
 
 .text-white{
 	color:#fff;
 }
 .content-second{
-	margin-left:20px;
+	margin-left:25px;
 	margin-bottom:0px;
 }
 
@@ -134,22 +164,37 @@ margin-bottom:40px;
 }
 
 .example-pic{
-	background-image:url(../img/example-pic.png);
 	width:210px;
-	height:141px;
-	margin-right:15px;
-	margin-bottom:0px;
+	height:140px;
+	margin-right:25px;
+	margin-bottom:30px;
 	margin-top:0px;
 }
 .example-vid{
-
 margin-top:20px;
-margin-bottom:20px;
+margin-bottom:100px;
 }
 
 .loading-square{
-	margin-left:5px;
-	margin-right:5px;
-	margin-top:60px;
+	background-color: red;
+	border-radius:20%;
+	height:23px;
+	width:23px;
+	margin-right:20px;
+	margin-top:30px;
 	margin-bottom:120px;
+	padding-right:0px!important;
+}
+.squares{
+	margin-left:330px;
+}
+
+.arrow{
+	margin-top:130px;
+	width:50px;
+	margin-left:100px;
+}
+
+.arrow-right{
+	margin-left:110px;
 }

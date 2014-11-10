@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
   var user_row_click;
   user_row_click = function() {
     var $user_content;
@@ -15,5 +15,8 @@ $(function() {
     }
   };
   $('[data-userrow=true]').click(user_row_click);
-  return $('[data-entries=true]').find('.bubble').hide();
+  $('[data-entries=true]').find('.bubble').hide();
+  return $('.fancybox').fancybox({
+    type: 'image'
+  });
 });

@@ -15,15 +15,21 @@
     </head>
 
     <body>
-
         <div class="container">
             @yield('content')
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-latest.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="/js/bootstrap.min.js"></script>
+
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="/js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="/js/fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="/js/fancyBox/source/jquery.fancybox.js"></script>
+        <!--<script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>-->
+
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/main.js"></script>
     </body>

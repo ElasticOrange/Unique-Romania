@@ -19,8 +19,8 @@
                 <span class="glyph glyph-disabled glyphicon glyphicon-camera"></span>
             @endif
 
-            <!-- Pictures video -->
-            @if(count($entry->videos))
+            <!-- Video icon -->
+            @if(!empty($entry->video))
                 <span class="glyph glyphicon glyphicon-film"></span>
             @else
                 <span class="glyph glyph-disabled glyphicon glyphicon-film"></span>
@@ -52,14 +52,16 @@
 
             <div class="row background-grey-dropdown">
                 <div class="col-xs-12 margins">
-                    @for($i = 0 ; $i < count($entry->pictures) ; $i++)
-                        <img src="{{ $entry->pictures[$i] }}" class="col-xs-4 example-pic" />
-                    @endfor
+                    @foreach($entry->pictures as $picture)
+                        <a class="fancybox" rel="{{ $entry->_id }}" href="{{ $picture }}">
+                            <img src="{{ $picture }}" class="col-xs-4 example-pic" />
+                        </a>
+                    @endforeach
                 </div>
             </div>
         @endif
 
-        @if(count($entry->videos))
+        @if(!empty($entry->video))
             <!-- Galeria Video -->
             <div class="row background-grey-dropdown">
                 <div class="col-xs-12">
@@ -68,14 +70,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xs-2">
-                        <span class="arrow hand glyphicon glyphicon-chevron-left pull-right"></span><!-- gliph! -->
-                    </div>
-                    <div class="col-xs-6 example-vid">
-                        <iframe width="470" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-xs-1 arrow-right ">
-                         <span class="arrow hand glyphicon glyphicon-chevron-right pull-right"></span><!-- gliph! -->
+                    <div class="col-xs-12 example-vid" >
+                        <iframe class="center-block" width="640" height="360" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-$ ->
+$(document).ready ()->
     # Gallery page
     user_row_click = ()->
         $user_content = $(@).next()
@@ -16,3 +16,6 @@ $ ->
 
     # Hide all user bubbles
     $('[data-entries=true]').find('.bubble').hide()
+
+    # Enable fancybox on user pictures
+    $('.fancybox').fancybox({type:'image'})

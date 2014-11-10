@@ -22,7 +22,6 @@
         </div>
     </div>
 
-
     <div class="row background-grey">
         <div class="col-xs-12">
             <div class="input-group input-search center">

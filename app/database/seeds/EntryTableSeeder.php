@@ -14,7 +14,7 @@ class EntryTableSeeder extends Seeder {
             $entry = [
                 'article' => []
                 , 'pictures' => []
-                , 'videos' => []
+                , 'video' => ''
                 , 'approved' => true
             ];
 
@@ -34,10 +34,7 @@ class EntryTableSeeder extends Seeder {
 
             if (rand(0, 2) == 1)
             {
-                foreach(range(0, rand(0, 5)) as $v_index)
-                {
-                    $entry['videos'][] = 'https://www.youtube.com/watch?v=JykAcR6V0bE';
-                }
+                $entry['video'] = '//www.youtube.com/embed/AJJ353epH3o';
             }
 
             Entry::create($entry);

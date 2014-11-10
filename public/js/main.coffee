@@ -2,13 +2,17 @@ $(document).ready ()->
     # Close row
     user_row_close = ($user_row, $user_content)->
         $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down')
+
         $user_content.find('.bubble').hide()
         $user_content.slideUp 400, ()->
+            $user_row.addClass('background-grey').removeClass('background-grey-dropdown')
             true
 
     # Open row
     user_row_open = ($user_row, $user_content)->
         $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up')
+
+        $user_row.addClass('background-grey-dropdown').removeClass('background-grey')
 
         $user_content.slideDown 400, ()->
             $.scrollTo($user_row, 400)

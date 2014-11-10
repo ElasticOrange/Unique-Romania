@@ -40,9 +40,29 @@
 	</div>
 <!-- static rows -->
 
+	<div class="row background-grey ">
+		<div class="col-xs-12">
+			<img class="bubble" src="/img/buble-red-head.png"/>
+			<h2 class="title-second">Povesteste experienta ta</h2>
+		</div>
+		<div class="col-xs-7">
+			<textarea class="margins nuformcontrol form-control" rows="4">...</textarea>
+		</div>
+	</div>
+	<div class="row background-grey">
+        <div class="col-xs-12 align-center">
+            <a href="#" class="btn btn-danger btn-md button-inainte">Inainte un pas</a>
+        </div>
+    </div>
 
-
-
+    <div class="row background-grey">
+        <div class="col-xs-4 pull-right margin-canon-regulament">
+            <a href="http://www.canon.ro" class="link-black link-size">www.canon.ro</a>
+            <span>|</span>
+            <a href="#" class="link-black link-size">Regulament</a>
+        </div>
+    </div>
+			
 
 
 

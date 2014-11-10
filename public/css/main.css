@@ -37,7 +37,7 @@ position:center;
 	margin-bottom:5px;
 }
 .margins-big{
-	margin-left:50px;
+	margin-left:35px;
 }
 .margin-right{
 	margin-right:25px;
@@ -54,6 +54,11 @@ position:center;
 .margin-progressbar-top{
 	margin-top:60px;
 	margin-bottom:20px;
+}
+.margin-canon-regulament{
+	margin-top:175px;
+	margin-right:20px;
+	margin-bottom:175px;
 }
 .username-title{
 	padding-top:5px;
@@ -140,6 +145,14 @@ position:center;
 	background-color:#cc0000;
 	font-size: 14px;
 	top:110px;
+}
+.button-inainte{
+	position:relative;
+	border:none;
+	background-color:#cc0000;
+	font-size: 14px;
+	padding-left:30px;
+	padding-right:30px
 }
 
 .bubble{
@@ -269,4 +282,9 @@ position:center;
 }
 .glyph-space-user{
 	margin-left:645px;
+}
+
+.nuformcontrol{
+	border: solid 2px #2c3e50;
+	margin-bottom:60px;
 }

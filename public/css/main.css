@@ -39,17 +39,30 @@ position:center;
 .margins-big{
 	margin-left:50px;
 }
-
+.margin-right{
+	margin-right:25px;
+}
 .margin-btns{
 	margin-left:100px;
 }
 
+.margin-progress-bar{
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.margin-progressbar-top{
+	margin-top:60px;
+	margin-bottom:20px;
+}
 .username-title{
 	padding-top:5px;
 }
+.hand{
+	cursor:pointer;
+}
 
 .glyph{
-	cursor:pointer;
 	padding:10px;
 	margin-top:15px;
 	border: solid 2px;
@@ -167,6 +180,14 @@ position:center;
 	left:40px;
 }
 
+.prize-reminder{
+	position:absolute;
+	top:40px;
+	left:120px;
+	width:98px;
+	height:88px;
+}
+
 .align-center{
 	text-align:center;
 }
@@ -185,6 +206,7 @@ position:center;
 .example-vid{
 	margin-top:20px;
 	margin-bottom:100px;
+	margin-left:5px;
 }
 
 .loading-square{
@@ -202,11 +224,52 @@ position:center;
 }
 
 .arrow{
-	margin-top:130px;
-	width:50px;
-	margin-left:100px;
+	padding:10px;
+	margin-top:120px;
+	border: solid 2px;
+	border-radius:20%;
+	font-size:28px;
 }
 
 .arrow-right{
-	margin-left:110px;
+	margin-left:128px;
+}
+.progress-bar-custom{
+	float:left;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFF;
+	text-align: center;
+	background-color: #4D5753;
+	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15)
+}
+
+.glyph-progress{
+	top:-10px;
+	z-index:1;
+	padding:10px;
+	border: solid 2px;
+	border-radius:20%;
+	font-size:22px;
+	position:absolute;
+}
+.glyph-progress-active{
+	background-color:#4D5753;
+	color:#d0d3d4;
+}
+
+.glyph-progress-inactive{
+	background-color:#d0d3d4;
+	color:#f0f1f1;
+}
+
+.glyph-space-camera{
+	margin-left:220px;
+}
+.glyph-space-film{
+	margin-left:430px;
+}
+.glyph-space-user{
+	margin-left:645px;
 }

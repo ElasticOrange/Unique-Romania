@@ -26,9 +26,12 @@
         <!-- Fancybox -->
         <link rel="stylesheet" href="/js/fancyBox/source/jquery.fancybox.css" type="text/css" media="screen" />
         <link rel="stylesheet" href="/js/fancyBox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="/js/fancyBox/source/jquery.fancybox.js"></script>
-        <!--<script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
-        <script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>-->
+        <script type="text/javascript" src="/js/fancyBox/source/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="/js/fancyBox/source/helpers/jquery.fancybox-media.js"></script>
+
+        <!-- ScrollTo -->
+        <script type="text/javascript" src="/js/scrollTo/jquery.scrollTo.min.js"></script>
 
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/main.js"></script>

@@ -1,21 +1,44 @@
 $(document).ready ()->
-    # Gallery page
+    # Close row
+    user_row_close = ($user_row, $user_content)->
+        $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down')
+        $user_content.find('.bubble').hide()
+        $user_content.slideUp 400, ()->
+            true
+
+    # Open row
+    user_row_open = ($user_row, $user_content)->
+        $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up')
+
+        $user_content.slideDown 400, ()->
+            $.scrollTo($user_row, 400)
+            $user_content.find('.bubble').fadeIn()
+
+
+    # Close all except for one
+    user_row_close_all = (except)->
+        for duc in $('[data-user_content]:visible')
+            $duc = $(duc)
+            if $duc.attr('data-user_content') is except
+                continue
+
+            $dur = $("[data-user_row=#{$duc.attr('data-user_content')}]")
+            user_row_close($dur, $duc)
+
+    # Gallery user row open/close
     user_row_click = ()->
         $user_row = $(@)
-        $user_content = $(@).next()
+        $user_content = $("[data-user_content=#{$(@).attr('data-user_row')}]")
+
+        user_row_close_all($(@).attr('data-user_row'))
 
         if $user_content.is(':visible')
-            $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down')
-            $user_content.find('.bubble').hide()
-            $user_content.slideUp 400, ()->
-                true
+            user_row_close $user_row, $user_content
         else
-            $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up')
-            $user_content.slideDown 400, ()->
-                $user_content.find('.bubble').fadeIn()
+            user_row_open $user_row, $user_content
 
     # Open and close user row
-    $('[data-userrow=true]').click user_row_click
+    $('[data-user_row]').click user_row_click
 
     # Hide all user bubbles
     $('[data-entries=true]').find('.bubble').hide()

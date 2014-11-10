@@ -1,5 +1,5 @@
     <!-- User row -->
-    <div data-userrow="true" class="row background-grey hand">
+    <div data-user_row="{{ $entry->_id }}" class="row background-grey hand">
         <div class="col-xs-2">
             <img class="margin-full" src="/img/profile-pic-default.png"/>
         </div>
@@ -30,7 +30,7 @@
     </div>
 
     <!-- The dropdown -->
-    <div class="user-hide">
+    <div class="user-hide" data-user_content="{{ $entry->_id }}">
         @if(!empty($entry->article['title']) or !empty($entry->article['content']))
             <div class="row background-grey-dropdown">
                 <div class="col-xs-12">

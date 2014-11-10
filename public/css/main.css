@@ -1,7 +1,7 @@
 
 .container{
-	font-family: "Century Gothic";
-	width:760px !important;
+    font-family: "Century Gothic";
+    width:760px !important;
 }
 
 .input-search{
@@ -12,201 +12,210 @@ position:center;
 }
 
 .line-break{
-	background-color:#bec1c3;
-	height:1px;
-	width: 680px;
-	position:absolute;
-	margin-left:40px;
+    background-color:#bec1c3;
+    height:1px;
+    width: 680px;
+    position:absolute;
+    margin-left:40px;
 }
 
 .line-break-space{
-	margin-top:15px;
+    margin-top:15px;
 }
 
 .center{
-	margin-left:auto;
-	margin-right:auto;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .margins{
-	margin-left:20px;
+    margin-left:20px;
 }
 .margin-full{
-	margin-left:27px;
-	margin-top:5px;
-	margin-bottom:5px;
+    margin-left:27px;
+    margin-top:5px;
+    margin-bottom:5px;
 }
 .margins-big{
-	margin-left:50px;
+    margin-left:50px;
 }
 
 .margin-btns{
-	margin-left:100px;
+    margin-left:100px;
 }
 
 .username-title{
-	padding-top:5px;
+    padding-top:5px;
+}
+.hand{
+    cursor:pointer;
 }
 
 .glyph{
-	cursor:pointer;
-	padding:10px;
-	margin-top:15px;
-	border: solid 2px;
-	border-radius:20%;
-	font-size:22px;
+    padding:10px;
+    margin-top:15px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:22px;
 }
 .glyph-disabled{
-	color:#bbb;
+    color:#bbb;
 }
 .glyph-red{
-	border:none;
-	color:#f0f1f1;
-	background-color:#cc0000;
+    border:none;
+    color:#f0f1f1;
+    background-color:#cc0000;
 }
 
 .link-white{
-	color:#fff;
+    color:#fff;
 }
 
 .link-black{
-	color:#000000;
+    color:#000000;
 }
 
 .link-size{
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .position-relative{
-	position:relative;
+    position:relative;
 }
 
 .title-heading{
-	font-family:"Century Gothic";
-	margin-top:60px;
-	margin-left:35px;
-	font-size:45px;
+    font-family:"Century Gothic";
+    margin-top:60px;
+    margin-left:35px;
+    font-size:45px;
 }
 
 .title-main{
-	position:absolute;
-	font-size: 70px;
-	color:#fff;
-	width:240px;
-	top:163px;
-	left:433px;
+    position:absolute;
+    font-size: 70px;
+    color:#fff;
+    width:240px;
+    top:163px;
+    left:433px;
 }
 
 .background-grey{
-	background-color:#d0d3d4;
+    background-color:#d0d3d4;
 }
 
 .background-red{
-	background-color:#cc0000
+    background-color:#cc0000
 }
 
 .background-orange{
-	background-color:#bbbd11
+    background-color:#bbbd11
 }
 
 .background-grey-dropdown{
-	background-color:#f0f1f1;
+    background-color:#f0f1f1;
 }
 
 .button-launch{
-	border:none;
-	background-color:#9199a3;
-	font-size: 22px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+    border:none;
+    background-color:#9199a3;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .button-arata-ne{
-	position:relative;
-	border:none;
-	background-color:#cc0000;
-	font-size: 14px;
-	top:110px;
+    position:relative;
+    border:none;
+    background-color:#cc0000;
+    font-size: 14px;
+    top:110px;
 }
 
 .bubble{
-	top:34px;
-	left:0px;
-	position:absolute;
+    top:34px;
+    left:0px;
+    position:absolute;
 }
 
 .title-second{
-	margin-top: 35px;
-	margin-left: 20px;
-	margin-bottom:40px;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-bottom:40px;
 }
 
 .text-white{
-	color:#fff;
+    color:#fff;
 }
 .content-second{
-	margin-left:25px;
-	margin-bottom:0px;
+    margin-left:25px;
+    margin-bottom:0px;
 }
 
 .logo{
-	position:absolute;
-	top:40px;
-	left:30px;
+    position:absolute;
+    top:40px;
+    left:30px;
 }
 .logo-white{
-	margin-top:30px;
-	margin-bottom:15px;
-	margin-left:20px;
-	padding-bottom: 10px;
+    margin-top:30px;
+    margin-bottom:15px;
+    margin-left:20px;
+    padding-bottom: 10px;
 
 }
 .prize{
-	position:absolute;
-	top:60px;
-	left:40px;
+    position:absolute;
+    top:60px;
+    left:40px;
 }
 
 .align-center{
-	text-align:center;
+    text-align:center;
 }
 
 .header-image{
-	background-image: url(/img/heading.png);
+    background-image: url(/img/heading.png);
 }
 
 .example-pic{
-	width:210px;
-	height:140px;
-	margin-right:25px;
-	margin-bottom:30px;
-	margin-top:0px;
+    width:210px;
+    height:140px;
+    margin-right:25px;
+    margin-bottom:30px;
+    margin-top:0px;
 }
 .example-vid{
-	margin-top:20px;
-	margin-bottom:100px;
+    margin-top:20px;
+    margin-bottom:100px;
+    margin-left:5px;
 }
 
 .loading-square{
-	background-color: red;
-	border-radius:20%;
-	height:23px;
-	width:23px;
-	margin-right:20px;
-	margin-top:30px;
-	margin-bottom:120px;
-	padding-right:0px!important;
+    background-color: red;
+    border-radius:20%;
+    height:23px;
+    width:23px;
+    margin-right:20px;
+    margin-top:30px;
+    margin-bottom:120px;
+    padding-right:0px!important;
 }
 .squares{
-	margin-left:330px;
+    margin-left:330px;
 }
 
 .arrow{
-	margin-top:130px;
-	width:50px;
-	margin-left:100px;
+    padding:10px;
+    margin-top:120px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:28px;
 }
 
 .arrow-right{
-	margin-left:110px;
+    margin-left:128px;
+}
+
+.user-hide{
+    display: none;
 }

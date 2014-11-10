@@ -1,5 +1,5 @@
 <?php
-class Entry extends \Eloquent {
+class Entry extends \Moloquent {
     // Add your validation rules here
     public static $rules = [
         // 'title' => 'required'

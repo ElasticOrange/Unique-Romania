@@ -1,15 +1,8 @@
 @extends('layout.master')
-
-@section('content')
-    <div class="row header-image">
-    	<div class="col-xs-8 text-white">
- 			<h1 class="title-heading">Unique Romania</h1>
- 		</div>
- 		<div class="col-xs-4">
-			<img class="logo-white" src="/img/logo-white.png" />
-		</div>
-    </div>
     
+@section('content')
+    @include('layout.header')
+
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>

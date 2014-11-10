@@ -1,13 +1,16 @@
 $(document).ready ()->
     # Gallery page
     user_row_click = ()->
+        $user_row = $(@)
         $user_content = $(@).next()
 
         if $user_content.is(':visible')
+            $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down')
             $user_content.find('.bubble').hide()
             $user_content.slideUp 400, ()->
                 true
         else
+            $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up')
             $user_content.slideDown 400, ()->
                 $user_content.find('.bubble').fadeIn()
 

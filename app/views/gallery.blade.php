@@ -25,7 +25,7 @@
 
     <div class="row">
         <div class="background-red">
-            <div class=" line-break line-break-space"></div>
+            <div class="line-break line-break-space"></div>
         </div>
     </div>
 
@@ -47,14 +47,14 @@
     <!--User field -normal-list tipe- (with <hr />-->
     <div class="row background-grey">
         <div class="col-xs-2">
-            <img class="margin-full" src="../img/profile-pic-default.png"/>
+            <img class="margin-full" src="/img/profile-pic-default.png"/>
         </div>
             <h3 class="col-md-4 username-title">Corneliu Vasilescu</h3>
         <div class="col-md-4 margin-btns">
-            <span class="glyph glyphicon glyphicon-pencil"></span>
+            <span class="glyph glyph-disabled glyphicon glyphicon-pencil"></span>
             <span class="glyph glyphicon glyphicon-camera"></span>
-            <span class="glyph glyphicon glyphicon-facetime-video"></span>
-            <span class="glyph glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
+            <span class="glyph glyph-disabled glyphicon glyphicon-film"></span>
+            <span class="glyph glyph-red glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
         </div>
     </div>
     <div class="row">
@@ -68,14 +68,14 @@
      <!--User field one-before-the dropped one ( no <hr />) --> 
     <div class="row background-grey">
         <div class="col-xs-2">
-            <img class="margin-full" src="../img/profile-pic-default.png"/>
+            <img class="margin-full" src="/img/profile-pic-default.png"/>
         </div>
             <h3 class="col-md-4 username-title">Corneliu Vasilescu</h3>
         <div class="col-md-4 margin-btns">
-            <span class="glyph glyphicon glyphicon-pencil"></span>
+            <span class="glyph glyph-disabled glyphicon glyphicon-pencil"></span>
             <span class="glyph glyphicon glyphicon-camera"></span>
-            <span class="glyph glyphicon glyphicon-facetime-video"></span>
-            <span class="glyph glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
+            <span class="glyph glyph-disabled glyphicon glyphicon-film"></span>
+            <span class="glyph glyph-red glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
         </div>
     </div>
      <!--User field one-before-the dropped one ( no <hr />) --> 
@@ -84,14 +84,14 @@
    
     <div class="row background-grey-dropdown">
     	<div class="col-xs-2">
-    		<img class="margin-full" src="../img/profile-pic-default.png"/>
+    		<img class="margin-full" src="/img/profile-pic-default.png"/>
     	</div>
     		<h3 class="col-md-4 username-title">Corneliu Vasilescu</h3>
     	<div class="col-md-4 margin-btns">
-	    	<span class="glyph glyphicon glyphicon-pencil"></span>
+	    	<span class="glyph  glyph-disabled glyphicon glyphicon-pencil"></span>
 	    	<span class="glyph glyphicon glyphicon-camera"></span>
-	    	<span class="glyph glyphicon glyphicon-facetime-video"></span>
-	    	<span class="glyph glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
+	    	<span class="glyph glyph-disabled glyphicon glyphicon-film"></span>
+	    	<span class="glyph glyph-red glyphicon glyphicon-chevron-up pull-right btn-dropdown"></span>
 	    </div>
 	</div>
     <div class="row">
@@ -108,12 +108,16 @@
                 <p class="content-second">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu .</p>
             </div>
         </div>
+        
+
         <div class="row background-grey-dropdown">
             <div class="col-xs-12">
                 <img class="bubble" src="img/buble-red-head.png"/>
                 <h2 class="title-second">Galerie Poze</h2>
             </div>
         </div>
+
+        
         <!--- img SRC!!!! -->
         <div class="row background-grey-dropdown">
             <div class="col-xs-12 margins">
@@ -123,6 +127,7 @@
             </div>
         </div>
 
+
         <div class="row background-grey-dropdown">
             <div class="col-xs-12 margins">
                 <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-4 example-pic" />
@@ -130,9 +135,8 @@
                 <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-4 example-pic" />
             </div>
         </div>
-
-        
-    <!--Galeria Video-->
+            
+        <!--Galeria Video-->
 
         <div class="row background-grey-dropdown">
             <div class="col-xs-12">

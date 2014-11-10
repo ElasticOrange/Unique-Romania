@@ -49,8 +49,19 @@ position:center;
 }
 
 .glyph{
-	padding:15px;
+	padding:10px;
 	margin-top:15px;
+	border: solid 2px;
+	border-radius:20%;
+	font-size:22px;
+}
+.glyph-disabled{
+	color:#bbb;
+}
+.glyph-red{
+	border:none;
+	color:#f0f1f1;
+	background-color:#cc0000;
 }
 
 .link-white{
@@ -171,8 +182,8 @@ position:center;
 	margin-top:0px;
 }
 .example-vid{
-margin-top:20px;
-margin-bottom:100px;
+	margin-top:20px;
+	margin-bottom:100px;
 }
 
 .loading-square{

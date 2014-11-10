@@ -16,3 +16,4 @@ Route::get('/logged', 'HomeController@getLogged');
 Route::get('/login', 'HomeController@getLogin');
 
 Route::controller('/gallery', 'GalleryController');
+Route::controller('/entry', 'EntryController');

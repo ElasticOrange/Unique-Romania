@@ -18,7 +18,6 @@ $(document).ready ()->
             $.scrollTo($user_row, 400)
             $user_content.find('.bubble').fadeIn()
 
-
     # Close all except for one
     user_row_close_all = (except)->
         for duc in $('[data-user_content]:visible')

@@ -234,19 +234,16 @@ position:center;
 .arrow-right{
 	margin-left:128px;
 }
-.progress-bar-custom{
-	float:left;
-	height: 100%;
-	font-size: 12px;
-	line-height: 20px;
-	color: #FFF;
-	text-align: center;
+
+.nuprogress{
 	background-color: #4D5753;
-	box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15)
+}
+.nuheight{
+	height:7px;
 }
 
 .glyph-progress{
-	top:-10px;
+	top:-18px;
 	z-index:1;
 	padding:10px;
 	border: solid 2px;

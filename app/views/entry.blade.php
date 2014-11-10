@@ -21,11 +21,11 @@
 	</div>
 
 	<div class="row background-grey">
-		<div class="col-xs-12 margin-progressbar-top">
-			<div class="progress margin-progress-bar">
-			  <div class="progress-bar-custom" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:33%;">
-			    <span class="sr-only">60% Complete</span>
-			  </div>
+		<div class="col-xs-12 margin-progressbar-top ">
+			<div class="progress margin-progress-bar nuheight">
+				<div class="progress-bar nuprogress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:33%;">
+				  	<span class="sr-only">60% Complete</span>
+				</div>
 			</div>
 			<div class="margins">
 			    <span class="glyph-progress glyph-progress-active glyphicon glyphicon-pencil"></span>

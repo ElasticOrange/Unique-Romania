@@ -40,12 +40,12 @@
 	</div>
 <!-- static rows -->
 
-	<div class="row background-grey ">
+	<div class="row background-grey">
 		<div class="col-xs-12">
 			<img class="bubble" src="/img/buble-red-head.png"/>
 			<h2 class="title-second">Povesteste experienta ta</h2>
 		</div>
-		<div class="col-xs-7">
+		<div class="col-xs-10">
 			<textarea class="margins nuformcontrol form-control" rows="4">...</textarea>
 		</div>
 	</div>

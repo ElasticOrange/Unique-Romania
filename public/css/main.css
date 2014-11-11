@@ -198,6 +198,70 @@ position:center;
     margin-bottom:120px;
     padding-right:0px!important;
 }
+
+.loading-square-a1{
+    -webkit-animation: color_change 1s infinite alternate;
+    -moz-animation: color_change 1s infinite alternate;
+    -ms-animation: color_change 1s infinite alternate;
+    -o-animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
+
+    -webkit-animation-delay: 0ms;
+    -moz-animation-delay: 0ms;
+    -ms-animation-delay: 0ms;
+    -o-animation-delay: 0ms;
+    animation-delay: 0ms;
+}
+
+.loading-square-a2{
+    -webkit-animation: color_change 1s infinite alternate;
+    -moz-animation: color_change 1s infinite alternate;
+    -ms-animation: color_change 1s infinite alternate;
+    -o-animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
+
+    -webkit-animation-delay: 333ms;
+    -moz-animation-delay: 333ms;
+    -ms-animation-delay: 333ms;
+    -o-animation-delay: 333ms;
+    animation-delay: 333ms;
+}
+
+.loading-square-a3{
+    -webkit-animation: color_change 1s infinite alternate;
+    -moz-animation: color_change 1s infinite alternate;
+    -ms-animation: color_change 1s infinite alternate;
+    -o-animation: color_change 1s infinite alternate;
+    animation: color_change 1s infinite alternate;
+
+    -webkit-animation-delay: 666ms;
+    -moz-animation-delay: 666ms;
+    -ms-animation-delay: 666ms;
+    -o-animation-delay: 666ms;
+    animation-delay: 666ms;
+}
+
+@-webkit-keyframes color_change {
+  from { background-color: #cc0000; }
+  to { background-color: #840000; }
+}
+@-moz-keyframes color_change {
+  from { background-color: #cc0000; }
+  to { background-color: #840000; }
+}
+@-ms-keyframes color_change {
+  from { background-color: #cc0000; }
+  to { background-color: #840000; }
+}
+@-o-keyframes color_change {
+  from { background-color: #cc0000; }
+  to { background-color: #840000; }
+}
+@keyframes color_change {
+  from { background-color: #cc0000; }
+  to { background-color: #840000; }
+}
+
 .squares{
     margin-left:330px;
 }

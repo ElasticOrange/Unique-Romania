@@ -1,9 +1,9 @@
     <!-- User row -->
     <div data-user_row="{{ $entry->_id }}" class="row background-grey hand">
         <div class="col-xs-2">
-            <img class="margin-full" src="/img/profile-pic-default.png"/>
+            <img class="margin-full" src="https://graph.facebook.com/10205210654286446/picture?type=normal"/>
         </div>
-            <h3 class="col-md-4 username-title">GIGEL</h3>
+            <h3 class="col-md-4 username-title">{{ $entry->user->name }}</h3>
         <div class="col-md-4 margin-btns">
             <!-- Article icon -->
             @if(!empty($entry->article['title']) or !empty($entry->article['content']))

@@ -42,11 +42,11 @@
     </div>
 
     <!-- square loading things -->
-    <div class="row background-grey ">
+    <div class="row background-grey" data-loading="true">
         <div class="squares">
-            <div class="col-xs-4 loading-square"></div>
-            <div class="col-xs-4 loading-square"></div>
-            <div class="col-xs-4 loading-square"></div>
+            <div class="col-xs-4 loading-square loading-square-a1"></div>
+            <div class="col-xs-4 loading-square loading-square-a2"></div>
+            <div class="col-xs-4 loading-square loading-square-a3"></div>
         </div>
     </div>
     <!-- square loading things-->
@@ -59,5 +59,8 @@
         </div>
     </div>
 
+@stop
 
+@section('js')
+    <script src="/js/app/gallery/index.js"></script>
 @stop

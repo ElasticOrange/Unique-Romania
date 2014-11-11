@@ -20,7 +20,7 @@
         </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="//code.jquery.com/jquery-latest.min.js"></script>
+        <script src="/js/jquery/jquery-2.1.1.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
 
         <!-- Fancybox -->
@@ -35,6 +35,8 @@
 
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/main.js"></script>
+
+        @yield('js')
     </body>
 
 </html>

@@ -60,7 +60,7 @@
 	</div>
 
 <!--photo upload section-->
-	<div class="hidden">
+	<div class="">
 		<div class="row background-grey">
  			<div class="col-xs-8">
 		        <img class="bubble" src="/img/buble-red-head.png"/>
@@ -69,11 +69,11 @@
 		</div>
 		<div class="row background-grey">
             <div class="col-xs-12 margins">
-            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
+            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
             </div>
         </div>
         <div class="row background-grey">

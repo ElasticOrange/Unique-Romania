@@ -130,7 +130,9 @@ position:center;
 .background-grey-dropdown{
 	background-color:#f0f1f1;
 }
-
+.color-btn{
+    background-color:#4b4f54;
+}
 .button-launch{
 	border:none;
 	background-color:#9199a3;
@@ -146,14 +148,11 @@ position:center;
 	font-size: 14px;
 	top:110px;
 }
-.button-inainte{
-	position:relative;
-	border:none;
+.btn-danger{
 	background-color:#cc0000;
 	font-size: 14px;
-	padding-left:30px;
-	padding-right:30px
 }
+
 
 .bubble{
 	top:34px;
@@ -216,6 +215,15 @@ position:center;
 	margin-bottom:30px;
 	margin-top:0px;
 }
+
+.upload-pic{
+    width:140px;
+    height:60px;
+    margin-right:0px;
+    margin-bottom:30px;
+    margin-top:0px;
+}
+
 .example-vid{
 	margin-top:20px;
 	margin-bottom:100px;

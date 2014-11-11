@@ -40,7 +40,7 @@
 			</div>
 		</div>
 	<!-- static rows -->
-
+<!-- Photo Section -->
 	<div class="hidden">
 		<div class="row background-grey">
 			<div class="col-xs-12">
@@ -56,15 +56,11 @@
 	            <a href="#" class="btn btn-danger btn-block btn-md ">Inainte un pas</a>
 	        </div>
 	    </div>
+	@include('layout.footer')
+	</div>
 
-	    <div class="row background-grey">
-	        <div class="col-xs-4 pull-right margin-canon-regulament">
-	            <a href="http://www.canon.ro" class="link-black link-size">www.canon.ro</a>
-	            <span>|</span>
-	            <a href="#" class="link-black link-size">Regulament</a>
-	        </div>
-	    </div>
-	</div>		
+<!--photo upload section-->
+	<div class="hidden">
 		<div class="row background-grey">
  			<div class="col-xs-8">
 		        <img class="bubble" src="/img/buble-red-head.png"/>
@@ -72,33 +68,40 @@
 		    </div>
 		</div>
 		<div class="row background-grey">
-            <div class="col-xs-12">
-            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 upload-pic" />
+            <div class="col-xs-12 margins">
+            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
+                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="col-xs-2 example-pic" />
             </div>
         </div>
         <div class="row background-grey">
-        	<div class="col-xs-6 col-xs-offset-3">
-			    <div class="input-group">
-			      <input type="text" class="form-control">
-			      <span class="input-group-btn">
-			        <button class="btn btn-default text-white  color-btn" type="button">Incarca</button>
-			      </span>
-			    </div>
-			</div>
+        		<div class="col-xs-4 col-xs-offset-5">
+	            <a href="#" class="btn btn-default btn-md">Incarca...</a>
+	        </div>
 		</div>
 		<div class="row background-grey">
-	        <div class="col-xs-2">
+	        <div class="col-xs-2 margin-progressbar-top offset">
 	            <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
 	        </div>
-	        <div class="col-xs-2">
-	            <a href="#" class="btn btn-danger btn-md">Inainte un pas</a>
+	        <div class="col-xs-2 margin-progressbar-top">
+	            <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
 	        </div>
 	    </div>
+	@include('layout.footer')  
+	</div>
+<!--end photo upload section-->
+
+<!--video upload section-->
+	<div class="">
+		<div class="row">
+		</div>
+
+	</div>
+
+
+<!--video upload section-->
 @stop
 
 

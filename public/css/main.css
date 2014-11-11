@@ -20,14 +20,20 @@ position:center;
 }
 
 .line-break-space{
-	margin-top:15px;
+	margin-top:12px;
 }
 
 .center{
 	margin-left:auto;
 	margin-right:auto;
 }
-
+.offset{
+	margin-left:240px;
+}
+.margin{
+	margin-top:20px;
+	margin-bottom:20px;
+}
 .margins{
 	margin-left:20px;
 }
@@ -140,6 +146,10 @@ position:center;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+.btn-default{
+	background-color:#4b4f54;
+	color:#fff;
+}
 
 .button-arata-ne{
 	position:relative;
@@ -152,7 +162,6 @@ position:center;
 	background-color:#cc0000;
 	font-size: 14px;
 }
-
 
 .bubble{
 	top:34px;
@@ -216,13 +225,6 @@ position:center;
 	margin-top:0px;
 }
 
-.upload-pic{
-    width:140px;
-    height:60px;
-    margin-right:0px;
-    margin-bottom:30px;
-    margin-top:0px;
-}
 
 .example-vid{
 	margin-top:20px;

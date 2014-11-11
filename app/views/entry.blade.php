@@ -67,15 +67,35 @@
 		        <h2 class="title-second">Arata ce ai vazut</h2>
 		    </div>
 		</div>
+
+<!--that image -->  		
 		<div class="row background-grey">
-            <div class="col-xs-12 margins">
-            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
-                <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" class="example-pic" />
+            <div class="col-xs-12 margin">
+
+            	<div class="col-xs-4">
+	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+	            	<div class="trash">
+        			</div>
+        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
+        		</div>
+
+        		<div class="col-xs-4">
+	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+	            	<div class="trash">
+	            	</div>
+        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
+        		</div>
+
+        		<div class="col-xs-4">
+	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+	            	<div class="trash">
+	            	</div>
+        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
+        		</div>
             </div>
         </div>
+<!--that image -->  
+
         <div class="row background-grey">
         		<div class="col-xs-4 col-xs-offset-5">
 	            <a href="#" class="btn btn-default btn-md">Incarca...</a>

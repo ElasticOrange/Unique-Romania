@@ -293,6 +293,25 @@ position:center;
 .glyph-space-user{
 	margin-left:645px;
 }
+.glyph-trash{
+	padding:10px;
+	border: solid 2px;
+	border-radius:20%;
+	font-size:22px;
+	position:absolute;
+	left:100px;
+	top:45px;
+	border-radius:50%;
+}
+
+.trash{
+	position:absolute;
+	top:0px;
+	width:210px;
+	height:140px;
+	background-color:white;
+	opacity:0.6;
+}
 
 .nuformcontrol{
 	border: solid 2px #2c3e50;

@@ -25,9 +25,9 @@
     <div class="row background-grey">
         <div class="col-xs-12">
             <div class="input-group input-search center">
-                  <input class="form-control" type="text" placeholder="Cauta dupa nume">
+                <input class="form-control" type="text" id="search" placeholder="Cauta dupa nume">
                 <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
+                    <button class="btn btn-default" id="search_button" type="button">
                         <div class="glyphicon glyphicon-search"></div>
                     </button>
                 </span>

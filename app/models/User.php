@@ -23,4 +23,11 @@ class User extends Moloquent implements UserInterface, RemindableInterface {
      */
     protected $hidden = array('password', 'remember_token');
 
+    /**
+     * The attributes allowed for mass assignment
+     *
+     * @var array
+     */
+    protected $fillable = ['facebook_id', 'name'];
+
 }

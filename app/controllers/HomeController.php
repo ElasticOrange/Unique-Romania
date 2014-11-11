@@ -11,9 +11,17 @@ class HomeController extends BaseController {
 
     public function postIndex()
     {
-        // User is not logged in
-        $helper = new FacebookRedirectLoginHelper(Config::get('facebook.redirect_url'));
-        $this->return_data['loginUrl'] = $helper->getLoginUrl();
+        // Check if the user is logged in
+        $facebook_session = Session::get('facebook-session');
+        $facebook_user = Session::get('facebook-user');
+
+        if (!$facebook_session or !$facebook_user)
+        {
+            // User is not logged in
+            $helper = new FacebookRedirectLoginHelper(Config::get('facebook.redirect_url'));
+            $this->return_data['loginUrl'] = $helper->getLoginUrl();
+            return Redirect::to($this->return_data['loginUrl']);
+        }
 
         return View::make('home', $this->return_data);
     }
@@ -43,8 +51,25 @@ class HomeController extends BaseController {
 
     public function getLogged()
     {
-        $user = Session::get('facebook-user');
+        $facebook_user = Session::get('facebook-user');
 
-        print_r($user->asArray());
+        // If the user is already in the database, login him and go back to homepage
+        $user = User::where('facebook_id', $facebook_user->getId())->first();
+        if ($user)
+        {
+            Auth::login($user);
+        }
+        else
+        {
+            $new_user = [
+                'facebook_id' => $facebook_user->getId()
+                , 'name' => $facebook_user->getName()
+            ];
+            $user = User::create($new_user);
+
+            Auth::login($user);
+        }
+
+        return Redirect::to('/');
     }
 }

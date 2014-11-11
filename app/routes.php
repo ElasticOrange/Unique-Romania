@@ -12,8 +12,8 @@
 */
 
 Route::any('/', 'HomeController@postIndex');
-Route::get('/logged', 'HomeController@getLogged');
 Route::get('/login', 'HomeController@getLogin');
+Route::get('/logged', 'HomeController@getLogged');
 
 Route::controller('/gallery', 'GalleryController');
 Route::controller('/entry', 'EntryController');

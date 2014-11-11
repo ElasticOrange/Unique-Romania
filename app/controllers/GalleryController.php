@@ -15,8 +15,6 @@ class GalleryController extends BaseController {
 
     public function getPage($Page)
     {
-        sleep(25);
-
         $entries = Entry::where('approved', true)
             ->skip($this->return_data['per_page'] * $Page)
             ->take($this->return_data['per_page'])

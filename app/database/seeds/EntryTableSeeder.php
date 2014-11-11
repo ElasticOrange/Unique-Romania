@@ -11,33 +11,43 @@ class EntryTableSeeder extends Seeder {
 
         foreach(range(1, 50) as $index)
         {
-            $entry = [
+            // Create the user
+            $user = User::create([
+                'facebook_id' => rand(1, 1000000)
+                , 'name' => $faker->name
+            ]);
+
+            // Create the entry
+            $entry_data = [
                 'article' => []
                 , 'pictures' => []
                 , 'video' => ''
-                , 'approved' => true
+                , 'approved' => (rand(0, 2) == 1) ? true : false
             ];
 
             if (rand(0, 2) == 1)
             {
-                $entry['article']['title'] = $faker->sentence(3);
-                $entry['article']['content'] = $faker->text;
+                $entry_data['article']['title'] = $faker->sentence(3);
+                $entry_data['article']['content'] = $faker->text;
             }
 
             if (rand(0, 2) == 1)
             {
                 foreach(range(0, rand(0, 10)) as $p_index)
                 {
-                    $entry['pictures'][] = $faker->imageUrl(rand(400, 1024), rand(400, 1024));
+                    $entry_data['pictures'][] = $faker->imageUrl(rand(400, 1024), rand(400, 1024));
                 }
             }
 
             if (rand(0, 2) == 1)
             {
-                $entry['video'] = '//www.youtube.com/embed/AJJ353epH3o';
+                $entry_data['video'] = '//www.youtube.com/embed/AJJ353epH3o';
             }
 
-            Entry::create($entry);
+            $entry = Entry::create($entry_data);
+
+            // Connect the user and the entry
+            $user->entry()->save($entry);
         }
     }
 

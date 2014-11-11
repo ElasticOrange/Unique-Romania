@@ -6,4 +6,9 @@ class Entry extends \Moloquent {
     ];
     // Don't forget to fill this array
     protected $fillable = [];
+
+    public function user()
+    {
+        return $this->belongsTo('User');
+    }
 }

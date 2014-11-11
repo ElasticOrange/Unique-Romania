@@ -30,4 +30,9 @@ class User extends Moloquent implements UserInterface, RemindableInterface {
      */
     protected $fillable = ['facebook_id', 'name'];
 
+    public function entry()
+    {
+        return $this->hasOne('Entry');
+    }
+
 }

@@ -19,15 +19,25 @@ position:center;
     margin-left:40px;
 }
 
+.user-hide{
+    display: none;
+}
+
 .line-break-space{
-    margin-top:15px;
+    margin-top:12px;
 }
 
 .center{
     margin-left:auto;
     margin-right:auto;
 }
-
+.offset{
+    margin-left:240px;
+}
+.margin{
+    margin-top:20px;
+    margin-bottom:20px;
+}
 .margins{
     margin-left:20px;
 }
@@ -37,15 +47,40 @@ position:center;
     margin-bottom:5px;
 }
 .margins-big{
-    margin-left:50px;
+    margin-left:35px;
 }
 
+.margin-data-entry{
+    left:40px;
+    margin-bottom:10px;
+}
+
+.margin-right{
+    margin-right:25px;
+}
 .margin-btns{
     margin-left:100px;
 }
 
+.margin-progress-bar{
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.margin-progressbar-top{
+    margin-top:60px;
+    margin-bottom:20px;
+}
+.margin-canon-regulament{
+    margin-top:130px;
+    margin-right:20px;
+    margin-bottom:35px;
+}
 .username-title{
     padding-top:5px;
+}
+.hand{
+    cursor:pointer;
 }
 .hand{
     cursor:pointer;
@@ -114,7 +149,9 @@ position:center;
 .background-grey-dropdown{
     background-color:#f0f1f1;
 }
-
+.color-btn{
+    background-color:#4b4f54;
+}
 .button-launch{
     border:none;
     background-color:#9199a3;
@@ -122,13 +159,24 @@ position:center;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+.btn-default{
+    background-color:#4b4f54;
+    color:#fff;
+}
+.input-group-addon{
+    background-color:#4b4f54;
+    color:#fff;
+}
 .button-arata-ne{
     position:relative;
     border:none;
     background-color:#cc0000;
     font-size: 14px;
     top:110px;
+}
+.btn-danger{
+    background-color:#cc0000;
+    font-size: 14px;
 }
 
 .bubble{
@@ -169,6 +217,14 @@ position:center;
     left:40px;
 }
 
+.prize-reminder{
+    position:absolute;
+    top:40px;
+    left:120px;
+    width:98px;
+    height:88px;
+}
+
 .align-center{
     text-align:center;
 }
@@ -184,8 +240,12 @@ position:center;
     margin-bottom:30px;
     margin-top:0px;
 }
+
+
 .example-vid{
+    margin-top:20px;
     margin-bottom:100px;
+    margin-left:5px;
 }
 
 .loading-square{
@@ -278,6 +338,69 @@ position:center;
     margin-left:128px;
 }
 
-.user-hide{
-    display: none;
+.nuprogress{
+    background-color: #4D5753;
+}
+.nuheight{
+    height:7px;
+}
+
+.glyph-progress{
+    top:-18px;
+    z-index:1;
+    padding:10px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:22px;
+    position:absolute;
+}
+.glyph-progress-active{
+    background-color:#4D5753;
+    color:#d0d3d4;
+}
+
+.glyph-progress-inactive{
+    background-color:#d0d3d4;
+    color:#4D5753;
+}
+
+.glyph-space-camera{
+    margin-left:220px;
+}
+.glyph-space-film{
+    margin-left:430px;
+}
+.glyph-space-user{
+    margin-left:645px;
+}
+
+.nuformcontrol{
+    border: solid 2px #2c3e50;
+    margin-bottom:60px;
+}
+
+.glyph-trash{
+    padding:10px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:22px;
+    position:absolute;
+    left:80px;
+    top:45px;
+    border-radius:50%;
+}
+
+
+.trash {
+    position:absolute;
+    top:0px;
+    width:210px;
+    height:140px;
+    background-color:white;
+    opacity:0;
+
+}
+
+.trash:hover {
+    opacity:0.6;
 }

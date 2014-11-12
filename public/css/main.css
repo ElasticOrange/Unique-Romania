@@ -45,6 +45,12 @@ position:center;
 .margins-big{
 	margin-left:35px;
 }
+
+.margin-data-entry{
+	left:40px;
+	margin-bottom:10px;
+}
+
 .margin-right{
 	margin-right:25px;
 }
@@ -62,9 +68,9 @@ position:center;
 	margin-bottom:20px;
 }
 .margin-canon-regulament{
-	margin-top:175px;
+	margin-top:130px;
 	margin-right:20px;
-	margin-bottom:175px;
+	margin-bottom:35px;
 }
 .username-title{
 	padding-top:5px;
@@ -150,7 +156,10 @@ position:center;
 	background-color:#4b4f54;
 	color:#fff;
 }
-
+.input-group-addon{
+	background-color:#4b4f54;
+	color:#fff;
+}
 .button-arata-ne{
 	position:relative;
 	border:none;
@@ -293,6 +302,12 @@ position:center;
 .glyph-space-user{
 	margin-left:645px;
 }
+
+.nuformcontrol{
+	border: solid 2px #2c3e50;
+	margin-bottom:60px;
+}
+
 .glyph-trash{
 	padding:10px;
 	border: solid 2px;
@@ -305,11 +320,6 @@ position:center;
 }
 
 
-.nuformcontrol{
-	border: solid 2px #2c3e50;
-	margin-bottom:60px;
-}
-
 .trash {
     position:absolute;
 	top:0px;
@@ -317,7 +327,12 @@ position:center;
 	height:140px;
 	background-color:white;
 	opacity:0;
+	
 }
+
 .trash:hover {
 	opacity:0.6;
 }
+
+
+

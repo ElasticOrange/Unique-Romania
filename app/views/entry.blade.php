@@ -40,8 +40,8 @@
 			</div>
 		</div>
 	<!-- static rows -->
-<!-- Photo Section -->
-	<div class="hidden">
+<!--text upload section-->
+	<div class="hidde">
 		<div class="row background-grey">
 			<div class="col-xs-12">
 				<img class="bubble" src="/img/buble-red-head.png"/>
@@ -59,16 +59,17 @@
 	@include('layout.footer')
 	</div>
 
+
 <!--photo upload section-->
-	<div class="">
+	<div class="hidde">
+		
 		<div class="row background-grey">
  			<div class="col-xs-8">
 		        <img class="bubble" src="/img/buble-red-head.png"/>
 		        <h2 class="title-second">Arata ce ai vazut</h2>
 		    </div>
 		</div>
-
-<!--that image -->  		
+	<!--that image-->  		
 		<div class="row background-grey">
             <div class="col-xs-12 margin">
 	        	<div class="col-xs-4 hand example-pic">
@@ -104,7 +105,7 @@
     		</div>
     	</div>
 
-<!--that image -->  
+	<!--that image-end-->  
 
         <div class="row background-grey">
         		<div class="col-xs-4 col-xs-offset-5">
@@ -112,28 +113,118 @@
 	        </div>
 		</div>
 		<div class="row background-grey">
-	        <div class="col-xs-2 margin-progressbar-top offset">
+	        <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
 	            <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
 	        </div>
 	        <div class="col-xs-2 margin-progressbar-top">
 	            <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
 	        </div>
 	    </div>
-	    
-	@include('layout.footer')  
+
+		@include('layout.footer')  
 	</div>
+
 <!--end photo upload section-->
 
 <!--video upload section-->
-	<div class="">
-		<div class="row">
-		</div>
+	<div class="hidde">
+		<div class="row background-grey">
+ 			<div class="col-xs-8">
+		        <img class="bubble" src="/img/buble-red-head.png"/>
+		        <h2 class="title-second">Arata un film</h2>
+		    </div>
 
-	</div>
+		     <div class="row">
+		    	<div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
+				    <div class="input-group">
+					    <input type="text" class="form-control">
+					    <span class="input-group-btn">
+					    	<button class="btn btn-default" type="button">Incarca</button>
+					    </span>
+				    </div>
+				</div>
+	        </div>
+
+		    <div class="col-xs-12 margin">
+		    	<div class="col-xs-8 col-xs-offset-2">
+                    <iframe width="460" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+            	<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+            </div>
+           
+
+            <div class="row">
+		        <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
+		            <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
+		        </div>
+		        <div class="col-xs-2 margin-progressbar-top">
+		            <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
+		        </div>
+		    </div>	
+		</div>
 
 
 <!--video upload section-->
+	@include('layout.footer')  
+	</div>
+
+<!--Personal data-->
+
+	<div class="">
+		
+		<div class="row background-grey">
+			<div class="col-xs-8">
+		        <img class="bubble" src="/img/buble-red-head.png"/>
+		        <h2 class="title-second">Inregistreaza-te si gastiga</h2>
+		    </div>
+		</div>
+		<div class="row row background-grey">
+			<div class="col-xs-6 input-group margin-data-entry">
+				<span class="input-group-addon">Nume</span>
+				<input type="text" class="form-control" placeholder="Ex: Ion">
+			</div>
+		</div>
+		
+		<div class="row row background-grey">
+			<div class="col-xs-6 input-group margin-data-entry">
+				<span class="input-group-addon">E-mail</span>
+				<input type="text" class="form-control" placeholder="Ex: Ion@gmail.com">
+			</div>
+		</div>
+		<div class="row row background-grey">
+			<div class="col-xs-6 input-group margin-data-entry">
+				<span class="input-group-addon">Telefon</span>
+				<input type="text" class="form-control" placeholder="Ex: xx xx xxxx xxxx">
+			</div>
+		</div>
+		<div class="row row background-grey">
+			<div class="col-xs-6 input-group margin-data-entry">
+				<span class="input-group-addon">Mobil</span>
+				<input type="text" class="form-control" placeholder="Ex: 07xx xxx xxx">
+			</div>
+		</div>
+		<div class="row background-grey">
+			<div class="checkbox margin-data-entry">
+			    <label>
+			      <input type="checkbox"> Sunt de Acord
+			    </label>
+			</div>
+		</div>
+		<div class="row background-grey">
+	        <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
+	            <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
+	        </div>
+	        <div class="col-xs-2 margin-progressbar-top">
+	            <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
+	        </div>
+	    </div>	
+
+	
+		@include('layout.footer')  
+	</div>
+<!--Personal data-->
 @stop
-
-
-

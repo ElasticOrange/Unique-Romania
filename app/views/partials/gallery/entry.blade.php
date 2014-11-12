@@ -1,10 +1,10 @@
     <!-- User row -->
     <div data-user_row="{{ $entry->_id }}" class="row background-grey hand">
         <div class="col-xs-2">
-            <img class="margin-full" src="https://graph.facebook.com/10205210654286446/picture?type=normal"/>
+            <img class="user-photo margin-full" src="https://graph.facebook.com/10205210654286446/picture?type=normal"/>
         </div>
-            <h3 class="col-md-4 username-title">{{ $entry['user']['name'] }}</h3>
-        <div class="col-md-4 margin-btns">
+            <h3 class="col-xs-6 username-title">{{ $entry['user']['name'] }}</h3>
+        <div class="col-xs-4">
             <!-- Article icon -->
             @if(!empty($entry->article['title']) or !empty($entry->article['content']))
                 <span class="glyph glyphicon glyphicon-pencil"></span>
@@ -25,7 +25,7 @@
             @else
                 <span class="glyph glyph-disabled glyphicon glyphicon-film"></span>
             @endif
-            <span class="glyph glyph-red glyphicon glyphicon-chevron-down pull-right btn-dropdown"></span>
+            <span class="glyph glyph-red glyphicon glyphicon-chevron-down margin-btns btn-dropdown"></span>
         </div>
     </div>
 

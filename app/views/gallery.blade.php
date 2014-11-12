@@ -11,7 +11,7 @@
         </div>
 
            <div class="col-xs-4 align-center">
-            <a href="#" class="btn btn-danger btn-md button-arata-ne text-white">Arata-ne cum vezi tu</a>
+            <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Arata-ne cum vezi tu</a>
         </div>
 
     </div>

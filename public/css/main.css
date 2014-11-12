@@ -11,6 +11,7 @@ margin-bottom:40px;
 position:center;
 }
 
+
 .line-break{
     background-color:#bec1c3;
     height:1px;
@@ -41,12 +42,19 @@ position:center;
 }
 
 .margin-btns{
-    margin-left:100px;
+    margin-left:10px;
+}
+
+.user-photo{
+	width:64px;
+	height:64px;
+	border-radius:50%;
 }
 
 .username-title{
     padding-top:5px;
 }
+
 .hand{
     cursor:pointer;
 }

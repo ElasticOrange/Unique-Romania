@@ -24,21 +24,20 @@
 
     <div class="row background-grey">
         <div class="col-xs-12">
-            <div class="input-group input-search center">
-                <input class="form-control" type="text" id="search" placeholder="Cauta dupa nume">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" id="search_button" type="button">
-                        <div class="glyphicon glyphicon-search"></div>
-                    </button>
-                </span>
-            </div>
+            <form id="search_form">
+                <div class="input-group input-search center">
+                    <input class="form-control" type="text" id="search" placeholder="Cauta dupa nume">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="search_button" type="button">
+                            <div class="glyphicon glyphicon-search"></div>
+                        </button>
+                    </span>
+                </div>
+            </form>
         </div>
     </div>
 
     <div data-entries="true">
-        @foreach($entries as $entry)
-            @include('partials.gallery.entry', array('entry' => $entry))
-        @endforeach
     </div>
 
     <!-- square loading things -->

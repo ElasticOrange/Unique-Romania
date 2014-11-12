@@ -49,15 +49,34 @@ $(document).ready ()->
     # Enable fancybox on user pictures
     $('.fancybox').fancybox({type:'image'})
 
+
     ###
     # Infinite scroll
     ###
-
     # The object where status is saved
     infinite_scroll =
         finished: false
         loading: false
         page: 0
+        search_term: ''
+
+    # Search
+    search_do = (e)->
+        e.preventDefault()
+        infinite_scroll =
+            finished: false
+            loading: false
+            page: 0
+            search_term: $('#search').val()
+
+        $('[data-entries=true]').empty()
+        infinite_scroll_load()
+
+        console.log infinite_scroll
+        true
+
+    $('#search_button').click search_do
+    $('#search_form').submit search_do
 
     # Show loading
     infinite_scroll_loading_show = ()->
@@ -80,12 +99,14 @@ $(document).ready ()->
             return false
 
         infinite_scroll.loading = true
-        infinite_scroll.page++
 
         infinite_scroll_loading_show()
         $.get \
-            "/gallery/page/#{infinite_scroll.page}"
+            "/gallery/page/#{infinite_scroll.page}/#{infinite_scroll.search_term}"
             , (s, t)->
+                # Go to the next page
+                infinite_scroll.page++
+
                 # Mark loading false
                 infinite_scroll.loading = false
 
@@ -98,7 +119,13 @@ $(document).ready ()->
                 # If there is no data return mark as finished loading
                 if s.html is ''
                     infinite_scroll.finished = true
+
+                console.log 'Response is here'
+                console.log infinite_scroll
             , 'json'
+
+    # Call the first load
+    infinite_scroll_load()
 
     # Infinite load event
     $(window).scroll ()->

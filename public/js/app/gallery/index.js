@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var infinite_scroll, infinite_scroll_load, infinite_scroll_loading_hide, infinite_scroll_loading_show, user_row_click, user_row_close, user_row_close_all, user_row_open;
+  var infinite_scroll, infinite_scroll_load, infinite_scroll_loading_hide, infinite_scroll_loading_show, search_do, user_row_click, user_row_close, user_row_close_all, user_row_open;
   user_row_close = function($user_row, $user_content) {
     $user_row.find('.btn-dropdown').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
     $user_content.find('.bubble').hide();
@@ -54,8 +54,24 @@ $(document).ready(function() {
   infinite_scroll = {
     finished: false,
     loading: false,
-    page: 0
+    page: 0,
+    search_term: ''
   };
+  search_do = function(e) {
+    e.preventDefault();
+    infinite_scroll = {
+      finished: false,
+      loading: false,
+      page: 0,
+      search_term: $('#search').val()
+    };
+    $('[data-entries=true]').empty();
+    infinite_scroll_load();
+    console.log(infinite_scroll);
+    return true;
+  };
+  $('#search_button').click(search_do);
+  $('#search_form').submit(search_do);
   infinite_scroll_loading_show = function() {
     $('[data-loading]').show();
     return true;
@@ -74,17 +90,20 @@ $(document).ready(function() {
       return false;
     }
     infinite_scroll.loading = true;
-    infinite_scroll.page++;
     infinite_scroll_loading_show();
-    return $.get("/gallery/page/" + infinite_scroll.page, function(s, t) {
+    return $.get("/gallery/page/" + infinite_scroll.page + "/" + infinite_scroll.search_term, function(s, t) {
+      infinite_scroll.page++;
       infinite_scroll.loading = false;
       infinite_scroll_loading_hide();
       $('[data-entries=true]').append(s.html);
       if (s.html === '') {
-        return infinite_scroll.finished = true;
+        infinite_scroll.finished = true;
       }
+      console.log('Response is here');
+      return console.log(infinite_scroll);
     }, 'json');
   };
+  infinite_scroll_load();
   return $(window).scroll(function() {
     var enable, factor;
     factor = 300;

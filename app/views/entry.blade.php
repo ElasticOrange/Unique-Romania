@@ -71,29 +71,39 @@
 <!--that image -->  		
 		<div class="row background-grey">
             <div class="col-xs-12 margin">
+	        	<div class="col-xs-4 hand example-pic">
+            		<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+            		<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+    			</div>
+    			<div class="col-xs-4 hand example-pic">
+            		<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+            		<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+    			</div>
+    			<div class="col-xs-4 hand example-pic">
+            		<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+            		<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+	        	</div>
+        		<div class="col-xs-4 hand example-pic">
+            		<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+            		<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+    			</div>
+    			<div class="col-xs-4 hand example-pic">
+            		<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+            		<div class="trash">
+	        			<span class="glyph-trash glyphicon glyphicon-trash"></span>
+	        		</div>
+    			</div>
+    		</div>
+    	</div>
 
-            	<div class="col-xs-4">
-	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-	            	<div class="trash">
-        			</div>
-        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
-        		</div>
-
-        		<div class="col-xs-4">
-	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-	            	<div class="trash">
-	            	</div>
-        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
-        		</div>
-
-        		<div class="col-xs-4">
-	            	<img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-	            	<div class="trash">
-	            	</div>
-        				<span class="glyph-trash glyphicon glyphicon-trash"></span>
-        		</div>
-            </div>
-        </div>
 <!--that image -->  
 
         <div class="row background-grey">
@@ -109,6 +119,7 @@
 	            <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
 	        </div>
 	    </div>
+	    
 	@include('layout.footer')  
 	</div>
 <!--end photo upload section-->

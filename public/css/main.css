@@ -299,21 +299,25 @@ position:center;
 	border-radius:20%;
 	font-size:22px;
 	position:absolute;
-	left:100px;
+	left:80px;
 	top:45px;
 	border-radius:50%;
 }
 
-.trash{
-	position:absolute;
-	top:0px;
-	width:210px;
-	height:140px;
-	background-color:white;
-	opacity:0.6;
-}
 
 .nuformcontrol{
 	border: solid 2px #2c3e50;
 	margin-bottom:60px;
+}
+
+.trash {
+    position:absolute;
+	top:0px;
+	width:210px;
+	height:140px;
+	background-color:white;
+	opacity:0;
+}
+.trash:hover {
+	opacity:0.6;
 }

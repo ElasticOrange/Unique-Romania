@@ -14,5 +14,11 @@ goto_step = function(number) {
 
 $(document).ready(function() {
   goto_step(1);
+  $('[data-goto_step]').click(function(e) {
+    var step_to;
+    e.preventDefault();
+    step_to = $(this).attr('data-goto_step');
+    return goto_step(step_to);
+  });
   return true;
 });

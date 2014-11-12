@@ -15,4 +15,12 @@ goto_step = (number)->
 
 $(document).ready ()->
     goto_step(1)
+
+    # Set events on prev/next buttons
+    $('[data-goto_step]').click (e)->
+        e.preventDefault()
+
+        step_to = $(@).attr('data-goto_step')
+        goto_step(step_to)
+
     true

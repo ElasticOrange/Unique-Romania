@@ -25,10 +25,10 @@
                 <div class="progress-bar nuprogress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
             <div class="margins" data-progress_icons="true">
-                <span class="glyph-progress glyph-progress-active glyphicon glyphicon-pencil"></span>
-                <span class="glyph-progress glyph-progress-inactive glyphicon glyphicon-camera glyph-space-camera"></span>
-                <span class="glyph-progress glyph-progress-inactive glyphicon glyphicon-film glyph-space-film"></span>
-                <span class="glyph-progress glyph-progress-inactive glyphicon glyphicon-user glyph-space-user"></span>
+                <span class="hand glyph-progress glyph-progress-active glyphicon glyphicon-pencil" data-goto_step="1"></span>
+                <span class="hand glyph-progress glyph-progress-inactive glyphicon glyphicon-camera glyph-space-camera" data-goto_step="2"></span>
+                <span class="hand glyph-progress glyph-progress-inactive glyphicon glyphicon-film glyph-space-film" data-goto_step="3"></span>
+                <span class="hand glyph-progress glyph-progress-inactive glyphicon glyphicon-user glyph-space-user" data-goto_step="4"></span>
             </div>
         </div>
     </div>
@@ -41,13 +41,13 @@
                 <img class="bubble" src="/img/buble-red-head.png"/>
                 <h2 class="title-second">Povesteste experienta ta</h2>
             </div>
-            <div class="col-xs-10">
-                <textarea class="margins nuformcontrol form-control" rows="4">...</textarea>
+            <div class="col-xs-11">
+                <textarea class="margins nuformcontrol form-control" rows="4"></textarea>
             </div>
         </div>
         <div class="row background-grey">
             <div class="col-xs-4 col-xs-offset-4 align-center">
-                <a href="#" class="btn btn-danger btn-block btn-md ">Inainte un pas</a>
+                <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Inainte un pas</a>
             </div>
         </div>
     </div>
@@ -98,15 +98,15 @@
         <!--that image-end-->
         <div class="row background-grey">
                 <div class="col-xs-4 col-xs-offset-5">
-                <a href="#" class="btn btn-default btn-md">Incarca...</a>
+                <a href="#" class="btn btn-default ">Incarca...</a>
             </div>
         </div>
         <div class="row background-grey">
             <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
+                <a href="#" class="btn btn-danger " data-goto_step="1">Inapoi un pas</a>
             </div>
             <div class="col-xs-2 margin-progressbar-top">
-                <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
+                <a href="#" class="btn btn-danger  " data-goto_step="3">Inainte un pas</a>
             </div>
         </div>
     </div>
@@ -145,10 +145,10 @@
 
             <div class="row">
                 <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
+                    <a href="#" class="btn btn-danger " data-goto_step="2">Inapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
+                    <a href="#" class="btn btn-danger  " data-goto_step="4">Inainte un pas</a>
                 </div>
             </div>
         </div>
@@ -166,7 +166,7 @@
         <div class="row row background-grey">
             <div class="col-xs-6 input-group margin-data-entry">
                 <span class="input-group-addon">Nume</span>
-                <input type="text" class="form-control" placeholder="Ex: Ion">
+                <input type="text" class="form-control" id="name" placeholder="Ex: Ion">
             </div>
         </div>
 
@@ -191,16 +191,16 @@
         <div class="row background-grey">
             <div class="checkbox margin-data-entry">
                 <label>
-                  <input type="checkbox"> Sunt de Acord
+                    <input type="checkbox"> Sunt de Acord
                 </label>
             </div>
         </div>
         <div class="row background-grey">
             <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                <a href="#" class="btn btn-danger btn-md">Inapoi un pas</a>
+                <a href="#" class="btn btn-danger " data-goto_step="3">Inapoi un pas</a>
             </div>
             <div class="col-xs-2 margin-progressbar-top">
-                <a href="#" class="btn btn-danger btn-md ">Inainte un pas</a>
+                <a href="#" class="btn btn-danger">Inainte un pas</a>
             </div>
         </div>
     </div>

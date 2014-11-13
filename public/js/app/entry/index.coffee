@@ -30,7 +30,7 @@ $(document).ready ()->
         e.preventDefault()
         $('#image_upload').click()
 
-    # Set the async fileupload
+    # Set the async image fileupload
     $('#image_upload').fileupload \
         dataType: 'json'
         , done: (e, data)->
@@ -41,9 +41,39 @@ $(document).ready ()->
             # data.result.name
             true
 
+    # Remove image from page and form
     remove_image = (e)->
         if confirm('Esti sigur ca vrei sa stergi poza?')
             e.preventDefault()
             $(@).parent().remove()
 
+    # Remove image event
     $('body').on 'click', '.trash', remove_image
+
+    # Youtube link to code
+    youtube_link_to_id = (url)->
+        regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/
+        match = url.match(regExp)
+
+        if (match and match[2].length == 11)
+            return match[2]
+        else
+            return false
+
+    # Create embed code
+    youtube_embed = ()->
+        # Embed the link
+        youtube_id = youtube_link_to_id($('[data-video_link=true]').val())
+        if youtube_id
+            youtube_html = _.template($('#video_template').html())
+            $('[data-video_container=true]').html(youtube_html({video_id: youtube_id}))
+        else
+            $('[data-video_container=true]').html('')
+
+        # Input type
+        $('[name=video]').val("//www.youtube.com/embed/#{youtube_id}")
+
+        true
+
+    # Add video
+    $('[data-video_load=true]').click youtube_embed

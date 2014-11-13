@@ -6,9 +6,11 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Cum vad altii Romania</h2>
-            <p class="content-second">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu .</p>
+            <h2 class="title-second">Unic în România prin ochii voştri</h2>
+            <p class="content-second">Am pornit şi noi în căutarea unor destinaţii sau oameni unici în România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre! Acum este rândul vostru!</p>
+            <p class="content-second">Ce este unic în România pentru voi?</p>
         </div>
+
 
            <div class="col-xs-4 align-center">
             <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Arata-ne cum vezi tu</a>

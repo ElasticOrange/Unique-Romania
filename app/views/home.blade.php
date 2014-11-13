@@ -10,7 +10,7 @@
         <div class="col-xs-8">
             <img class="bubble" src="img/buble-red-head.png"/>
             <h2 class="title-second">Descopera Unique Romania</h2>
-            <p class="content-second">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="content-second">În fiecare zi, pas cu pas, descoperim locuri unice în jurul nostru şi oameni speciali, pe care dorim să îi cunoaştem îndeaproape. Nu contează cât de departe este destinaţia finală, important este cum transformăm, prin forţe proprii, un vis în realitate. Alături de voi, vrem să descoperim locuri unice şi fascinante din România şi povesti reale despre oameni frumoşi şi pasiunile lor. Împreună, îţi oferim inspiraţia de care ai nevoie pentru a dezvălui momente şi experienţe care demonstrează că în fiecare colţ de lume există magie şi inspiraţie, dacă ştim unde să căutăm.</p>
         </div>
         <div class="col-xs-4">
             <img class="logo" src="img/logo.png"/>
@@ -21,7 +21,7 @@
         <div class="col-xs-8">
             <img class="bubble" src="img/buble-white-head.png"/>
             <h2 class="title-second text-white">Castiga un premiu</h2>
-            <p class="content-second text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+            <p class="content-second text-white">La finalul călătoriei noastre, trei biciclete Pegas vor ajunge la voi, pentru a le folosi către viitoarele destinaţii unice, pe care le descoperiţi din mers. Puteţi povesti despre locurile unice sau oamenii frumoşi prin texte, fotografii sau video-uri, voi alegeţi! Noi vom selecta câştigătorul care ne impresionează cel mai mult, din fiecare categorie. Alege-ţi categoria preferată şi uimeşte-ne! Mult succes!</p>
         </div>
         <div class="col-xs-4">
             <img class="prize" src="img/logo-camera.png"/>

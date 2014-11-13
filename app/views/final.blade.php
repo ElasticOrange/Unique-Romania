@@ -18,7 +18,7 @@
 		<div class="row background-grey">
 			<div class="col-xs-8 margin margins">
 				<p>Contentul tau va trece printr-un proces de aprobare.</p>
-				<p>Vei primii in scurt timp un email de confirmare la adresa xxx_xxxxx@gmail.com</p>
+				<p>Vei primii in scurt timp un email de confirmare la adresa de e-mail inscrisa de tine</p>
 			</div>
 		</div>
 		<div class="col-xs-4">
@@ -40,8 +40,8 @@
 	    </div>
 	    <div class="row background-grey">
 			<div class="col-xs-10 margin margins">
-				<p>Ai intrat in cursa pentru a castiga un super aparat photo Canon.</p>
-				<p>Stai cu ochii pe pagina Facebook Canon Romania si afla daca ai castigat. Extragerea va avea loc in data de xx.xx.xxxx</p>
+				<p>Îţi multimim că ai imparasit cu noi povesti despre oameni şi locuri unice. Invită-ţi şi prietenii să participe la concurs.</p>
+				<p>Împreună, vom descoperi în toate colţurile ţării ce este unic în România.</p>
 			</div>
 		</div>
 		<div class="row background-grey">

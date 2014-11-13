@@ -39,7 +39,7 @@
         <input type="file" class="moveout" name="picture" id="image_upload" multiple />
     </form>
 
-    <form action="/entry" method="post" enctype="multipart/form-data">
+    <form action="/entry" method="post">
         <!--text upload section-->
         <div class="hidden" data-step="1">
             <div class="row background-grey">

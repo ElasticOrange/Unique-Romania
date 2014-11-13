@@ -13,6 +13,7 @@ goto_step = function(number) {
 };
 
 $(document).ready(function() {
+  var remove_image;
   goto_step(1);
   $('[data-goto_step]').click(function(e) {
     var step_to;
@@ -25,7 +26,7 @@ $(document).ready(function() {
     e.preventDefault();
     return $('#image_upload').click();
   });
-  return $('#image_upload').fileupload({
+  $('#image_upload').fileupload({
     dataType: 'json',
     done: function(e, data) {
       var picture_html, picture_template;
@@ -34,8 +35,14 @@ $(document).ready(function() {
         picture_url: data.result.name
       });
       $('[data-picture_container=true]').append(picture_html);
-      console.log(picture_html);
       return true;
     }
   });
+  remove_image = function(e) {
+    if (confirm('Esti sigur ca vrei sa stergi poza?')) {
+      e.preventDefault();
+      return $(this).parent().remove();
+    }
+  };
+  return $('body').on('click', '.trash', remove_image);
 });

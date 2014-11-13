@@ -38,6 +38,12 @@ $(document).ready ()->
             picture_html = picture_template \
                 picture_url: data.result.name
             $('[data-picture_container=true]').append(picture_html)
-            console.log picture_html
             # data.result.name
             true
+
+    remove_image = (e)->
+        if confirm('Esti sigur ca vrei sa stergi poza?')
+            e.preventDefault()
+            $(@).parent().remove()
+
+    $('body').on 'click', '.trash', remove_image

@@ -24,3 +24,15 @@ $(document).ready ()->
         goto_step(step_to)
 
     true
+
+    # Set the on click event of upload image button to the real input file element
+    $('[data-upload_image=true]').click (e)->
+        e.preventDefault()
+        $('#image_upload').click()
+
+    # Set the async fileupload
+    $('#image_upload').fileupload \
+        dataType: 'json'
+        , done: (e, data)->
+            # data.result.name
+            true

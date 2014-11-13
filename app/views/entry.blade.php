@@ -34,181 +34,193 @@
     </div>
     <!-- static rows -->
 
-    <!--text upload section-->
-    <div class="hidden" data-step="1">
-        <div class="row background-grey">
-            <div class="col-xs-12">
-                <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Povesteste experienta ta</h2>
-            </div>
-            <div class="col-xs-11">
-                <textarea class="margins nuformcontrol form-control" rows="4"></textarea>
-            </div>
-        </div>
-        <div class="row background-grey">
-            <div class="col-xs-4 col-xs-offset-4 align-center">
-                <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Inainte un pas</a>
-            </div>
-        </div>
-    </div>
+    <!-- -->
+    <form action="/entry/image" method="post" enctype="multipart/form-data">
+        <input type="file" class="moveout" name="picture" id="image_upload" multiple />
+    </form>
 
-    <!--photo upload section-->
-    <div class="hidden" data-step="2">
-        <div class="row background-grey">
-             <div class="col-xs-8">
-                <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Arata ce ai vazut</h2>
+    <form action="/entry" method="post" enctype="multipart/form-data">
+        <!--text upload section-->
+        <div class="hidden" data-step="1">
+            <div class="row background-grey">
+                <div class="col-xs-12">
+                    <img class="bubble" src="/img/buble-red-head.png"/>
+                    <h2 class="title-second">Povesteste experienta ta</h2>
+                </div>
+                <div class="col-xs-11">
+                    <textarea name="article" class="margins nuformcontrol form-control" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="row background-grey">
+                <div class="col-xs-4 col-xs-offset-4 align-center">
+                    <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Inainte un pas</a>
+                </div>
             </div>
         </div>
-        <!--that image-->
-        <div class="row background-grey">
-            <div class="col-xs-12 margin">
+
+        <!--photo upload section-->
+        <div class="hidden" data-step="2">
+            <div class="row background-grey">
+                 <div class="col-xs-8">
+                    <img class="bubble" src="/img/buble-red-head.png"/>
+                    <h2 class="title-second">Arata ce ai vazut</h2>
+                </div>
+            </div>
+            <!--that image-->
+            <script type="text/template" id="picture_template">
                 <div class="col-xs-4 hand example-pic">
                     <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
                     <div class="trash">
                         <span class="glyph-trash glyphicon glyphicon-trash"></span>
                     </div>
                 </div>
-                <div class="col-xs-4 hand example-pic">
-                    <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                    <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
+            </script>
+            <div class="row background-grey">
+                <div class="col-xs-12 margin">
+                    <div class="col-xs-4 hand example-pic">
+                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                        <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-4 hand example-pic">
-                    <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                    <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                    <div class="col-xs-4 hand example-pic">
+                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                        <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-4 hand example-pic">
-                    <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                    <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                    <div class="col-xs-4 hand example-pic">
+                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                        <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-4 hand example-pic">
-                    <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                    <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                    <div class="col-xs-4 hand example-pic">
+                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                        <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!--that image-end-->
-        <div class="row background-grey">
-                <div class="col-xs-4 col-xs-offset-5">
-                <a href="#" class="btn btn-default ">Incarca...</a>
-            </div>
-        </div>
-        <div class="row background-grey">
-            <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                <a href="#" class="btn btn-danger " data-goto_step="1">Inapoi un pas</a>
-            </div>
-            <div class="col-xs-2 margin-progressbar-top">
-                <a href="#" class="btn btn-danger  " data-goto_step="3">Inainte un pas</a>
-            </div>
-        </div>
-    </div>
-    <!--end photo upload section-->
-
-    <!--video upload section-->
-    <div class="hidden" data-step="3">
-        <div class="row background-grey">
-             <div class="col-xs-8">
-                <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Arata un film</h2>
-            </div>
-
-             <div class="row">
-                <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
-                    <div class="input-group">
-                        <input type="text" class="form-control">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Incarca</button>
-                        </span>
+                    <div class="col-xs-4 hand example-pic">
+                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                        <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-xs-12 margin">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <iframe width="460" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
+            <!--that image-end-->
+            <div class="row background-grey">
+                    <div class="col-xs-4 col-xs-offset-5">
+                    <a href="#" class="btn btn-default" data-upload_image="true">Incarca...</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                    </div>
-            </div>
-
-
-            <div class="row">
+            <div class="row background-grey">
                 <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger " data-goto_step="2">Inapoi un pas</a>
+                    <a href="#" class="btn btn-danger " data-goto_step="1">Inapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger  " data-goto_step="4">Inainte un pas</a>
+                    <a href="#" class="btn btn-danger  " data-goto_step="3">Inainte un pas</a>
                 </div>
             </div>
         </div>
-    </div>
-    <!--video upload section-->
+        <!--end photo upload section-->
 
-    <!--Personal data-->
-    <div class="hidden" data-step="4">
-        <div class="row background-grey">
-            <div class="col-xs-8">
-                <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Inregistreaza-te si gastiga</h2>
-            </div>
-        </div>
-        <div class="row row background-grey">
-            <div class="col-xs-6 input-group margin-data-entry">
-                <span class="input-group-addon">Nume</span>
-                <input type="text" class="form-control" id="name" placeholder="Ex: Ion">
-            </div>
-        </div>
+        <!--video upload section-->
+        <div class="hidden" data-step="3">
+            <div class="row background-grey">
+                 <div class="col-xs-8">
+                    <img class="bubble" src="/img/buble-red-head.png"/>
+                    <h2 class="title-second">Arata un film</h2>
+                </div>
 
-        <div class="row row background-grey">
-            <div class="col-xs-6 input-group margin-data-entry">
-                <span class="input-group-addon">E-mail</span>
-                <input type="text" class="form-control" placeholder="Ex: Ion@gmail.com">
+                 <div class="row">
+                    <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Incarca</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 margin">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <iframe width="460" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="trash">
+                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
+                        <a href="#" class="btn btn-danger " data-goto_step="2">Inapoi un pas</a>
+                    </div>
+                    <div class="col-xs-2 margin-progressbar-top">
+                        <a href="#" class="btn btn-danger  " data-goto_step="4">Inainte un pas</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row row background-grey">
-            <div class="col-xs-6 input-group margin-data-entry">
-                <span class="input-group-addon">Telefon</span>
-                <input type="text" class="form-control" placeholder="Ex: xx xx xxxx xxxx">
+        <!--video upload section-->
+
+        <!--Personal data-->
+        <div class="hidden" data-step="4">
+            <div class="row background-grey">
+                <div class="col-xs-8">
+                    <img class="bubble" src="/img/buble-red-head.png"/>
+                    <h2 class="title-second">Inregistreaza-te si gastiga</h2>
+                </div>
+            </div>
+            <div class="row row background-grey">
+                <div class="col-xs-6 input-group margin-data-entry">
+                    <span class="input-group-addon">Nume</span>
+                    <input type="text" class="form-control" name="name" placeholder="Ex: Ion">
+                </div>
+            </div>
+
+            <div class="row row background-grey">
+                <div class="col-xs-6 input-group margin-data-entry">
+                    <span class="input-group-addon">E-mail</span>
+                    <input type="text" class="form-control" name="email" placeholder="Ex: Ion@gmail.com">
+                </div>
+            </div>
+            <div class="row row background-grey">
+                <div class="col-xs-6 input-group margin-data-entry">
+                    <span class="input-group-addon">Telefon</span>
+                    <input type="text" class="form-control" name="phone" placeholder="Ex: xx xx xxxx xxxx">
+                </div>
+            </div>
+            <div class="row background-grey">
+                <div class="checkbox margin-data-entry">
+                    <label>
+                        <input type="checkbox"> Sunt de Acord
+                    </label>
+                </div>
+            </div>
+            <div class="row background-grey">
+                <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
+                    <a href="#" class="btn btn-danger " data-goto_step="3">Inapoi un pas</a>
+                </div>
+                <div class="col-xs-2 margin-progressbar-top">
+                    <button href="#" class="btn btn-danger">Inainte un pas</button>
+                </div>
             </div>
         </div>
-        <div class="row row background-grey">
-            <div class="col-xs-6 input-group margin-data-entry">
-                <span class="input-group-addon">Mobil</span>
-                <input type="text" class="form-control" placeholder="Ex: 07xx xxx xxx">
-            </div>
-        </div>
-        <div class="row background-grey">
-            <div class="checkbox margin-data-entry">
-                <label>
-                    <input type="checkbox"> Sunt de Acord
-                </label>
-            </div>
-        </div>
-        <div class="row background-grey">
-            <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                <a href="#" class="btn btn-danger " data-goto_step="3">Inapoi un pas</a>
-            </div>
-            <div class="col-xs-2 margin-progressbar-top">
-                <a href="#" class="btn btn-danger">Inainte un pas</a>
-            </div>
-        </div>
-    </div>
-    <!--Personal data-->
+        <!--Personal data-->
+    </form>
 
     @include('layout.footer')
 @stop
 
 @section('js')
+    <script src="/js/fileupload/jquery.ui.widget.js"></script>
+    <script src="/js/fileupload/jquery.iframe-transport.js"></script>
+    <script src="/js/fileupload/jquery.fileupload.js"></script>
+    <script src="/js/underscore/underscore.min.js"></script>
     <script src="/js/app/entry/index.js"></script>
 @stop

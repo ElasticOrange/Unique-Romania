@@ -20,5 +20,15 @@ $(document).ready(function() {
     step_to = $(this).attr('data-goto_step');
     return goto_step(step_to);
   });
-  return true;
+  true;
+  $('[data-upload_image=true]').click(function(e) {
+    e.preventDefault();
+    return $('#image_upload').click();
+  });
+  return $('#image_upload').fileupload({
+    dataType: 'json',
+    done: function(e, data) {
+      return true;
+    }
+  });
 });

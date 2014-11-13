@@ -28,6 +28,13 @@ $(document).ready(function() {
   return $('#image_upload').fileupload({
     dataType: 'json',
     done: function(e, data) {
+      var picture_html, picture_template;
+      picture_template = _.template($('#picture_template').html());
+      picture_html = picture_template({
+        picture_url: data.result.name
+      });
+      $('[data-picture_container=true]').append(picture_html);
+      console.log(picture_html);
       return true;
     }
   });

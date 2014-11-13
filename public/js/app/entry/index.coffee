@@ -34,5 +34,10 @@ $(document).ready ()->
     $('#image_upload').fileupload \
         dataType: 'json'
         , done: (e, data)->
+            picture_template = _.template($('#picture_template').html())
+            picture_html = picture_template \
+                picture_url: data.result.name
+            $('[data-picture_container=true]').append(picture_html)
+            console.log picture_html
             # data.result.name
             true

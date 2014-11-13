@@ -124,6 +124,7 @@ return array(
         'Jenssegers\Mongodb\MongodbServiceProvider',
         'Jenssegers\Mongodb\Auth\ReminderServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
+        'Intervention\Image\ImageServiceProvider',
     ),
 
     /*
@@ -191,7 +192,7 @@ return array(
         'Validator'         => 'Illuminate\Support\Facades\Validator',
         'View'              => 'Illuminate\Support\Facades\View',
         'Moloquent'         => 'Jenssegers\Mongodb\Model',
-
+        'Image'             => 'Intervention\Image\Facades\Image',
     ),
 
 );

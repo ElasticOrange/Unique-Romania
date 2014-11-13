@@ -69,44 +69,15 @@
             <!--that image-->
             <script type="text/template" id="picture_template">
                 <div class="col-xs-4 hand example-pic">
-                    <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
+                    <input type="hidden" name="pictures[]" value="<%= picture_url %>" />
+                    <img src="/entry/small-image/<%= picture_url %>" />
                     <div class="trash">
                         <span class="glyph-trash glyphicon glyphicon-trash"></span>
                     </div>
                 </div>
             </script>
             <div class="row background-grey">
-                <div class="col-xs-12 margin">
-                    <div class="col-xs-4 hand example-pic">
-                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                        <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 hand example-pic">
-                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                        <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 hand example-pic">
-                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                        <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 hand example-pic">
-                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                        <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 hand example-pic">
-                        <img src="http://images.carmelrealtycompany.com/webart/mls/thumb/748.jpg" />
-                        <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
-                    </div>
+                <div class="col-xs-12 margin" data-picture_container="true">
                 </div>
             </div>
             <!--that image-end-->

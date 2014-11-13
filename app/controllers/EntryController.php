@@ -33,12 +33,10 @@ class EntryController extends BaseController {
         $name = str_replace('..', '', $name);
         $name = str_replace('/', '', $name);
 
-        header('Content-Type: image/png');
+        $image_path = $this->picture_path . $name;
+        $image = Image::make($image_path)->fit(210, 140);
 
-        $response = Response::make(File::get($this->picture_path . $name));
-        $response->header('Content-Type', 'image/png');
-
-        return $response;
+        return $image->response('png');
     }
 
     public function getBigImage($name)
@@ -46,11 +44,9 @@ class EntryController extends BaseController {
         $name = str_replace('..', '', $name);
         $name = str_replace('/', '', $name);
 
-        header('Content-Type: image/png');
+        $image_path = $this->picture_path . $name;
+        $image = Image::make($image_path);
 
-        $response = Response::make(File::get($this->picture_path . $name));
-        $response->header('Content-Type', 'image/png');
-
-        return $response;
+        return $image->response('png');
     }
 }

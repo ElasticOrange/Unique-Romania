@@ -64,9 +64,9 @@ position:center;
 }
 
 .user-photo{
-	width:64px;
-	height:64px;
-	border-radius:50%;
+    width:64px;
+    height:64px;
+    border-radius:50%;
 }
 
 .margin-progress-bar{
@@ -411,4 +411,9 @@ position:center;
 
 .trash:hover {
     opacity:0.6;
+}
+
+.moveout {
+    position:absolute;
+    left: -9999px;
 }

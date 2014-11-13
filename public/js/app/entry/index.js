@@ -13,7 +13,7 @@ goto_step = function(number) {
 };
 
 $(document).ready(function() {
-  var remove_image;
+  var remove_image, youtube_embed, youtube_link_to_id;
   goto_step(1);
   $('[data-goto_step]').click(function(e) {
     var step_to;
@@ -44,5 +44,30 @@ $(document).ready(function() {
       return $(this).parent().remove();
     }
   };
-  return $('body').on('click', '.trash', remove_image);
+  $('body').on('click', '.trash', remove_image);
+  youtube_link_to_id = function(url) {
+    var match, regExp;
+    regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    match = url.match(regExp);
+    if (match && match[2].length === 11) {
+      return match[2];
+    } else {
+      return false;
+    }
+  };
+  youtube_embed = function() {
+    var youtube_html, youtube_id;
+    youtube_id = youtube_link_to_id($('[data-video_link=true]').val());
+    if (youtube_id) {
+      youtube_html = _.template($('#video_template').html());
+      $('[data-video_container=true]').html(youtube_html({
+        video_id: youtube_id
+      }));
+    } else {
+      $('[data-video_container=true]').html('');
+    }
+    $('[name=video]').val("//www.youtube.com/embed/" + youtube_id);
+    return true;
+  };
+  return $('[data-video_load=true]').click(youtube_embed);
 });

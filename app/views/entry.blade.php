@@ -108,23 +108,27 @@
                  <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
                         <div class="input-group">
-                            <input type="text" class="form-control">
+                            <input type="hidden" name="video" value="" />
+                            <input type="text" class="form-control" data-video_link="true" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Incarca</button>
+                                <button class="btn btn-default" type="button" data-video_load="true">Incarca</button>
                             </span>
                         </div>
                     </div>
                 </div>
 
+                <script type="text/template" id="video_template">
+                    <iframe width="460" height="263" src="//www.youtube.com/embed/<%= video_id %>" frameborder="0" allowfullscreen></iframe>
+                </script>
+
                 <div class="col-xs-12 margin">
-                    <div class="col-xs-8 col-xs-offset-2">
-                        <iframe width="460" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
+                    <div class="col-xs-8 col-xs-offset-2" data-video_container="true">
                     </div>
                 </div>
                 <div class="row">
                     <div class="trash">
-                            <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                        </div>
+                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                    </div>
                 </div>
 
                 <div class="row">

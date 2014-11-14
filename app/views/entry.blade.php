@@ -168,7 +168,7 @@
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Telefon</span>
-                    <input type="text" class="form-control" name="phone" placeholder="Ex: xx xx xxxx xxxx">
+                    <input type="text" class="form-control" name="phone" placeholder="Ex: 07xx-xxx-xxx">
                 </div>
             </div>
             <div class="row background-grey">

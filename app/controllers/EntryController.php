@@ -27,7 +27,7 @@ class EntryController extends BaseController {
         $entry = $user->entry;
         if ($entry)
         {
-            return 'Redirect catre pagina de sfarsit';
+            return Redirect::to('/final');
         }
         else
         {
@@ -57,7 +57,7 @@ class EntryController extends BaseController {
 
         $user->entry()->save($entry);
 
-        return $entry;
+        return Redirect::to('/final');
     }
 
     public function postImage()

@@ -23,6 +23,9 @@ class EntryTableSeeder extends Seeder {
                 , 'pictures' => []
                 , 'video' => ''
                 , 'approved' => (rand(0, 2) == 1) ? true : false
+                , 'name' => $faker->name
+                , 'email' => $faker->email
+                , 'phone' => $faker->phoneNumber
             ];
 
             if (rand(0, 2) == 1)

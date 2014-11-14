@@ -4,11 +4,16 @@
     width:760px !important;
 }
 
+p{
+    font-size:15px;
+    line-height:1.2;
+}
+
 .input-search{
-width:680px;
-margin-top:40px;
-margin-bottom:40px;
-position:center;
+    width:680px;
+    margin-top:40px;
+    margin-bottom:40px;
+    position:center;
 }
 
 
@@ -22,6 +27,7 @@ position:center;
 
 .user-hide{
     display: none;
+
 }
 
 .line-break-space{
@@ -36,7 +42,7 @@ position:center;
     margin-right:auto;
 }
 .offset{
-    margin-left:240px;
+    margin-left: 240px;
 }
 .margin{
     margin-top:20px;

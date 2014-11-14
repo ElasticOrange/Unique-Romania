@@ -51,13 +51,17 @@ p{
 .margins{
     margin-left:20px;
 }
+
+.marginz{
+    margin-top:50px;
+}
 .margin-full{
     margin-left:27px;
     margin-top:5px;
     margin-bottom:5px;
 }
 .margins-big{
-    margin-left:35px;
+    margin-left:45px;
 }
 
 .margin-data-entry{
@@ -92,17 +96,31 @@ p{
     margin-right:20px;
     margin-bottom:35px;
 }
+
 .username-title{
     padding-top:5px;
 }
 
-.hand{
-    cursor:pointer;
-}
-.hand{
-    cursor:pointer;
+.eg-username-title{
+    padding-top:30px;
 }
 
+.hand{
+    cursor:pointer;
+}
+.hand{
+    cursor:pointer;
+}
+.eg-glyph{
+    padding:6px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:40px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:22px;
+
+}
 .glyph{
     padding:10px;
     margin-top:15px;
@@ -196,6 +214,13 @@ p{
     background-color:#cc0000;
     font-size: 14px;
     top:110px;
+}
+.button-arata-ne-eg{
+    position:relative;
+    border:none;
+    background-color:#cc0000;
+    font-size: 14px;
+    top:30px;
 }
 .button-incarca-foto{
     margin-left:300px;

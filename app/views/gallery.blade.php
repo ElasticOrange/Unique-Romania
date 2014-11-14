@@ -12,7 +12,7 @@
         </div>
 
 
-           <div class="col-xs-4 align-center">
+        <div class="col-xs-4 align-center">
             <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Arata-ne cum vezi tu</a>
         </div>
 

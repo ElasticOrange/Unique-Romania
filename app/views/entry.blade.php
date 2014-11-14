@@ -8,7 +8,7 @@
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
             <h2 class="title-second">Cum vad altii Romania</h2>
-            <p class="content-second">Reminder cu premiul pe care il poti castiga daca urci content</p>
+            <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
         </div>
         <div class="col-xs-4">
             <img class="prize-reminder" src="/img/logo-camera.png"/>
@@ -45,12 +45,16 @@
             <div class="row background-grey">
                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Povesteste experienta ta</h2>
+                    <h2 class="title-second ">Povesteşte ce este unic în România prin exemple din jurul tău.</h2>
+                </div>
+                <div class="margins">
+                    <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
                 </div>
                 <div class="col-xs-11">
                     <textarea name="article" class="margins nuformcontrol form-control" rows="4"></textarea>
                 </div>
             </div>
+
             <div class="row background-grey">
                 <div class="col-xs-4 col-xs-offset-4 align-center">
                     <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Inainte un pas</a>
@@ -61,9 +65,12 @@
         <!--photo upload section-->
         <div class="hidden" data-step="2">
             <div class="row background-grey">
-                 <div class="col-xs-8">
+                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Arata ce ai vazut</h2>
+                    <div class="">
+                        <h2 class="title-second">Arată ce este unic în România prin intermediul fotografiilor</h2>
+                        <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
+                    </div>
                 </div>
             </div>
             <!--that image-->
@@ -100,9 +107,10 @@
         <!--video upload section-->
         <div class="hidden" data-step="3">
             <div class="row background-grey">
-                 <div class="col-xs-8">
+                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Arata un film</h2>
+                    <h2 class="title-second">Arată ce este unic în România prin intermediul materialelor video realizate</h2>
+                    <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
                 </div>
 
                  <div class="row">

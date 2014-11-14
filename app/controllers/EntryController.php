@@ -89,9 +89,10 @@ class EntryController extends BaseController {
         $name = str_replace('/', '', $name);
 
         $image_path = $this->picture_path . $name;
-        $image = Image::make($image_path)->resize(2000, null, function($constraint)
+        $image = Image::make($image_path)->resize(1000, null, function($constraint)
             {
                 $constraint->aspectRatio();
+                $constraint->upsize();
             });
 
         return $image->response('png');

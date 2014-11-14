@@ -5,7 +5,15 @@ class Entry extends \Moloquent {
         // 'title' => 'required'
     ];
     // Don't forget to fill this array
-    protected $fillable = [];
+    protected $fillable = [
+        'approved'
+        , 'article'
+        , 'pictures'
+        , 'video'
+        , 'name'
+        , 'email'
+        , 'phone'
+    ];
 
     public function user()
     {

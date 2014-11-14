@@ -11,8 +11,6 @@ goto_step = (number)->
     for i in [0..number-1]
         $("[data-progress_icons] :nth(#{i})").removeClass('glyph-progress-inactive').addClass('glyph-progress-active')
 
-    console.log "Step #{number}"
-
 $(document).ready ()->
     goto_step(1)
 

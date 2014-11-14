@@ -35,7 +35,7 @@
             <div class="row background-grey-dropdown">
                 <div class="col-xs-12">
                     <img class="bubble" src="img/buble-red-head.png"/>
-                    <h2 class="title-second">{{ $entry->article['title'] }}</h2>
+                    <h2 class="title-second">Cum vad eu ?</h2>
                     <p class="content-second">{{ $entry->article['content'] }}</p>
                 </div>
             </div>
@@ -53,8 +53,8 @@
             <div class="row background-grey-dropdown">
                 <div class="col-xs-12 margins">
                     @foreach($entry->pictures as $picture)
-                        <a class="fancybox" rel="{{ $entry->_id }}" href="{{ $picture }}">
-                            <img src="{{ $picture }}" class="col-xs-4 example-pic" />
+                        <a class="fancybox" rel="{{ $entry->_id }}" href="{{ url('/entry/big-image/'. $picture) }}">
+                            <img src="{{ url('/entry/small-image/'. $picture) }}" class="col-xs-4 example-pic" />
                         </a>
                     @endforeach
                 </div>

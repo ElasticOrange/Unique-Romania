@@ -27,6 +27,7 @@ $app = new Illuminate\Foundation\Application;
 $env = $app->detectEnvironment(array(
 
     'local' => array('homestead'),
+    'probook' => array('daniel-HP-ProBook-450-G0'),
 
 ));
 

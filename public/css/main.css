@@ -33,7 +33,10 @@ p{
 .line-break-space{
     margin-top:12px;
 }
-
+.line-break-space-second{
+    margin-top:-20px;
+    width:520px;
+}
 .center{
     margin-left:auto;
     margin-right:auto;
@@ -81,8 +84,8 @@ p{
 }
 
 .margin-progressbar-top{
-    margin-top:60px;
-    margin-bottom:20px;
+    margin-top:75px;
+    margin-bottom:40px;
 }
 .margin-canon-regulament{
     margin-top:130px;
@@ -128,6 +131,11 @@ p{
     font-size: 15px;
 }
 
+.link-margin{
+    margin-top:50px;
+    margin-bottom:20px;
+}
+
 .position-relative{
     position:relative;
 }
@@ -170,8 +178,9 @@ p{
     border:none;
     background-color:#9199a3;
     font-size: 22px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top:25px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .btn-default{
     background-color:#4b4f54;
@@ -187,6 +196,10 @@ p{
     background-color:#cc0000;
     font-size: 14px;
     top:110px;
+}
+.button-incarca-foto{
+    margin-left:300px;
+
 }
 .btn-danger{
     background-color:#cc0000;
@@ -210,7 +223,7 @@ p{
 }
 .content-second{
     margin-left:25px;
-    margin-bottom:10px;
+    margin-bottom:30px;
 }
 
 .logo{
@@ -234,9 +247,9 @@ p{
 .prize-reminder{
     position:absolute;
     top:40px;
-    left:120px;
-    width:98px;
-    height:88px;
+    left:90px;
+    width:118px;
+    height:108px;
 }
 
 .align-center{

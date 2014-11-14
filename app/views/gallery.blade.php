@@ -53,7 +53,7 @@
     <!-- square loading things-->
 
     <div class="row background-grey">
-        <div class="col-xs-4 pull-right">
+        <div class="col-xs-4 pull-right link-margin">
             <a href="http://www.canon.ro" class="link-black link-size">www.canon.ro</a>
             <span>|</span>
             <a href="#" class="link-black link-size">Regulament</a>

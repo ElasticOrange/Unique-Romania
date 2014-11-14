@@ -8,7 +8,7 @@
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
             <h2 class="title-second">Cum vad altii Romania</h2>
-            <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
+            <p class="content-second"></p>
         </div>
         <div class="col-xs-4">
             <img class="prize-reminder" src="/img/logo-camera.png"/>
@@ -16,7 +16,7 @@
     </div>
 
     <div class="row background-grey">
-        <div class="line-break line-break-space"></div>
+        <div class="line-break line-break-space-second"></div>
     </div>
 
     <div class="row background-grey">
@@ -89,8 +89,8 @@
             </div>
             <!--that image-end-->
             <div class="row background-grey">
-                    <div class="col-xs-4 col-xs-offset-5">
-                    <a href="#" class="btn btn-default" data-upload_image="true">Incarca...</a>
+                    <div class="col-xs-4 button-incarca-foto">
+                    <a href="#" class="btn btn-default" data-upload_image="true">Incarca fotografii..</a>
                 </div>
             </div>
             <div class="row background-grey">
@@ -112,7 +112,6 @@
                     <h2 class="title-second">Arată ce este unic în România prin intermediul materialelor video realizate</h2>
                     <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
                 </div>
-
                  <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
                         <div class="input-group">
@@ -133,13 +132,7 @@
                     <div class="col-xs-8 col-xs-offset-2" data-video_container="true">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="trash">
-                        <span class="glyph-trash glyphicon glyphicon-trash"></span>
-                    </div>
-                </div>
-
-                <div class="row">
+                <div class="">
                     <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
                         <a href="#" class="btn btn-danger " data-goto_step="2">Inapoi un pas</a>
                     </div>

@@ -52,6 +52,7 @@ p{
     margin-left:20px;
 }
 
+
 .marginz{
     margin-top:50px;
 }
@@ -102,7 +103,22 @@ p{
 }
 
 .eg-username-title{
+    margin-top:12px;
+    margin-left:-25px;
+}
+
+.eg-second-title{
     padding-top:30px;
+    margin-left:-35px;
+}
+
+.blog-link{
+    position:relative; 
+    clear:both;
+    margin-left:120px;
+    font-size:16px;
+    top:-30px;
+    
 }
 
 .hand{
@@ -299,6 +315,11 @@ p{
     margin-bottom:100px;
     margin-left:5px;
 }
+.eg-example-vid{
+    margin-top:20px;
+    margin-bottom:60px;
+    margin-left:5px;
+}
 
 .loading-square{
     background-color: red;
@@ -460,4 +481,8 @@ p{
 .moveout {
     position:absolute;
     left: -9999px;
+}
+
+.row-padding{
+    padding-top:20px;
 }

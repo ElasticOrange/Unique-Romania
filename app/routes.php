@@ -19,3 +19,5 @@ Route::controller('/endorser-gallery', 'EndorserGalleryController');
 Route::controller('/gallery', 'GalleryController');
 Route::controller('/entry', 'EntryController');
 Route::controller('/final', 'FinalController');
+
+Route::controller('/admin/entry', 'AdminEntryController');

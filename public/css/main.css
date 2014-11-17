@@ -78,9 +78,15 @@ p{
 }
 
 .user-photo{
-    width:64px;
+    overflow:hidden;
     height:64px;
+    width:64px;
     border-radius:50%;
+}
+
+.user-photo img{
+    height:100%;
+    vertical-align: middle;
 }
 
 .margin-progress-bar{
@@ -229,7 +235,7 @@ p{
     border:none;
     background-color:#cc0000;
     font-size: 14px;
-    top:110px;
+    top:138px;
 }
 .button-arata-ne-eg{
     position:relative;

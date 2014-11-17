@@ -6,14 +6,14 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Unic în România prin ochii voştri</h2>
-            <p class="content-second">Am pornit şi noi în căutarea unor destinaţii sau oameni unici în România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre! Acum este rândul vostru!</p>
-            <p class="content-second">Ce este unic în România pentru voi?</p>
+            <h2 class="title-second">Ştiu o poveste despre…</h2>
+            <p class="content-second">Alături de unii dintre cei mai aventuroşi bloggeri din ţară, am pornit şi noi în căutarea unor destinaţii faine, în căutarea unor oameni speciali din România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre! Acum este rândul vostru!</p>
+            <p class="content-second"></p>
         </div>
 
 
         <div class="col-xs-4 align-center">
-            <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Arata-ne cum vezi tu</a>
+            <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Ce poveşti ştiţi voi?</a>
         </div>
 
     </div>

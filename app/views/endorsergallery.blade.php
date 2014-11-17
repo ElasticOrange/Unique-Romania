@@ -25,14 +25,14 @@
 	    <div class="row background-grey row-padding">
 	        <div class="col-xs-2 ">
 	        	<div class="user-photo margin-full">
-	            	<img class="" src="/img/garbage/Delia.jpeg"/>
+	            	<img class="" src="/img/profile-pic-default.png"/>
 	            </div>
 	        </div>
-            <h3 class="col-xs-4 eg-username-title">Vali Petcu</h3>
+            <h3 class="col-xs-4 eg-username-title">Ion Popescu</h3>
 
 	    </div>
 	    <div class="row background-grey">
-	    	<a href="https//www.zoso.ro/" class="link-black hand blog-link">www.Zoso.ro</a>
+	    	<a href="https//www.zoso.ro/" class="link-black hand blog-link">www.example.com</a>
 	    </div>
 	    
 

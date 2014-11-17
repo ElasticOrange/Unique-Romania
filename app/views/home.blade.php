@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="row position-relative">
-        <img src="img/intro-pic.png"/>
+        <img src="img/Unique-romania.png"/>
         <h1 class="title-main">Unique Romania</h1>
     </div>
 

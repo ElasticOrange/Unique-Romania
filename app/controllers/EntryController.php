@@ -99,7 +99,7 @@ class EntryController extends BaseController {
         $image = Image::cache(
             function ($img) use ($image_path)
             {
-                return $img->make($image_path)->resize(1000, null, function($constraint)
+                return $img->make($image_path)->resize(760, null, function($constraint)
                 {
                     $constraint->aspectRatio();
                     $constraint->upsize();

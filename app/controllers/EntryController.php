@@ -100,7 +100,14 @@ class EntryController extends BaseController {
 
     public function getAvatarImage($user_id)
     {
-        $image = Image::make("https://graph.facebook.com/$user_id/picture?type=normal")->fit(64, 64);
+        $image = Image::cache(
+            function ($img) use ($user_id)
+            {
+                return $img->make("https://graph.facebook.com/$user_id/picture?type=normal")->fit(64, 64);
+            }
+            , 10
+            , true
+        );
 
         return $image->response('png');
     }

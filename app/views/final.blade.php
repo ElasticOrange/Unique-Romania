@@ -21,8 +21,9 @@
                 <p>Vei primii in scurt timp un email de confirmare la adresa de e-mail inscrisa de tine</p>
             </div>
         </div>
-        <div class="col-xs-4">
-            <a href="/gallery" class="btn btn-danger text-white margin">Afla cum vad altii</a>
+        <div class="col-xs-6">
+            <a href="/gallery" class="btn btn-danger text-white">Afla cum vad altii</a>
+            <a class="btn btn-danger text-white" data-share="true" href="https://www.facebook.com/dialog/share?app_id={{ Config::get('facebook.app_id') }}&display=popup&href={{ url('/gallery') }}&redirect_uri={{ url('/gallery') }}">Share la prieteni</a>
         </div>
     </div>
 
@@ -46,4 +47,8 @@
         </div>
     </div>
     @include('layout.footer')
+@stop
+
+@section('js')
+    <script src="/js/app/final/index.js"></script>
 @stop

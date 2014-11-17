@@ -1,7 +1,9 @@
     <!-- User row -->
     <div data-user_row="{{ $entry->_id }}" class="row background-grey hand">
         <div class="col-xs-2">
-            <img class="user-photo margin-full" src="https://graph.facebook.com/{{ $entry['user']['facebook_id'] }}/picture?type=normal"/>
+            <div class="user-photo margin-full">
+                <img class="" src="{{ url('/entry/avatar-image/'. $entry['user']['facebook_id']) }}"/>
+            </div>
         </div>
             <h3 class="col-xs-6 username-title">{{ $entry['user']['name'] }}</h3>
         <div class="col-xs-4">

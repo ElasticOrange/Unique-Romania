@@ -12,7 +12,7 @@
 	        <div class="col-xs-4 align-center">
 	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white">Arata-ne cum vezi tu</a>
 	            <p class="marginz">Si poti castiga un aparat profesional canon EOS</p>
-	            <a href="/entry" class="margin btn btn-default text-white">Cum vad altii ...</a>
+	            <a href="/gallery" class="margin btn btn-default text-white">Cum vad altii ...</a>
 	        </div>
     	</div>
     	<!-- Line Break -->
@@ -98,7 +98,7 @@
 	    		<h4 class="eg-second-title">Filmeaza ca si mine</h4>
 	    	</div>
 		    <div class="col-xs-6 eg-example-vid">
-                <iframe width="470" height="263" src="//www.youtube.com/embed/KRXn7dfnmW8" frameborder="0" allowfullscreen></iframe>
+                <iframe width="470" height="263" src="//www.youtube.com/embed/-dZGDy45ZeI" frameborder="0" allowfullscreen></iframe>
             </div>
 	    </div>
         <!-- Line Break -->

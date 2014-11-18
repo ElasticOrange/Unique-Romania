@@ -22,4 +22,11 @@ class AdminLoginController extends \BaseController {
         }
     }
 
+    public function getLogout()
+    {
+        Session::forget('admin');
+
+        return Redirect::to('/admin/login');
+    }
+
 }

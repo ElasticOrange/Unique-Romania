@@ -15,13 +15,13 @@
         </thead>
         <tbody>
             @foreach ($entries as $entry)
-            <tr> 
+            <tr>
                 <td>{{ $entry->created_at->format('F d, Y h:ia') }}</td>
                 <td>{{ $entry->name }}</td>
                 <td>{{ $entry->phone }}</td>
                 <td>{{ $entry->email }}</td>
                 <td>{{ $entry->video }}</td>
-                <td>{{ $entry->article['content'] }}</td>
+                <td>{{ @$entry->article['content'] }}</td>
                 <td>
                     @foreach ($entry->pictures as $picture)
                         {{ $picture }}
@@ -29,6 +29,6 @@
                 </td>
             </tr>
             @endforeach
-        </tbody>    
+        </tbody>
     </table>
 @stop

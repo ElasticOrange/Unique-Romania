@@ -19,3 +19,28 @@ Route::controller('/endorser-gallery', 'EndorserGalleryController');
 Route::controller('/gallery', 'GalleryController');
 Route::controller('/entry', 'EntryController');
 Route::controller('/final', 'FinalController');
+
+// Check the admin is authenticated before letting him edit things on the database
+Route::group(
+    array('before' => 'admin_auth')
+    , function()
+    {
+        Route::controller('/admin/entry', 'AdminEntryController');
+    }
+);
+
+// Define the Login controller
+Route::controller('/admin/login', 'AdminLoginController');
+Route::controller('/admin/user', 'AdminUserController');
+
+// The filter that checks if the user is logged in
+Route::filter(
+    'admin_auth'
+    , function()
+    {
+        if (!Session::get('admin'))
+        {
+            return Redirect::to('/admin/login');
+        }
+    }
+);

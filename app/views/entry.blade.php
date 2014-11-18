@@ -68,7 +68,7 @@
                  <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
                     <div class="">
-                        <h2 class="title-second">Arată-ne ce este special în România prin intermediul fotografiilor pe care le-ai facut!</h2>
+                        <h2 class="title-second">Arată-ne ce este special în România prin intermediul fotografiilor pe care le-ai făcut!</h2>
                         <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                     </div>
                 </div>

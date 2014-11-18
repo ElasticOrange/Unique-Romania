@@ -18,7 +18,7 @@
         <div class="row background-grey">
             <div class="col-xs-8 margin margins">
                 <p>Contentul tău va trece printr-un proces de aprobare.</p>
-                <p>Vei primii în scurt timp un email de confirmare la adresa de e-mail înscrisă de tine.</p>
+                <p>Vei primii în scurt timp un e-mail de confirmare la adresa de e-mail înscrisă de tine.</p>
             </div>
         </div>
         <div class="col-xs-6">
@@ -41,8 +41,8 @@
         </div>
         <div class="row background-grey">
             <div class="col-xs-10 margin margins">
-                <p>Îţi mulţuimim că ai impărtăşit cu noi poveşti despre oameni şi locuri speciale. Invită-ţi şi prietenii să participe la concurs. </p>
-                <p>Împreună, vom descoperi în toate colţurile ţării ceva special şi deosebit !</p>
+                <p>Îţi mulţuimim că ai impărtăşit cu noi poveşti despre oameni şi locuri speciale.</p>
+                <p>Invită-ţi şi prietenii să participe la concurs! Împreună, vom descoperi în toate colţurile ţării ceva special şi deosebit !</p>
             </div>
         </div>
     </div>

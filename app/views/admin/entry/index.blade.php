@@ -1,7 +1,6 @@
 @extends('admin.layout.master')
 
 @section('content')
-    @include('admin.layout.header')
     <table class="table table-hover">
         <thead>
             <tr>

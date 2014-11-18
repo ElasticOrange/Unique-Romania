@@ -10,8 +10,13 @@ class AdminEntryController extends \BaseController {
      */
     public function getIndex()
     {
-        //
-        return View::make('admin.entry.index');
+        $entries = Entry::where('approved', true)->orderBy('created_at', 'desc')->get(); 
+        
+                
+        //print_r($entries->toArray());
+        
+        
+        return View::make('admin.entry.index', array('entries' => $entries));
     }
 
 }

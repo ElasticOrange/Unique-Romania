@@ -1,5 +1,5 @@
 @extends('admin.layout.master')
 
 @section('content')
-    @include('layout.header')
+    @include('admin.layout.header')
 @stop

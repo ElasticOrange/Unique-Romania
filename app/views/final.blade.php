@@ -23,7 +23,7 @@
         </div>
         <div class="col-xs-6">
             <a href="/gallery" class="btn btn-danger text-white">Poveştile altora</a>
-            <a class="btn btn-danger text-white" data-share="true" href="https://www.facebook.com/dialog/share?app_id={{ Config::get('facebook.app_id') }}&display=popup&href={{ url('/gallery') }}&redirect_uri={{ url('/gallery') }}">Share la prieteni</a>
+            <a class="btn btn-danger text-white" data-share="true" href="https://www.facebook.com/dialog/share?app_id={{ Config::get('facebook.app_id') }}&display=popup&href={{ url('/gallery') }}&redirect_uri={{ url('/gallery') }}">Share către prieteni</a>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
         <div class="row background-grey">
             <div class="col-xs-12">
                 <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Felicitari</h2>
+                <h2 class="title-second">Felicitări</h2>
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -41,7 +41,7 @@
         </div>
         <div class="row background-grey">
             <div class="col-xs-10 margin margins">
-                <p>Îţi multimim că ai imparasit cu noi povesti despre oameni şi locuri speciale. Invită-ţi şi prietenii să participe la concurs. </p>
+                <p>Îţi mulţuimim că ai impărtăşit cu noi poveşti despre oameni şi locuri speciale. Invită-ţi şi prietenii să participe la concurs. </p>
                 <p>Împreună, vom descoperi în toate colţurile ţării ceva special şi deosebit !</p>
             </div>
         </div>

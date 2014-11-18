@@ -14,7 +14,7 @@
 	        <div class="col-xs-4 align-center">
 	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white eg-vertical">Ce povesti ştiţi voi?</a>
 	            <p class="marginz eg-horizontal">Şi poţi câştiga un echipament de iarnă</p>
-	            <a href="/gallery" class="margin btn btn-default text-white">Poveştile altora...</a>
+	            <a href="/gallery" class="margin btn btn-default text-white">Poveştile altora</a>
 	        </div>
     	</div>
     	<!-- Line Break -->
@@ -34,7 +34,7 @@
             <div class="col-xs-4 align-center">
                 <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white">Ce povesti ştiţi voi?</a>
                 <p class="marginz">Şi poţi câştiga un echipament de iarnă</p>
-                <a href="/gallery" class="margin btn btn-default text-white">Poveştile altora...</a>
+                <a href="/gallery" class="margin btn btn-default text-white">Poveştile altora</a>
             </div>
         </div>
         <!-- Line Break -->

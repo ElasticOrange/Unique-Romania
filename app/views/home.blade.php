@@ -3,13 +3,13 @@
 @section('content')
     <div class="row position-relative">
         <img src="img/Unique-romania.png"/>
-        <h1 class="title-main">Ştiu o poveste...</h1>
+        <h1 class="title-main">Ştiu o poveste</h1>
     </div>
 
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste...</h2>
+            <h2 class="title-second">Ştiu o poveste</h2>
             <p class="content-second">În fiecare zi, pas cu pas, descoperim locuri unice în jurul nostru şi oameni speciali, pe care dorim să îi cunoaştem îndeaproape. Cel mai frumos lucru în a descoperi este acela de a împărtăşi cu ceilalţi. Alături de voi, vrem să descoperim locuri unice şi fascinante din România şi povesti reale despre oameni frumoşi şi pasiunile lor. Aşa că, nu contează cât de departe este destinaţia finală, important este cum transformăm, prin forţe proprii, un vis în realitate. Împreună, îţi oferim inspiraţia de care ai nevoie pentru a dezvălui momente şi experienţe care demonstrează că în fiecare colţ de lume există magie şi inspiraţie, dacă ştim unde să căutăm.</p>
         </div>
         <div class="col-xs-4">

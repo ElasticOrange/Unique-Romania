@@ -51,7 +51,7 @@
                     <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
                 <div class="col-xs-11">
-                    <textarea name="article" class="margins nuformcontrol form-control" rows="4"></textarea>
+                    <textarea name="article" class="margins nuformcontrol form-control" rows="4">{{ @$entry->article['content'] }}</textarea>
                 </div>
             </div>
 
@@ -85,6 +85,17 @@
             </script>
             <div class="row background-grey">
                 <div class="col-xs-12 margin" data-picture_container="true">
+                    @if(isset($entry->pictures))
+                        @foreach($entry->pictures as $picture)
+                            <div class="col-xs-4 hand example-pic">
+                                <input type="hidden" name="pictures[]" value="{{ $picture }}" />
+                                <img src="/entry/small-image/{{ $picture }}" />
+                                <div class="trash">
+                                    <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <!--that image-end-->
@@ -130,6 +141,9 @@
 
                 <div class="col-xs-12 margin">
                     <div class="col-xs-8 col-xs-offset-2" data-video_container="true">
+                        @if(!empty(@$entry->video))
+                            <iframe width="460" height="263" src="{{@$entry->video}}" frameborder="0" allowfullscreen></iframe>
+                        @endif
                     </div>
                 </div>
                 <div class="">
@@ -155,20 +169,20 @@
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Nume</span>
-                    <input type="text" class="form-control" name="name" placeholder="Ex: Ion">
+                    <input type="text" class="form-control" name="name" placeholder="Ex: Ion" value="{{ @$entry->name }}">
                 </div>
             </div>
 
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">E-mail</span>
-                    <input type="text" class="form-control" name="email" placeholder="Ex: Ion@gmail.com">
+                    <input type="text" class="form-control" name="email" placeholder="Ex: Ion@gmail.com" value="{{ @$entry->email }}">
                 </div>
             </div>
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Telefon</span>
-                    <input type="text" class="form-control" name="phone" placeholder="Ex: 07xx-xxx-xxx">
+                    <input type="text" class="form-control" name="phone" placeholder="Ex: 07xx-xxx-xxx" value="{{ @$entry->phone }}">
                 </div>
             </div>
             <div class="row background-grey">

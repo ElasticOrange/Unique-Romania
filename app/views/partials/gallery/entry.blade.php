@@ -38,7 +38,7 @@
                 <div class="col-xs-12">
                     <img class="bubble" src="img/buble-red-head.png"/>
                     <h2 class="title-second">Cum vad eu ?</h2>
-                    <p class="content-second">{{ $entry->article['content'] }}</p>
+                    <p class="content-second">{{ nl2br($entry->article['content']) }}</p>
                 </div>
             </div>
         @endif

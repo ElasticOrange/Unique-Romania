@@ -24,15 +24,8 @@ class EntryController extends BaseController {
             return Redirect::to('/');
         }
 
-        $entry = $user->entry;
-        if ($entry)
-        {
-            return Redirect::to('/final');
-        }
-        else
-        {
-            return View::make('entry', $this->return_data);
-        }
+        $this->return_data['entry'] = $user->entry;
+        return View::make('entry', $this->return_data);
     }
 
     /* Data that was posted for the entry
@@ -43,7 +36,7 @@ class EntryController extends BaseController {
         $entry = new Entry([
             'approved' => true
             , 'article' => [
-                'content' => nl2br(Input::get('article'))
+                'content' => Input::get('article')
             ]
             , 'pictures' => Input::get('pictures')
             , 'video' => Input::get('video')

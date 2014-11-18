@@ -244,6 +244,14 @@ p{
     font-size: 14px;
     top:30px;
 }
+.eg-vertical{
+    margin-top:50px;
+}
+.eg-horizontal{
+    margin-left:10px;
+    margin:right:10px;
+}
+
 .button-incarca-foto{
     margin-left:300px;
 

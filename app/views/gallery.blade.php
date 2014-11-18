@@ -6,7 +6,7 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste despre…</h2>
+            <h2 class="title-second">Ştiu o poveste despre</h2>
             <p class="content-second">Alături de unii dintre cei mai aventuroşi bloggeri din ţară, am pornit şi noi în căutarea unor destinaţii faine, în căutarea unor oameni speciali din România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre!</p>
             <p class="content-second">Acum este rândul vostru!</p>
         </div>

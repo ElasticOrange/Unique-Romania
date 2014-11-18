@@ -7,7 +7,7 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste despre…</h2>
+            <h2 class="title-second">Ştiu o poveste despre</h2>
             <p class="content-second"></p>
         </div>
         <div class="col-xs-4">
@@ -90,7 +90,7 @@
             <!--that image-end-->
             <div class="row background-grey">
                     <div class="col-xs-4 button-incarca-foto">
-                    <a href="#" class="btn btn-default" data-upload_image="true">Încarcă fotografii..</a>
+                    <a href="#" class="btn btn-default" data-upload_image="true">Încarcă fotografii</a>
                 </div>
             </div>
             <div class="row background-grey">

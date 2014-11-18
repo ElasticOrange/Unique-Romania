@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="col-xs-6">
-            <a href="/gallery" class="btn btn-danger text-white">Poveştile altora...</a>
+            <a href="/gallery" class="btn btn-danger text-white">Poveştile altora</a>
             <a class="btn btn-danger text-white" data-share="true" href="https://www.facebook.com/dialog/share?app_id={{ Config::get('facebook.app_id') }}&display=popup&href={{ url('/gallery') }}&redirect_uri={{ url('/gallery') }}">Share la prieteni</a>
         </div>
     </div>

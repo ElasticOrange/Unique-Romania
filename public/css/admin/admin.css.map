@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "admin.css",
+  "sources": [
+    "admin.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAAA;EACE,aAAa;EACb,gBAAgB;;;AAGlB;EACE,eAAe",
+  "names": [],
+  "sourceRoot": ""
+}

@@ -21,3 +21,4 @@ Route::controller('/entry', 'EntryController');
 Route::controller('/final', 'FinalController');
 
 Route::controller('/admin/entry', 'AdminEntryController');
+Route::controller('/admin/login', 'AdminLoginController');

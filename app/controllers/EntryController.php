@@ -78,7 +78,14 @@ class EntryController extends BaseController {
         $name = str_replace('/', '', $name);
 
         $image_path = $this->picture_path . $name;
-        $image = Image::make($image_path)->fit(210, 140);
+        $image = Image::cache(
+            function ($img) use ($image_path)
+            {
+                return $img->make($image_path)->fit(210, 140);
+            }
+            , 1440
+            , true
+        );
 
         return $image->response('png');
     }
@@ -89,11 +96,32 @@ class EntryController extends BaseController {
         $name = str_replace('/', '', $name);
 
         $image_path = $this->picture_path . $name;
-        $image = Image::make($image_path)->resize(1000, null, function($constraint)
+        $image = Image::cache(
+            function ($img) use ($image_path)
             {
-                $constraint->aspectRatio();
-                $constraint->upsize();
-            });
+                return $img->make($image_path)->resize(760, null, function($constraint)
+                {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                });
+            }
+            , 1440
+            , true
+        );
+
+        return $image->response('png');
+    }
+
+    public function getAvatarImage($user_id)
+    {
+        $image = Image::cache(
+            function ($img) use ($user_id)
+            {
+                return $img->make("https://graph.facebook.com/$user_id/picture?type=normal")->fit(64, 64);
+            }
+            , 1440
+            , true
+        );
 
         return $image->response('png');
     }

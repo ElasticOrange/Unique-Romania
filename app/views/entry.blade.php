@@ -7,7 +7,7 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Cum vad altii Romania</h2>
+            <h2 class="title-second">Ştiu o poveste despre…</h2>
             <p class="content-second"></p>
         </div>
         <div class="col-xs-4">
@@ -45,10 +45,10 @@
             <div class="row background-grey">
                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second ">Povesteşte ce este unic în România prin exemple din jurul tău.</h2>
+                    <h2 class="title-second ">Completează cu descrierile tale despre un loc sau despre un om fain din România.</h2>
                 </div>
                 <div class="margins">
-                    <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
+                    <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
                 <div class="col-xs-11">
                     <textarea name="article" class="margins nuformcontrol form-control" rows="4"></textarea>
@@ -57,7 +57,7 @@
 
             <div class="row background-grey">
                 <div class="col-xs-4 col-xs-offset-4 align-center">
-                    <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Inainte un pas</a>
+                    <a href="#" class="btn btn-danger btn-block" data-goto_step="2">Mergi mai departe</a>
                 </div>
             </div>
         </div>
@@ -68,8 +68,8 @@
                  <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
                     <div class="">
-                        <h2 class="title-second">Arată ce este unic în România prin intermediul fotografiilor</h2>
-                        <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
+                        <h2 class="title-second">Arată-ne ce este special în România prin intermediul fotografiilor pe care le-ai facut!</h2>
+                        <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                     </div>
                 </div>
             </div>
@@ -90,15 +90,15 @@
             <!--that image-end-->
             <div class="row background-grey">
                     <div class="col-xs-4 button-incarca-foto">
-                    <a href="#" class="btn btn-default" data-upload_image="true">Incarca fotografii..</a>
+                    <a href="#" class="btn btn-default" data-upload_image="true">Încarcă fotografii..</a>
                 </div>
             </div>
             <div class="row background-grey">
-                <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger " data-goto_step="1">Inapoi un pas</a>
+                <div class="col-xs-3 col-xs-offset-3 margin-progressbar-top">
+                    <a href="#" class="btn btn-danger " data-goto_step="1">Mergi înapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger  " data-goto_step="3">Inainte un pas</a>
+                    <a href="#" class="btn btn-danger  " data-goto_step="3">Mergi mai departe</a>
                 </div>
             </div>
         </div>
@@ -109,8 +109,8 @@
             <div class="row background-grey">
                  <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Arată ce este unic în România prin intermediul materialelor video realizate</h2>
-                    <p class="content-second">La final, bicicleta Pegas poate fi a ta.</p>
+                    <h2 class="title-second">Completeză mai departe si trimite-ne materialele tale video!</h2>
+                    <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
                  <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
@@ -118,7 +118,7 @@
                             <input type="hidden" name="video" value="" />
                             <input type="text" class="form-control" data-video_link="true" />
                             <span class="input-group-btn">
-                                <button class="btn btn-default" type="button" data-video_load="true">Incarca</button>
+                                <button class="btn btn-default" type="button" data-video_load="true">Încarcă</button>
                             </span>
                         </div>
                     </div>
@@ -133,11 +133,11 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                        <a href="#" class="btn btn-danger " data-goto_step="2">Inapoi un pas</a>
+                    <div class="col-xs-3 col-xs-offset-3 margin-progressbar-top">
+                        <a href="#" class="btn btn-danger " data-goto_step="2">Mergi înapoi un pas</a>
                     </div>
                     <div class="col-xs-2 margin-progressbar-top">
-                        <a href="#" class="btn btn-danger  " data-goto_step="4">Inainte un pas</a>
+                        <a href="#" class="btn btn-danger  " data-goto_step="4">Mergi mai departe</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             <div class="row background-grey">
                 <div class="col-xs-8">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Inregistreaza-te si gastiga</h2>
+                    <h2 class="title-second">Înregistrează-te şi câştigă</h2>
                 </div>
             </div>
             <div class="row row background-grey">
@@ -179,11 +179,11 @@
                 </div>
             </div>
             <div class="row background-grey">
-                <div class="col-xs-2 col-xs-offset-4 margin-progressbar-top">
-                    <a href="#" class="btn btn-danger " data-goto_step="3">Inapoi un pas</a>
+                <div class="col-xs-3 col-xs-offset-3 margin-progressbar-top">
+                    <a href="#" class="btn btn-danger " data-goto_step="3">Mergi înapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <button href="#" class="btn btn-danger">Inainte un pas</button>
+                    <button href="#" class="btn btn-danger">Mergi mai departe</button>
                 </div>
             </div>
         </div>

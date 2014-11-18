@@ -51,13 +51,18 @@ p{
 .margins{
     margin-left:20px;
 }
+
+
+.marginz{
+    margin-top:50px;
+}
 .margin-full{
     margin-left:27px;
     margin-top:5px;
     margin-bottom:5px;
 }
 .margins-big{
-    margin-left:35px;
+    margin-left:45px;
 }
 
 .margin-data-entry{
@@ -73,9 +78,15 @@ p{
 }
 
 .user-photo{
-    width:64px;
+    overflow:hidden;
     height:64px;
+    width:64px;
     border-radius:50%;
+}
+
+.user-photo img{
+    height:100%;
+    vertical-align: middle;
 }
 
 .margin-progress-bar{
@@ -92,17 +103,46 @@ p{
     margin-right:20px;
     margin-bottom:35px;
 }
+
 .username-title{
     padding-top:5px;
 }
 
-.hand{
-    cursor:pointer;
-}
-.hand{
-    cursor:pointer;
+.eg-username-title{
+    margin-top:12px;
+    margin-left:-25px;
 }
 
+.eg-second-title{
+    padding-top:30px;
+    margin-left:-35px;
+}
+
+.blog-link{
+    position:relative; 
+    clear:both;
+    margin-left:120px;
+    font-size:16px;
+    top:-30px;
+    
+}
+
+.hand{
+    cursor:pointer;
+}
+.hand{
+    cursor:pointer;
+}
+.eg-glyph{
+    padding:6px;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:40px;
+    border: solid 2px;
+    border-radius:20%;
+    font-size:22px;
+
+}
 .glyph{
     padding:10px;
     margin-top:15px;
@@ -153,7 +193,7 @@ p{
     color:#fff;
     width:240px;
     top:163px;
-    left:433px;
+    left:420px;
 }
 
 .background-grey{
@@ -195,7 +235,14 @@ p{
     border:none;
     background-color:#cc0000;
     font-size: 14px;
-    top:110px;
+    top:138px;
+}
+.button-arata-ne-eg{
+    position:relative;
+    border:none;
+    background-color:#cc0000;
+    font-size: 14px;
+    top:30px;
 }
 .button-incarca-foto{
     margin-left:300px;
@@ -257,7 +304,7 @@ p{
 }
 
 .header-image{
-    background-image: url(/img/heading.png);
+    background-image: url(/img/Unique-romania-header.png);
 }
 
 .example-pic{
@@ -272,6 +319,11 @@ p{
 .example-vid{
     margin-top:20px;
     margin-bottom:100px;
+    margin-left:5px;
+}
+.eg-example-vid{
+    margin-top:20px;
+    margin-bottom:60px;
     margin-left:5px;
 }
 
@@ -435,4 +487,8 @@ p{
 .moveout {
     position:absolute;
     left: -9999px;
+}
+
+.row-padding{
+    padding-top:20px;
 }

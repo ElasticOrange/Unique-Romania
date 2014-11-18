@@ -10,7 +10,8 @@
         "facebook/php-sdk-v4": "4.0.*",
         "way/generators": "~2.0",
         "fzaninotto/faker": "v1.3.0",
-        "intervention/image": "~2.0"
+        "intervention/image": "~2.0",
+        "intervention/imagecache": "2.*"
     },
     "autoload": {
         "classmap": [

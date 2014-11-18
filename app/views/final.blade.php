@@ -6,7 +6,7 @@
         <div class="row background-grey">
             <div class="col-xs-12">
                 <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Iti multumim pantru participare</h2>
+                <h2 class="title-second">Îţi mulţumim pentru participare</h2>
             </div>
 
             <div class="row">
@@ -17,12 +17,13 @@
         </div>
         <div class="row background-grey">
             <div class="col-xs-8 margin margins">
-                <p>Contentul tau va trece printr-un proces de aprobare.</p>
-                <p>Vei primii in scurt timp un email de confirmare la adresa de e-mail inscrisa de tine</p>
+                <p>Contentul tău va trece printr-un proces de aprobare.</p>
+                <p>Vei primii în scurt timp un email de confirmare la adresa de e-mail înscrisă de tine.</p>
             </div>
         </div>
-        <div class="col-xs-4">
-            <a href="/gallery" class="btn btn-danger text-white margin">Afla cum vad altii</a>
+        <div class="col-xs-6">
+            <a href="/gallery" class="btn btn-danger text-white">Poveştile altora...</a>
+            <a class="btn btn-danger text-white" data-share="true" href="https://www.facebook.com/dialog/share?app_id={{ Config::get('facebook.app_id') }}&display=popup&href={{ url('/gallery') }}&redirect_uri={{ url('/gallery') }}">Share la prieteni</a>
         </div>
     </div>
 
@@ -40,10 +41,14 @@
         </div>
         <div class="row background-grey">
             <div class="col-xs-10 margin margins">
-                <p>Îţi multimim că ai imparasit cu noi povesti despre oameni şi locuri unice. Invită-ţi şi prietenii să participe la concurs.</p>
-                <p>Împreună, vom descoperi în toate colţurile ţării ce este unic în România.</p>
+                <p>Îţi multimim că ai imparasit cu noi povesti despre oameni şi locuri speciale. Invită-ţi şi prietenii să participe la concurs. </p>
+                <p>Împreună, vom descoperi în toate colţurile ţării ceva special şi deosebit !</p>
             </div>
         </div>
     </div>
     @include('layout.footer')
+@stop
+
+@section('js')
+    <script src="/js/app/final/index.js"></script>
 @stop

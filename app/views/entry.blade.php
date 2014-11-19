@@ -39,7 +39,7 @@
         <input type="file" class="moveout" name="picture" id="image_upload" multiple />
     </form>
 
-    <form action="/entry" method="post">
+    <form action="/entry" method="post" data-form_entry="true">
         <!--text upload section-->
         <div class="hidden" data-step="1">
             <div class="row background-grey">
@@ -203,7 +203,7 @@
                     <a href="#" class="btn btn-danger " data-goto_step="3">Mergi înapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <button href="#" class="btn btn-danger">Mergi mai departe</button>
+                    <input type="submit" class="btn btn-danger" value="Salvează" />
                 </div>
             </div>
         </div>

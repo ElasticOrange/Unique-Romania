@@ -32,7 +32,6 @@ Route::group(
 
 // Define the Login controller
 Route::controller('/admin/login', 'AdminLoginController');
-Route::controller('/admin/user', 'AdminUserController');
 
 // The filter that checks if the user is logged in
 Route::filter(

@@ -17,10 +17,11 @@ class AdminEntryController extends \BaseController {
         
         return View::make('admin.entry.index', array('entries' => $entries));
     }
-    public function put()
+    public function putApprove()
     {
-        $entries = Entry::all();
+        /*$entries = Entry::all();
         $entries->approved = true;
-        $entries->save();
+        $entries->save();*/
+        
     }
 }

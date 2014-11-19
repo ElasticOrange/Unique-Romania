@@ -38,7 +38,10 @@
                             @endforeach
                         </td>
                         <td>
-                            
+                            <form action="/admin/entry/approve/" method="put">
+                                <input type="hidden" name="id" value="{{ $entry->_id }}" />
+                                <input type="submit" value="Approve" class="btn btn-danger"/>
+                            </form>
                         </td>
                     </tr>
                     @endforeach
@@ -49,4 +52,13 @@
                 @endif
     </div>
 </div>
+
+<script>
+$(document).ready(function()
+{
+    
+});
+
+
+</script>
 @stop

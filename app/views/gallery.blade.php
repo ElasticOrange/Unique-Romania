@@ -6,8 +6,8 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste despre</h2>
-            <p class="content-second">Alături de unii dintre cei mai aventuroşi bloggeri din ţară, am pornit şi noi în căutarea unor destinaţii faine, în căutarea unor oameni speciali din România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre!</p>
+            <h2 class="title-second">Ştiu o poveste.</h2>
+            <p class="content-second">Alături de alţi "povestitori", îţi oferim inspiraţia de care ai nevoie pentru a dezvălui momente şi experienţe care demonstrează că în fiecare colţ de lume există magie şi inspiraţie, dacă ştim unde să căutăm.</p>
             <p class="content-second">Acum este rândul vostru!</p>
         </div>
 
@@ -52,14 +52,7 @@
     </div>
     <!-- square loading things-->
 
-    <div class="row background-grey">
-        <div class="col-xs-4 pull-right link-margin">
-            <a href="http://www.canon.ro" class="link-black link-size">www.canon.ro</a>
-            <span>|</span>
-            <a href="#" class="link-black link-size">Regulament</a>
-        </div>
-    </div>
-
+   @include ('layout.footer')
 @stop
 
 @section('js')

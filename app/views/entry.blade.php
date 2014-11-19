@@ -7,7 +7,7 @@
     <div class="row background-grey">
         <div class="col-xs-8">
             <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste despre</h2>
+            <h2 class="title-second">Ştiu o poveste.</h2>
             <p class="content-second"></p>
         </div>
         <div class="col-xs-4">
@@ -112,8 +112,14 @@
                     <h2 class="title-second">Completeză mai departe si trimite-ne materialele tale video!</h2>
                     <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
-                 <div class="row">
+                
+                
+                
+                <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
+                        <div class="align-center">
+                            <p class="content-second">Încarcă povestea ta video pe canalul tău de youtube şi pune linkul aici! În cel mai scurt timp va intra în competiţie!</p>
+                        </div>
                         <div class="input-group">
                             <input type="hidden" name="video" value="" />
                             <input type="text" class="form-control" data-video_link="true" />
@@ -155,14 +161,14 @@
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Nume</span>
-                    <input type="text" class="form-control" name="name" placeholder="Ex: Ion">
+                    <input type="text" class="form-control" name="name" placeholder="Ex: Andrei">
                 </div>
             </div>
 
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">E-mail</span>
-                    <input type="text" class="form-control" name="email" placeholder="Ex: Ion@gmail.com">
+                    <input type="text" class="form-control" name="email" placeholder="Ex: Andrei@gmail.com">
                 </div>
             </div>
             <div class="row row background-grey">

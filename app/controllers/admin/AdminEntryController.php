@@ -10,18 +10,23 @@ class AdminEntryController extends \BaseController {
      */
     public function getIndex()
     {
-        $entries = Entry::where('approved', false)->orderBy('created_at', 'desc')->get(); 
-                
+        $entries = Entry::where('approved', false)->orderBy('created_at', 'desc')->get();
+
         //print_r($entries->toArray());
-        
-        
+
+
         return View::make('admin.entry.index', array('entries' => $entries));
     }
     public function putApprove()
     {
-        /*$entries = Entry::all();
-        $entries->approved = true;
-        $entries->save();*/
-        
+        $entry = Entry::find(Input::get('id'));
+        $entry->approved = true;
+        $entry->save();
+
+        return Response::json(array(
+            'status' => 'OK'
+            , 'error' => ''
+            , 'id' => Input::get('id')
+        ));
     }
 }

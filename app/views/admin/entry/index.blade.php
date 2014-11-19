@@ -1,25 +1,25 @@
 @extends('admin.layout.master')
 
 @section('content')
-   <h1>Lista de useri care trebuie aprobati:</h1><br />
-<div class="row">
-   <div class="col-md-12">
-        <table class="table table-condensed">
-            <thead>
-                <tr>
-                    <th>Created at</th>
-                    <th>Name</th>
-                    <th>Phone</th>
-                    <th>Email</th>
-                    <th>Video</th>
-                    <th>Article</th>
-                    <th>Photos</th>
-                </tr>
-            </thead>
-            <tbody>
-                @if($entries->count())               
+    <h1>Lista de useri care trebuie aprobati:</h1><br />
+    <div class="row">
+        <div class="col-md-12">
+            @if($entries->count())
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Created at</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Video</th>
+                        <th>Article</th>
+                        <th>Photos</th>
+                    </tr>
+                </thead>
+                <tbody>
                     @foreach ($entries as $entry)
-                    <tr> 
+                    <tr data-id="{{ $entry->_id }}">
                         <td>{{ $entry->created_at->format('F d, Y h:ia') }}</td>
                         <td>{{ $entry->name }}</td>
                         <td>{{ $entry->phone }}</td>
@@ -38,27 +38,22 @@
                             @endforeach
                         </td>
                         <td>
-                            <form action="/admin/entry/approve/" method="put">
+                            <form action="/admin/entry/approve/" method="put" data-form_approve="true">
                                 <input type="hidden" name="id" value="{{ $entry->_id }}" />
                                 <input type="submit" value="Approve" class="btn btn-danger"/>
                             </form>
                         </td>
                     </tr>
                     @endforeach
-            </tbody>    
-        </table>
-                @else
-                    <p>Unfortunately, there are no entries to be approved.</p>
-                @endif
+                </tbody>
+            </table>
+            @else
+                <p>Unfortunately, there are no entries to be approved.</p>
+            @endif
+        </div>
     </div>
-</div>
+@stop
 
-<script>
-$(document).ready(function()
-{
-    
-});
-
-
-</script>
+@section('js')
+    <script src="/js/app/admin/entry/index.js"></script>
 @stop

@@ -40,7 +40,7 @@
                         <td>
                             <form action="/admin/entry/approve/" method="put" data-form_approve="true">
                                 <input type="hidden" name="id" value="{{ $entry->_id }}" />
-                                <input type="submit" value="Approve" class="btn btn-danger"/>
+                                <input type="submit" value="Approve" class="btn btn-default"/>
                             </form>
                         </td>
                     </tr>

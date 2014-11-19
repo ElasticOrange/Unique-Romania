@@ -132,7 +132,7 @@
                             <p class="content-second">Încarcă povestea ta video pe canalul tău de youtube şi pune linkul aici! În cel mai scurt timp va intra în competiţie!</p>
                         </div>
                         <div class="input-group">
-                            <input type="hidden" name="video" value="" />
+                            <input type="hidden" name="video" value="{{@$entry->video}}" />
                             <input type="text" class="form-control" data-video_link="true" />
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" data-video_load="true">Încarcă</button>

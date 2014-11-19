@@ -14,6 +14,7 @@ class AdminEntryController extends \BaseController {
 
         return View::make('admin.entry.index', array('entries' => $entries));
     }
+
     public function putApprove()
     {
         $entry = Entry::find(Input::get('id'));

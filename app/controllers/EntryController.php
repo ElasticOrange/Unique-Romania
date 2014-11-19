@@ -46,7 +46,7 @@ class EntryController extends BaseController {
             $entry = new Entry();
         }
 
-        $entry->approved = true;
+        $entry->approved = false;
         $entry->article = [
             'content' => Input::get('article')
         ];

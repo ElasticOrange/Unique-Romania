@@ -1,7 +1,7 @@
 @extends('admin.layout.master')
 
 @section('content')
-    <h1>Lista de useri care trebuie aprobati:</h1><br />
+    <h1>Lista de useri care au fost deja aprobati:</h1><br />
     <div class="row">
         <div class="col-md-12">
             @if($entries->count())
@@ -38,9 +38,9 @@
                             @endforeach
                         </td>
                         <td>
-                            <form action="/admin/entry/approve/" method="put" data-form_approve="true">
+                            <form action="/admin/entry/disapprove/" method="put" data-form_approve="true">
                                 <input type="hidden" name="id" value="{{ $entry->_id }}" />
-                                <input type="submit" value="Approve" class="btn btn-danger"/>
+                                <input type="submit" value="Disapprove" class="btn btn-danger"/>
                             </form>
                         </td>
                     </tr>
@@ -48,7 +48,7 @@
                 </tbody>
             </table>
             @else
-                <p>Unfortunately, there are no entries to be approved.</p>
+                <p>Unfortunately, there are no entries to be disapproved.</p>
             @endif
         </div>
     </div>

@@ -12,9 +12,6 @@ class AdminEntryController extends \BaseController {
     {
         $entries = Entry::where('approved', false)->orderBy('created_at', 'desc')->get();
 
-        //print_r($entries->toArray());
-
-
         return View::make('admin.entry.index', array('entries' => $entries));
     }
     public function putApprove()

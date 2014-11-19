@@ -15,7 +15,8 @@
                 <li><a href="/">Home site</a></li>
                 <li><a href="/admin/">Home admin</a></li>
                 <li><a href="/admin/user">About</a></li>
-                <li><a href="/admin/entry">Inscrieri</a></li>
+                <li><a href="/admin/entry">Adauga inscrieri</a></li>
+                <li><a href="/admin/entry/disapprove">Sterge inscrieri</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->

@@ -5,7 +5,7 @@
                 <img class="" src="{{ url('/entry/avatar-image/'. $entry['user']['facebook_id']) }}"/>
             </div>
         </div>
-            <h3 class="col-xs-6 username-title">{{ $entry['user']['name'] }}</h3>
+            <h3 class="col-xs-6 username-title">{{ $entry->name }}</h3>
         <div class="col-xs-4">
             <!-- Article icon -->
             @if(!empty($entry->article['title']) or !empty($entry->article['content']))

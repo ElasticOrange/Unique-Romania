@@ -194,7 +194,7 @@
             <div class="row background-grey">
                 <div class="checkbox margin-data-entry">
                     <label>
-                        <input type="checkbox"> Sunt de Acord
+                        <input type="checkbox" name="agree"> Sunt de acord cu regulile
                     </label>
                 </div>
             </div>

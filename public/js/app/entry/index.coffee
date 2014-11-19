@@ -83,7 +83,6 @@ $(document).ready ()->
 
     # Check the user completed the form properly before posting
     $('[data-form_entry=true]').submit (e)->
-        debugger
         if _.isEmpty($('[name=name]').val()) or _.isEmpty($('[name=email]').val()) or _.isEmpty($('[name=phone]').val())
             alert 'Te rugam sa completezi datele tale personale ca sa te putem contacta'
             e.preventDefault()
@@ -107,9 +106,16 @@ $(document).ready ()->
         else
             added_video = true
 
-        debugger
         # Alert if user did not add anything
         if not added_text and not added_pictures and not added_video
             alert 'Te rugam sa adaugi un articol, poze sau un film pentru a participa la concurs'
             e.preventDefault()
             return false
+
+        # Alert if user does not agree to rules
+        if not $('[name=agree]').prop('checked')
+            alert 'Trebuie sa fii de acord cu regulile pentru a intra in concurs'
+            e.preventDefault()
+            return false
+
+

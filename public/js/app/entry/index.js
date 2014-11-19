@@ -73,7 +73,6 @@ $(document).ready(function() {
   };
   $('[data-video_load=true]').click(youtube_embed);
   return $('[data-form_entry=true]').submit(function(e) {
-    debugger;
     var added_pictures, added_text, added_video;
     if (_.isEmpty($('[name=name]').val()) || _.isEmpty($('[name=email]').val()) || _.isEmpty($('[name=phone]').val())) {
       alert('Te rugam sa completezi datele tale personale ca sa te putem contacta');
@@ -95,9 +94,13 @@ $(document).ready(function() {
     } else {
       added_video = true;
     }
-    debugger;
     if (!added_text && !added_pictures && !added_video) {
       alert('Te rugam sa adaugi un articol, poze sau un film pentru a participa la concurs');
+      e.preventDefault();
+      return false;
+    }
+    if (!$('[name=agree]').prop('checked')) {
+      alert('Trebuie sa fii de acord cu regulile pentru a intra in concurs');
       e.preventDefault();
       return false;
     }

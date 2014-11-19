@@ -26,6 +26,7 @@ Route::group(
     , function()
     {
         Route::controller('/admin/entry', 'AdminEntryController');
+        Route::controller('/admin/', 'AdminController');
     }
 );
 

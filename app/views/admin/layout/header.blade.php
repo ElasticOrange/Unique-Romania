@@ -14,6 +14,7 @@
             <ul class="nav navbar-nav">
                 <li class="{{ Request::is('admin/entry') ? 'active' : '' }}"><a href="/admin/entry">Aproba inscrieri</a></li>
                 <li class="{{ Request::is('admin/entry/disapprove') ? 'active' : '' }}"><a href="/admin/entry/disapprove">Dezaproba inscrieri</a></li>
+                <li class="{{ Request::is('admin/entry/logout') }}"><a href="/admin/entry/logout">Logout</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->

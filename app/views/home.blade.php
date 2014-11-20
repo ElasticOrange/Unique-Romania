@@ -32,7 +32,7 @@
     </div>
     <div class="row background-red">
         <div class="col-xs-12 align-center">
-            <a href="/endorser-gallery" class="btn btn-default btn-lg button-launch text-white">Intră în aplicaţie</a>
+            <a href="/gallery" class="btn btn-default btn-lg button-launch text-white">Intră în aplicaţie</a>
         </div>
     </div>
     <div class="row background-red">

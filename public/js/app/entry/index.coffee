@@ -65,13 +65,57 @@ $(document).ready ()->
         if youtube_id
             youtube_html = _.template($('#video_template').html())
             $('[data-video_container=true]').html(youtube_html({video_id: youtube_id}))
+
+            # Input value
+            $('[name=video]').val("//www.youtube.com/embed/#{youtube_id}")
         else
             $('[data-video_container=true]').html('')
 
-        # Input type
-        $('[name=video]').val("//www.youtube.com/embed/#{youtube_id}")
+            # Input value
+            $('[name=video]').val("")
+
+
 
         true
 
     # Add video
     $('[data-video_load=true]').click youtube_embed
+
+    # Check the user completed the form properly before posting
+    $('[data-form_entry=true]').submit (e)->
+        if _.isEmpty($('[name=name]').val()) or _.isEmpty($('[name=email]').val()) or _.isEmpty($('[name=phone]').val())
+            alert 'Te rugam sa completezi datele tale personale ca sa te putem contacta'
+            e.preventDefault()
+            return false
+
+        # Check if user added text
+        if _.isEmpty($('[name=article]').val())
+            added_text = false
+        else
+            added_text = true
+
+        # Check if user added pictures
+        if $('[name="pictures[]"]').length is 0
+            added_pictures = false
+        else
+            added_pictures = true
+
+        # Check if user added video
+        if _.isEmpty($('[name=video]').val())
+            added_video = false
+        else
+            added_video = true
+
+        # Alert if user did not add anything
+        if not added_text and not added_pictures and not added_video
+            alert 'Te rugam sa adaugi un articol, poze sau un film pentru a participa la concurs'
+            e.preventDefault()
+            return false
+
+        # Alert if user does not agree to rules
+        if not $('[name=agree]').prop('checked')
+            alert 'Trebuie sa fii de acord cu regulile pentru a intra in concurs'
+            e.preventDefault()
+            return false
+
+

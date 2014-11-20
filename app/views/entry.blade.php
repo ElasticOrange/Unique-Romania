@@ -39,7 +39,7 @@
         <input type="file" class="moveout" name="picture" id="image_upload" multiple />
     </form>
 
-    <form action="/entry" method="post">
+    <form action="/entry" method="post" data-form_entry="true">
         <!--text upload section-->
         <div class="hidden" data-step="1">
             <div class="row background-grey">
@@ -51,7 +51,7 @@
                     <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
                 <div class="col-xs-11">
-                    <textarea name="article" class="margins nuformcontrol form-control" rows="4"></textarea>
+                    <textarea name="article" class="margins nuformcontrol form-control" rows="4">{{ @$entry->article['content'] }}</textarea>
                 </div>
             </div>
 
@@ -85,6 +85,17 @@
             </script>
             <div class="row background-grey">
                 <div class="col-xs-12 margin" data-picture_container="true">
+                    @if(isset($entry->pictures))
+                        @foreach($entry->pictures as $picture)
+                            <div class="col-xs-4 hand example-pic">
+                                <input type="hidden" name="pictures[]" value="{{ $picture }}" />
+                                <img src="/entry/small-image/{{ $picture }}" />
+                                <div class="trash">
+                                    <span class="glyph-trash glyphicon glyphicon-trash"></span>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
                 </div>
             </div>
             <!--that image-end-->
@@ -112,16 +123,16 @@
                     <h2 class="title-second">Completeză mai departe si trimite-ne materialele tale video!</h2>
                     <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
-                
-                
-                
+
+
+
                 <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
                         <div class="align-center">
                             <p class="content-second">Încarcă povestea ta video pe canalul tău de youtube şi pune linkul aici! În cel mai scurt timp va intra în competiţie!</p>
                         </div>
                         <div class="input-group">
-                            <input type="hidden" name="video" value="" />
+                            <input type="hidden" name="video" value="{{@$entry->video}}" />
                             <input type="text" class="form-control" data-video_link="true" />
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" data-video_load="true">Încarcă</button>
@@ -136,6 +147,9 @@
 
                 <div class="col-xs-12 margin">
                     <div class="col-xs-8 col-xs-offset-2" data-video_container="true">
+                        @if(!empty(@$entry->video))
+                            <iframe width="460" height="263" src="{{@$entry->video}}" frameborder="0" allowfullscreen></iframe>
+                        @endif
                     </div>
                 </div>
                 <div class="">
@@ -161,26 +175,26 @@
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Nume</span>
-                    <input type="text" class="form-control" name="name" placeholder="Ex: Andrei">
+                    <input type="text" class="form-control" name="name" placeholder="Ex: Andrei" value="{{ @$entry->name }}">
                 </div>
             </div>
 
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">E-mail</span>
-                    <input type="text" class="form-control" name="email" placeholder="Ex: Andrei@gmail.com">
+                    <input type="text" class="form-control" name="email" placeholder="Ex: Andrei@gmail.com" value="{{ @$entry->email }}">
                 </div>
             </div>
             <div class="row row background-grey">
                 <div class="col-xs-6 input-group margin-data-entry">
                     <span class="input-group-addon">Telefon</span>
-                    <input type="text" class="form-control" name="phone" placeholder="Ex: 07xx-xxx-xxx">
+                    <input type="text" class="form-control" name="phone" placeholder="Ex: 07xx-xxx-xxx" value="{{ @$entry->phone }}">
                 </div>
             </div>
             <div class="row background-grey">
                 <div class="checkbox margin-data-entry">
                     <label>
-                        <input type="checkbox"> Sunt de Acord
+                        <input type="checkbox" name="agree"> Sunt de acord cu regulile
                     </label>
                 </div>
             </div>
@@ -189,7 +203,7 @@
                     <a href="#" class="btn btn-danger " data-goto_step="3">Mergi înapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <button href="#" class="btn btn-danger">Mergi mai departe</button>
+                    <input type="submit" class="btn btn-danger" value="Salvează" />
                 </div>
             </div>
         </div>

@@ -64,11 +64,45 @@ $(document).ready(function() {
       $('[data-video_container=true]').html(youtube_html({
         video_id: youtube_id
       }));
+      $('[name=video]').val("//www.youtube.com/embed/" + youtube_id);
     } else {
       $('[data-video_container=true]').html('');
+      $('[name=video]').val("");
     }
-    $('[name=video]').val("//www.youtube.com/embed/" + youtube_id);
     return true;
   };
-  return $('[data-video_load=true]').click(youtube_embed);
+  $('[data-video_load=true]').click(youtube_embed);
+  return $('[data-form_entry=true]').submit(function(e) {
+    var added_pictures, added_text, added_video;
+    if (_.isEmpty($('[name=name]').val()) || _.isEmpty($('[name=email]').val()) || _.isEmpty($('[name=phone]').val())) {
+      alert('Te rugam sa completezi datele tale personale ca sa te putem contacta');
+      e.preventDefault();
+      return false;
+    }
+    if (_.isEmpty($('[name=article]').val())) {
+      added_text = false;
+    } else {
+      added_text = true;
+    }
+    if ($('[name="pictures[]"]').length === 0) {
+      added_pictures = false;
+    } else {
+      added_pictures = true;
+    }
+    if (_.isEmpty($('[name=video]').val())) {
+      added_video = false;
+    } else {
+      added_video = true;
+    }
+    if (!added_text && !added_pictures && !added_video) {
+      alert('Te rugam sa adaugi un articol, poze sau un film pentru a participa la concurs');
+      e.preventDefault();
+      return false;
+    }
+    if (!$('[name=agree]').prop('checked')) {
+      alert('Trebuie sa fii de acord cu regulile pentru a intra in concurs');
+      e.preventDefault();
+      return false;
+    }
+  });
 });

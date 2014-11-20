@@ -24,15 +24,8 @@ class EntryController extends BaseController {
             return Redirect::to('/');
         }
 
-        $entry = $user->entry;
-        if ($entry)
-        {
-            return Redirect::to('/final');
-        }
-        else
-        {
-            return View::make('entry', $this->return_data);
-        }
+        $this->return_data['entry'] = $user->entry;
+        return View::make('entry', $this->return_data);
     }
 
     /* Data that was posted for the entry
@@ -40,20 +33,28 @@ class EntryController extends BaseController {
      */
     public function postIndex()
     {
-        $entry = new Entry([
-            'approved' => true
-            , 'article' => [
-                'content' => nl2br(Input::get('article'))
-            ]
-            , 'pictures' => Input::get('pictures')
-            , 'video' => Input::get('video')
-            , 'name' => Input::get('name')
-            , 'email' => Input::get('email')
-            , 'phone' => Input::get('phone')
-        ]);
-
         $facebook_user = Session::get('facebook-user');
         $user = User::where('facebook_id', $facebook_user->getId())->first();
+
+        // Get the current entry or create a new one
+        if (count($user->entry))
+        {
+            $entry = $user->entry;
+        }
+        else
+        {
+            $entry = new Entry();
+        }
+
+        $entry->approved = false;
+        $entry->article = [
+            'content' => Input::get('article')
+        ];
+        $entry->pictures = Input::get('pictures');
+        $entry->video = Input::get('video');
+        $entry->name = Input::get('name');
+        $entry->email = Input::get('email');
+        $entry->phone = Input::get('phone');
 
         $user->entry()->save($entry);
 

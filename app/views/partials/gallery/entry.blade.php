@@ -5,7 +5,7 @@
                 <img class="" src="{{ url('/entry/avatar-image/'. $entry['user']['facebook_id']) }}"/>
             </div>
         </div>
-            <h3 class="col-xs-6 username-title">{{ $entry['user']['name'] }}</h3>
+            <h3 class="col-xs-6 username-title">{{ $entry->name }}</h3>
         <div class="col-xs-4">
             <!-- Article icon -->
             @if(!empty($entry->article['title']) or !empty($entry->article['content']))
@@ -38,7 +38,7 @@
                 <div class="col-xs-12">
                     <img class="bubble" src="img/buble-red-head.png"/>
                     <h2 class="title-second">Cum vad eu ?</h2>
-                    <p class="content-second">{{ $entry->article['content'] }}</p>
+                    <p class="content-second">{{ nl2br($entry->article['content']) }}</p>
                 </div>
             </div>
         @endif

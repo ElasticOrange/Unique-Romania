@@ -17,21 +17,21 @@
                 <tbody>
                     @foreach ($entries as $entry)
                     <tr data-id="{{ $entry->_id }}">
-                        <td>
+                        <td width="245">
                             <strong>Updated at: </strong>{{ $entry->created_at->format('d-m-Y h:ia') }}<br>
                             <strong>Name: </strong>{{ $entry->name }}<br>
                             <strong>Phone: </strong>{{ $entry->phone }}<br>
                             <strong>Email: </strong>{{ $entry->email }}
                         </td>
-                        <td>
+                        <td width="190">
                             <iframe class="center-block" width="180" height="100" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
                         </td>
-                        <td>
+                        <td width="400">
                             @if(isset($entry->article['content']))
                                 {{ $entry->article['content'] }}
                             @endif
                         </td>
-                        <td>
+                        <td width="220">
                             @if(isset($entry->pictures))
                                 @foreach ($entry->pictures as $picture)
                                     <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" width="100" height="100" />

@@ -8,10 +8,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>Updated at</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Email</th>
+                        <th>Info</th>
                         <th>Video</th>
                         <th>Article</th>
                         <th>Photos</th>
@@ -20,12 +17,14 @@
                 <tbody>
                     @foreach ($entries as $entry)
                     <tr data-id="{{ $entry->_id }}">
-                        <td>{{ $entry->updated_at->format('F d, Y h:ia') }}</td>
-                        <td>{{ $entry->name }}</td>
-                        <td>{{ $entry->phone }}</td>
-                        <td>{{ $entry->email }}</td>
                         <td>
-                            <iframe class="center-block" width="240" height="135" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
+                            <strong>Updated at: </strong>{{ $entry->updated_at->format('d-m-Y h:ia') }}<br>
+                            <strong>Name: </strong>{{ $entry->name }}<br>
+                            <strong>Phone: </strong>{{ $entry->phone }}<br>
+                            <strong>Email: </strong>{{ $entry->email }}
+                        </td>
+                        <td>
+                            <iframe class="center-block" width="180" height="100" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
                         </td>
                         <td>
                             @if(isset($entry->article['content']))
@@ -35,7 +34,7 @@
                         <td>
                             @if(isset($entry->pictures))
                                 @foreach ($entry->pictures as $picture)
-                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" />
+                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" width="100" height="100" />
                                 @endforeach
                             @endif
                         </td>

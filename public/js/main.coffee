@@ -1,3 +1,4 @@
+###
 $(document).ready ()->
     setTimeout \
         ()->
@@ -8,3 +9,4 @@ $(document).ready ()->
         ()->
             FB.Canvas.setSize()
         , 1000
+###

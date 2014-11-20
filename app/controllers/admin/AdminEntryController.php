@@ -17,7 +17,7 @@ class AdminEntryController extends \BaseController {
     
     public function getDisapprove()
     {
-        $entries = Entry::where('approved', true)->orderBy('created_at', 'desc')->get();
+        $entries = Entry::where('approved', true)->orderBy('updated_at', 'desc')->get();
 
         return View::make('admin.entry.disapprove', array('entries' => $entries));
     }
@@ -46,5 +46,11 @@ class AdminEntryController extends \BaseController {
             , 'error' => ''
             , 'id' => Input::get('id')
         ));
+    }
+        public function getLogout()
+    {
+        Session::forget('admin');
+
+        return Redirect::to('/admin/login');
     }
 }

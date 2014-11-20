@@ -8,7 +8,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>Created at</th>
+                        <th>Updated at</th>
                         <th>Name</th>
                         <th>Phone</th>
                         <th>Email</th>
@@ -20,7 +20,7 @@
                 <tbody>
                     @foreach ($entries as $entry)
                     <tr data-id="{{ $entry->_id }}">
-                        <td>{{ $entry->created_at->format('F d, Y h:ia') }}</td>
+                        <td>{{ $entry->updated_at->format('F d, Y h:ia') }}</td>
                         <td>{{ $entry->name }}</td>
                         <td>{{ $entry->phone }}</td>
                         <td>{{ $entry->email }}</td>

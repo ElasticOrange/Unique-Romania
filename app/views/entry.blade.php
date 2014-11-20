@@ -129,11 +129,11 @@
                 <div class="row">
                     <div class="col-xs-8  col-xs-offset-2 margin-progressbar-top">
                         <div class="align-center">
-                            <p class="content-second">Încarcă povestea ta video pe canalul tău de <b>Youtube</b> şi pune linkul aici! În cel mai scurt timp va intra în competiţie!</p>
+                            <p class="content-second">Încarcă povestea ta video pe <b>canalul tău</b> de <b>YouTube</b> şi pune linkul aici! În cel mai scurt timp va intra în competiţie!</p>
                         </div>
                         <div class="input-group">
                             <input type="hidden" name="video" value="{{@$entry->video}}" />
-                            <input type="text" class="form-control" data-video_link="true" />
+                            <input type="text" class="form-control" data-video_link="true" placeholder="https://www.youtube.com/?gl=RO&hl=ro"  />
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button" data-video_load="true">Încarcă</button>
                             </span>
@@ -142,7 +142,7 @@
                 </div>
 
                 <script type="text/template" id="video_template">
-                    <iframe width="460" height="263" src="//www.youtube.com/embed/<%= video_id %>" frameborder="0" placeholder="https://www.youtube.com/?gl=RO&hl=ro" allowfullscreen></iframe>
+                    <iframe width="460" height="263" src="//www.youtube.com/embed/<%= video_id %>" frameborder="0" allowfullscreen></iframe>
                 </script>
 
                 <div class="col-xs-12 margin">

@@ -20,7 +20,7 @@ class HomeController extends BaseController {
             // User is not logged in
             $helper = new FacebookRedirectLoginHelper(Config::get('facebook.redirect_url'));
             $this->return_data['loginUrl'] = $helper->getLoginUrl();
-            return Redirect::to($this->return_data['loginUrl']);
+            return View::make('login', array('login_url' => $this->return_data['loginUrl']));
         }
 
         return View::make('home', $this->return_data);
@@ -70,6 +70,6 @@ class HomeController extends BaseController {
             Auth::login($user);
         }
 
-        return Redirect::to('/');
+        return Redirect::to('https://apps.facebook.com/'. Config::get('facebook.app_id'));
     }
 }

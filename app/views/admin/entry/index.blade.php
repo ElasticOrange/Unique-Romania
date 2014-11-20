@@ -33,9 +33,11 @@
                             @endif
                         </td>
                         <td>
-                            @foreach ($entry->pictures as $picture)
-                                <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" />
-                            @endforeach
+                            @if(isset($entry->pictures))
+                                @foreach ($entry->pictures as $picture)
+                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" />
+                                @endforeach
+                            @endif
                         </td>
                         <td>
                             <form action="/admin/entry/approve/" method="put" data-form_approve="true">

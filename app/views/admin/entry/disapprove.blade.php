@@ -24,7 +24,7 @@
                             <strong>Email: </strong>{{ $entry->email }}
                         </td>
                         <td width="100">
-                            @if(isset($entry->video))
+                            @if(!empty($entry->video))
                             <a href="/admin/entry/youtube-video/{{ $entry->_id }}" target="_blank"><input type="submit" value="Show video" class="btn btn-default"/></a>
                             @endif
                         </td>

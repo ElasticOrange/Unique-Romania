@@ -23,10 +23,12 @@
                             <strong>Phone: </strong>{{ $entry->phone }}<br>
                             <strong>Email: </strong>{{ $entry->email }}
                         </td>
-                        <td width="190">
-                            <iframe class="center-block" width="180" height="100" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
+                        <td width="100">
+                            @if(isset($entry))
+                            <a href="/admin/entry/youtube-video/{{ $entry->_id }}" target="_blank"><input type="submit" value="Show video" class="btn btn-default"/></a>
+                            @endif
                         </td>
-                        <td width="400">
+                        <td width="490">
                             @if(isset($entry->article['content']))
                                 {{ $entry->article['content'] }}
                             @endif

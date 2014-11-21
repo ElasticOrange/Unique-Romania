@@ -192,7 +192,7 @@ p{
     font-size: 70px;
     color:#fff;
     width:240px;
-    top:163px;
+    top:133px;
     left:450px;
 }
 
@@ -235,7 +235,7 @@ p{
     border:none;
     background-color:#cc0000;
     font-size: 14px;
-    top:138px;
+    top:118px;
 }
 .button-arata-ne-eg{
     position:relative;
@@ -245,7 +245,7 @@ p{
     top:30px;
 }
 .eg-vertical{
-    margin-top:50px;
+    margin-top:10px;
 }
 .eg-horizontal{
     margin-left:10px;
@@ -280,10 +280,15 @@ p{
     margin-left:25px;
     margin-bottom:30px;
 }
+.content-second-nb{
+    margin-left:25px;
+    margin-bottom:30px;
+    margin-top:30px;
+}
 
 .logo{
     position:absolute;
-    top:40px;
+    top:60px;
     left:30px;
 }
 .logo-white{
@@ -295,8 +300,8 @@ p{
 }
 .prize{
     position:absolute;
-    top:60px;
-    left:40px;
+    top:100px;
+    left:20px;
 }
 
 .prize-reminder{

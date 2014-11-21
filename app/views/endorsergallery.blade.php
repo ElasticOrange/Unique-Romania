@@ -4,15 +4,13 @@
     @include('layout.header')
         <div class="row background-grey">
             <div class="col-xs-8">
-                <img class="bubble" src="/img/buble-red-head.png"/>
-                <h2 class="title-second">Ştiu o poveste.</h2>
-                <p class="content-second">Alături de alţi exploratori dornici să descopere, am pornit şi noi în căutarea unor destinaţii frumoase, în căutarea unor oameni speciali din România. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre!</p>
+                <p class="content-second-nb">Alături de alţi exploratori dornici să descopere, am pornit şi noi în căutarea unor destinaţii frumoase, în căutarea unor oameni speciali. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre!</p>
                 <p class="content-second">Acum este rândul vostru!</p>
             </div>
 
 	        <div class="col-xs-4 align-center">
 	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white eg-vertical">Ce povesti ştiţi voi?</a>
-	            <p class="marginz eg-horizontal">Şi poţi câştiga un echipament de iarnă</p>
+	            <p class="marginz eg-horizontal">Şi poţi câştiga un Canon PowerShot G7X</p>
 	            <a href="/gallery" class="margin btn btn-default text-white">Poveştile altora</a>
 	        </div>
     	</div>

@@ -5,13 +5,10 @@
 
     <div class="row background-grey">
         <div class="col-xs-8">
-            <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste.</h2>
-            <p class="content-second">Alături de alţi "povestitori", îţi oferim inspiraţia de care ai nevoie pentru a dezvălui momente şi experienţe care demonstrează că în fiecare colţ de lume există magie şi inspiraţie, dacă ştim unde să căutăm.</p>
+            <p class="content-second-nb">Alături de alţi "povestitori", îţi oferim inspiraţia de care ai nevoie pentru a dezvălui momente şi experienţe care demonstrează că în fiecare colţ de lume există magie şi inspiraţie, dacă ştim unde să căutăm.</p>
             <p class="content-second">Acum este rândul vostru!</p>
         </div>
-
-
+        
         <div class="col-xs-4 align-center">
             <a href="/entry" class="btn btn-danger btn-md button-arata-ne text-white">Ce poveşti ştiţi voi?</a>
         </div>

@@ -147,8 +147,8 @@
 
                 <div class="col-xs-12 margin">
                     <div class="col-xs-8 col-xs-offset-2" data-video_container="true">
-                        @if(!empty(@$entry->video))
-                            <iframe width="460" height="263" src="{{@$entry->video}}" frameborder="0" allowfullscreen></iframe>
+                        @if(!empty($entry->video))
+                            <iframe width="460" height="263" src="{{$entry->video}}" frameborder="0" allowfullscreen></iframe>
                         @endif
                     </div>
                 </div>

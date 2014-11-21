@@ -34,7 +34,7 @@
                         <td width="220">
                             @if(isset($entry->pictures))
                                 @foreach ($entry->pictures as $picture)
-                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" width="100" height="100" />
+                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" width="100" />
                                 @endforeach
                             @endif
                         </td>

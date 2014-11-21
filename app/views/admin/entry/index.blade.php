@@ -8,10 +8,7 @@
             <table class="table table-condensed">
                 <thead>
                     <tr>
-                        <th>Created at</th>
-                        <th>Name</th>
-                        <th>Phone</th>
-                        <th>Email</th>
+                        <th>Info</th>
                         <th>Video</th>
                         <th>Article</th>
                         <th>Photos</th>
@@ -20,22 +17,28 @@
                 <tbody>
                     @foreach ($entries as $entry)
                     <tr data-id="{{ $entry->_id }}">
-                        <td>{{ $entry->created_at->format('F d, Y h:ia') }}</td>
-                        <td>{{ $entry->name }}</td>
-                        <td>{{ $entry->phone }}</td>
-                        <td>{{ $entry->email }}</td>
-                        <td>
-                            <iframe class="center-block" width="240" height="135" src="{{ $entry->video }}" frameborder="0" allowfullscreen="true" ></iframe>
+                        <td width="245">
+                            <strong>Updated at: </strong>{{ $entry->created_at->format('d-m-Y h:ia') }}<br>
+                            <strong>Name: </strong>{{ $entry->name }}<br>
+                            <strong>Phone: </strong>{{ $entry->phone }}<br>
+                            <strong>Email: </strong>{{ $entry->email }}
                         </td>
-                        <td>
+                        <td width="100">
+                            @if(!empty($entry->video))
+                            <a href="/admin/entry/youtube-video/{{ $entry->_id }}" target="_blank"><input type="submit" value="Show video" class="btn btn-default"/></a>
+                            @endif
+                        </td>
+                        <td width="490">
                             @if(isset($entry->article['content']))
                                 {{ $entry->article['content'] }}
                             @endif
                         </td>
-                        <td>
-                            @foreach ($entry->pictures as $picture)
-                                <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" />
-                            @endforeach
+                        <td width="220">
+                            @if(isset($entry->pictures))
+                                @foreach ($entry->pictures as $picture)
+                                    <img src="{{ url('/entry/small-image/'. $picture) }}" class="img-rounded" width="100" />
+                                @endforeach
+                            @endif
                         </td>
                         <td>
                             <form action="/admin/entry/approve/" method="put" data-form_approve="true">

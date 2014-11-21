@@ -27,15 +27,15 @@ p{
 
 .user-hide{
     display: none;
-
 }
 
 .line-break-space{
     margin-top:12px;
 }
 .line-break-space-second{
-    margin-top:-20px;
-    width:520px;
+    position:relative;
+    margin-top:120px;
+    width:500px;
 }
 .center{
     margin-left:auto;
@@ -505,4 +505,9 @@ p{
 
 .row-padding{
     padding-top:20px;
+}
+
+.salveaza-btn{
+    padding-left:10px;
+    padding-right:10px;
 }

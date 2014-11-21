@@ -5,21 +5,6 @@
 
     <!-- static rows -->
     <div class="row background-grey">
-        <div class="col-xs-8">
-            <img class="bubble" src="/img/buble-red-head.png"/>
-            <h2 class="title-second">Ştiu o poveste.</h2>
-            <p class="content-second"></p>
-        </div>
-        <div class="col-xs-4">
-            <img class="prize-reminder" src="/img/logo-camera.png"/>
-        </div>
-    </div>
-
-    <div class="row background-grey">
-        <div class="line-break line-break-space-second"></div>
-    </div>
-
-    <div class="row background-grey">
         <div class="col-xs-12 margin-progressbar-top ">
             <div class="progress margin-progress-bar nuheight">
                 <div class="progress-bar nuprogress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -45,10 +30,7 @@
             <div class="row background-grey">
                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second ">Completează cu descrierile tale despre un loc sau despre un om fain din România.</h2>
-                </div>
-                <div class="margins">
-                    <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
+                    <h2 class="title-second ">Completează cu descrierile tale despre un loc sau despre un om fain.</h2>
                 </div>
                 <div class="col-xs-11">
                     <textarea name="article" class="margins nuformcontrol form-control" rows="4">{{ @$entry->article['content'] }}</textarea>
@@ -68,8 +50,7 @@
                  <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
                     <div class="">
-                        <h2 class="title-second">Arată-ne ce este special în România prin intermediul fotografiilor pe care le-ai făcut!</h2>
-                        <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
+                        <h2 class="title-second">Arată-ne ce este special prin intermediul fotografiilor pe care le-ai făcut!</h2>
                     </div>
                 </div>
             </div>
@@ -121,7 +102,6 @@
                  <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
                     <h2 class="title-second">Completeză mai departe si trimite-ne materialele tale video!</h2>
-                    <p class="content-second">La final, echipamentul de iarnă poate fi al tău!</p>
                 </div>
 
 
@@ -169,7 +149,7 @@
             <div class="row background-grey">
                 <div class="col-xs-8">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second">Înregistrează-te şi câştigă</h2>
+                    <h2 class="title-second">Înregistrează-te şi câştigă!</h2>
                 </div>
             </div>
             <div class="row row background-grey">
@@ -203,7 +183,7 @@
                     <a href="#" class="btn btn-danger " data-goto_step="3">Mergi înapoi un pas</a>
                 </div>
                 <div class="col-xs-2 margin-progressbar-top">
-                    <input type="submit" class="btn btn-danger" value="Salvează" />
+                    <input type="submit" class="btn btn-danger salveaza-btn" value="Salvează" />
                 </div>
             </div>
         </div>

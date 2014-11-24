@@ -27,6 +27,7 @@ Route::group(
     {
         Route::controller('/admin/entry', 'AdminEntryController');
         Route::controller('/admin/', 'AdminController');
+        Route::resource('/admin/user', 'AdminUserController');
     }
 );
 

@@ -56,10 +56,11 @@ class AdminEntryController extends \BaseController {
             , 'id' => Input::get('id')
         ));
     }
-        public function getLogout()
+    public function getLogout()
     {
         Session::forget('admin');
 
         return Redirect::to('/admin/login');
     }
+    
 }

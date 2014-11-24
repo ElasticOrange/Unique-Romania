@@ -6,5 +6,5 @@ class AdminController extends \BaseController {
     {
         return Redirect::to('/admin/entry');
     }
-
+    
 }

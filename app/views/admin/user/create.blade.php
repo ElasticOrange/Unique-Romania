@@ -9,13 +9,13 @@
         @endforeach
     @endif
  
-    <h1><i class='fa fa-user'></i> Adauga User</h1>
+    <h1><i class='fa fa-user'></i> Adauga Admin</h1>
  
-    {{ Form::open(['role' => 'form', 'url' => 'admin/user']) }}
+    {{ Form::open(['role' => 'form', 'url' => 'admin/user', 'autocomplete' => 'off']) }}
  
     <div class='form-group'>
         {{ Form::label('username', 'Username') }}
-        {{ Form::text('username', null, ['placeholder' => 'Username', 'class' => 'form-control']) }}
+        {{ Form::text('username', null, ['placeholder' => 'Username', 'class' => 'form-control', 'autocomplete' => 'off']) }}
     </div>
  
     <div class='form-group'>

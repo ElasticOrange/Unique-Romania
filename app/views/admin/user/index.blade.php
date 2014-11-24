@@ -23,9 +23,11 @@
                 <td>{{ $user->created_at->format('d F Y,  h:ia') }}</td>
                 <td>
                     <a href="/admin/user/{{ $user->_id }}/edit" class="btn btn-info pull-left" style="margin-right: 3px;">Edit</a>
+                    @if($users->count() > 1)
                     {{ Form::open(['url' => '/admin/user/' . $user->_id, 'method' => 'DELETE']) }}
-                    {{ Form::submit('Delete', ['class' => 'btn btn-danger'])}}
+                    {{ Form::submit('Delete', ['class' => 'btn btn-danger', 'data-confirm' => 'true'])}}
                     {{ Form::close() }}
+                    @endif
                 </td>
             </tr>
             @endforeach
@@ -37,7 +39,8 @@
 <a href="/admin/user/create" class="btn btn-success">Adauga User</a>
  
 </div>
-    
-    
+@section('js')
+    <script src="/js/app/admin/user/index.js"></script>
+@stop
     
 @stop

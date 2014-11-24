@@ -79,8 +79,8 @@ class AdminUserController extends \BaseController {
 	{
 		$user = Admin::find($id);
  
-        $user->username   = Input::get('username');
-        $user->password   = md5(Input::get('password'));
+        $user->username = Input::get('username');
+        $user->password = md5(Input::get('password'));
  
         $user->save();
  

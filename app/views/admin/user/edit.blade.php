@@ -20,19 +20,22 @@
  
     <div class='form-group'>
         {{ Form::label('password_confirmation', 'Password') }}
-        {{ Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control']) }}
+        {{ Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control', 'data-password' => 'true']) }}
     </div>
     
     <div class='form-group'>
         {{ Form::label('password_confirmation', 'Password Confirmation') }}
-        {{ Form::password('password_confirmation', ['placeholder' => 'Password', 'class' => 'form-control']) }}
+        {{ Form::password('password_confirmation', ['placeholder' => 'Password', 'class' => 'form-control', 'data-password_confirm' => 'true']) }}
     </div>
  
     <div class='form-group'>
-        {{ Form::submit('Adauga User', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('Adauga User', ['class' => 'btn btn-primary', 'data-buton' => 'true']) }}
     </div>
  
     {{ Form::close() }}
  
 </div>
+@section('js')
+    <script src="/js/app/admin/user/create.js"></script>
+@stop
 @stop

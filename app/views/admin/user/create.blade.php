@@ -5,11 +5,11 @@
         
     <h1><i class='fa fa-user'></i> Adauga User</h1>
  
-    {{ Form::open(['role' => 'form', 'url' => 'admin/user']) }}
+    {{ Form::open(['role' => 'form', 'url' => 'admin/user', 'data-form' => 'true']) }}
  
     <div class='form-group'>
         {{ Form::label('username', 'Username') }}
-        {{ Form::text('username', null, ['placeholder' => 'Username', 'class' => 'form-control', 'autocomplete' => 'off']) }}
+        {{ Form::text('username', null, ['placeholder' => 'Username', 'class' => 'form-control', 'data-username' => 'true']) }}
     </div>
  
     <div class='form-group'>

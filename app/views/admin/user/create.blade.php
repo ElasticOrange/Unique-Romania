@@ -2,16 +2,10 @@
 
 @section('content')
 <div class='col-lg-4 col-lg-offset-4'>
+        
+    <h1><i class='fa fa-user'></i> Adauga User</h1>
  
-    @if ($errors->has())
-        @foreach ($errors->all() as $error)
-            <div class='bg-danger alert'>{{ $error }}</div>
-        @endforeach
-    @endif
- 
-    <h1><i class='fa fa-user'></i> Adauga Admin</h1>
- 
-    {{ Form::open(['role' => 'form', 'url' => 'admin/user', 'autocomplete' => 'off']) }}
+    {{ Form::open(['role' => 'form', 'url' => 'admin/user']) }}
  
     <div class='form-group'>
         {{ Form::label('username', 'Username') }}
@@ -20,14 +14,22 @@
  
     <div class='form-group'>
         {{ Form::label('password', 'Password') }}
-        {{ Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control']) }}
+        {{ Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control', 'data-password' => 'true']) }}
+    </div>
+    
+    <div class='form-group'>
+        {{ Form::label('password_confirmation', 'Password Confirmation') }}
+        {{ Form::password('password_confirmation', ['placeholder' => 'Password', 'class' => 'form-control', 'data-password_confirm' => 'true']) }}
     </div>
  
     <div class='form-group'>
-        {{ Form::submit('Adauga', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('Adauga', ['class' => 'btn btn-primary', 'data-buton' => 'true']) }}
     </div>
  
     {{ Form::close() }}
  
 </div>
+@section('js')
+    <script src="/js/app/admin/user/create.js"></script>
+@stop
 @stop

@@ -101,5 +101,4 @@ class AdminUserController extends \BaseController {
         return Redirect::to('/admin/user');
 	}
 
-
 }

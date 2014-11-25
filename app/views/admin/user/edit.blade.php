@@ -19,12 +19,17 @@
     </div>
  
     <div class='form-group'>
-        {{ Form::label('password', 'Password') }}
+        {{ Form::label('password_confirmation', 'Password') }}
         {{ Form::password('password', ['placeholder' => 'Password', 'class' => 'form-control']) }}
+    </div>
+    
+    <div class='form-group'>
+        {{ Form::label('password_confirmation', 'Password Confirmation') }}
+        {{ Form::password('password_confirmation', ['placeholder' => 'Password', 'class' => 'form-control']) }}
     </div>
  
     <div class='form-group'>
-        {{ Form::submit('Adauga', ['class' => 'btn btn-primary']) }}
+        {{ Form::submit('Adauga User', ['class' => 'btn btn-primary']) }}
     </div>
  
     {{ Form::close() }}

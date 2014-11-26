@@ -33,13 +33,29 @@ class AdminUserController extends \BaseController {
 	 */
 	public function store()
 	{
-		$user = new Admin;
-        $user->username = Input::get('username');
-        $user->password = md5(Input::get('password'));
+		
+        $user = Admin::where('username', '=', Input::get('username'))->get();
         
-        $user->save();
- 
-        return Redirect::to('/admin/user');
+        if($user->count() < 1)
+        {
+            $user = new Admin;
+            $user->username = Input::get('username');
+            $user->password = md5(Input::get('password'));
+
+            $user->save();
+            
+            return Response::json(array(
+                  'status' => 'OK'
+                , 'message' => 'Userul nu exista'
+            ));
+        }
+        else
+        {
+            return Response::json(array(
+                  'status' => 'not OK'
+                , 'message' => 'Userul exista'
+            ));
+        }
 	}
 
 

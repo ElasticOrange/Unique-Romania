@@ -10,13 +10,11 @@ $(document).ready(function()
         {
             if(pass1 === pass2) 
             {
-                console.log("OK");
                 ajax_submit();
             }
             else 
             {
-                alert("Passwords don't Match");
-                console.log("Error");
+                alert("Parola nu a fost confirmata");
             }
         }
         else
@@ -27,28 +25,28 @@ $(document).ready(function()
     
     function ajax_submit()
     {
-        var u = 
+        var user = 
         {
             username: $('[data-username=true]').val(),
-            password: ''
+            password: $('[data-password=true]').val()
         };
         return $.ajax(
             {
                 url: $('[data-form=true]').attr('action'),
                 type: $('[data-form=true]').attr('method'),
-                data: u,
+                data: user,
                 content: 'json',
-                success: function(data)
+                success: function(conditie)
                 {
-                    // data
-                    /* 
+                    if(conditie.status === 'OK')
                     {
-                        status: 'OK',
-                        message: 'all ok'
+                        return window.location.href = '/admin/user';
                     }
-                    */
-                    
-                    console.log(data.status);
+                    else
+                    {
+                        alert("Userul exista, alegeti alt user.");
+                        return false;
+                    }
                 }
             });
     }

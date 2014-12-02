@@ -30,7 +30,7 @@
             <div class="row background-grey">
                 <div class="col-xs-12">
                     <img class="bubble" src="/img/buble-red-head.png"/>
-                    <h2 class="title-second ">Completează cu descrierile tale despre un loc sau despre un om fain.</h2>
+                    <h2 class="title-second ">Completează cu descrierile tale despre un loc sau despre un om special.</h2>
                 </div>
                 <div class="col-xs-11">
                     <textarea name="article" class="margins nuformcontrol form-control" rows="4">{{ @$entry->article['content'] }}</textarea>
@@ -133,10 +133,10 @@
                     </div>
                 </div>
                 <div class="">
-                    <div class="col-xs-3 col-xs-offset-3 margin-progressbar-top">
+                    <div class="col-xs-3 col-xs-offset-3 margin-button-top">
                         <a href="#" class="btn btn-danger " data-goto_step="2">Mergi înapoi un pas</a>
                     </div>
-                    <div class="col-xs-2 margin-progressbar-top">
+                    <div class="col-xs-2 margin-button-top">
                         <a href="#" class="btn btn-danger  " data-goto_step="4">Mergi mai departe</a>
                     </div>
                 </div>

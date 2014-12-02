@@ -29,7 +29,7 @@
 
     <div class="hidde">
         <div class="row background-grey">
-            <div class="col-xs-12">
+            <div class="col-xs-12 marginz">
                 <img class="bubble" src="/img/buble-red-head.png"/>
                 <h2 class="title-second">Felicitări</h2>
             </div>

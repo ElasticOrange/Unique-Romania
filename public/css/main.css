@@ -24,7 +24,17 @@ p{
     position:absolute;
     margin-left:40px;
 }
-
+.line-break-double{
+    height:3px;
+    }
+.video-title{
+    position:absolute;
+    top: 10px;
+    left: 120px;
+}
+.video-title2{
+    left: 230px;
+}
 .user-hide{
     display: none;
 }

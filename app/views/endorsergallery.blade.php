@@ -9,7 +9,7 @@
             </div>
 
 	        <div class="col-xs-4 align-center">
-	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white eg-vertical">Ce povesti ştiţi voi?</a>
+	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white eg-vertical">încărcaţi poveştile voastre!</a>
             <!--
                 <p class="marginz eg-horizontal">Şi poţi câştiga un Canon PowerShot G7X</p>
             -->
@@ -26,7 +26,7 @@
 	    <div class="row background-grey row-padding">
 	        <div class="col-xs-2 ">
 	        	<div class="user-photo margin-full">
-	            	<img class="" src="/img/vladpetreanu/2.jpg"/>
+	            	<img class="" src="/img/profile-pic-default.png"/>
 	            </div>
 	        </div>
 
@@ -131,7 +131,7 @@
         <div class="row background-grey row-padding">
             <div class="col-xs-2 ">
                 <div class="user-photo margin-full">
-                    <img class="" src="/img/vladpetreanu/2.jpg"/>
+                    <img class="" src="/img/profile-pic-default.png"/>
                 </div>
             </div>
 
@@ -242,7 +242,7 @@
         <div class="row background-grey row-padding">
             <div class="col-xs-2 ">
                 <div class="user-photo margin-full">
-                    <img class="" src="/img/vladpetreanu/2.jpg"/>
+                    <img class="" src="/img/profile-pic-default.png"/>
                 </div>
             </div>
 

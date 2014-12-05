@@ -26,7 +26,7 @@
 	    <div class="row background-grey row-padding">
 	        <div class="col-xs-2 ">
 	        	<div class="user-photo margin-full">
-	            	<img class="" src="/img/profile-pic-default.png"/>
+	            	<img class="" src="/img/vladpetreanu.png"/>
 	            </div>
 	        </div>
 
@@ -131,7 +131,7 @@
         <div class="row background-grey row-padding">
             <div class="col-xs-2 ">
                 <div class="user-photo margin-full">
-                    <img class="" src="/img/profile-pic-default.png"/>
+                    <img class="" src="/img/designist.png"/>
                 </div>
             </div>
 
@@ -242,7 +242,7 @@
         <div class="row background-grey row-padding">
             <div class="col-xs-2 ">
                 <div class="user-photo margin-full">
-                    <img class="" src="/img/profile-pic-default.png"/>
+                    <img class="" src="/img/dorupanaitescu.png"/>
                 </div>
             </div>
 

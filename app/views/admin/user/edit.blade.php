@@ -35,7 +35,4 @@
     {{ Form::close() }}
  
 </div>
-@section('js')
-    <script src="/js/app/admin/user/create.js"></script>
-@stop
 @stop

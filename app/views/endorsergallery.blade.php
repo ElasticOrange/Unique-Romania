@@ -77,22 +77,22 @@
         <div class="row background-grey">
             <div class="col-xs-12 hand margins">
                 <a href="/img/vladpetreanu/2.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/2.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/2.jpg" class="example-pic" />
                 </a>
                 <a href="/img/vladpetreanu/3.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/3.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/3.jpg" class="example-pic" />
                 </a>
                 <a href="/img/vladpetreanu/4.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/4.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/4.jpg" class="example-pic" />
                 </a>
                 <a href="/img/vladpetreanu/6.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/6.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/6.jpg" class="example-pic" />
                 </a>
                 <a href="/img/vladpetreanu/7.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/7.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/7.jpg" class="example-pic" />
                 </a>
                 <a href="/img/vladpetreanu/5.jpg." class="fancybox">
-                    <img src="/img/vladpetreanu/5.jpg." class="example-pic" />
+                    <img src="/img/vladpetreanu/5.jpg" class="example-pic" />
                 </a>
             </div>
         </div>
@@ -182,28 +182,28 @@
         <div class="row background-grey">
             <div class="col-xs-12 hand margins">
                 <a href="/img/designist/1.png." class="fancybox">
-                    <img src="/img/designist/1.png." class="example-pic" />
+                    <img src="/img/designist/1.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/4.png." class="fancybox">
-                    <img src="/img/designist/4.png." class="example-pic" />
+                    <img src="/img/designist/4.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/3.png." class="fancybox">
-                    <img src="/img/designist/3.png." class="example-pic" />
+                    <img src="/img/designist/3.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/2.png." class="fancybox">
-                    <img src="/img/designist/2.png." class="example-pic" />
+                    <img src="/img/designist/2.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/5.png." class="fancybox">
-                    <img src="/img/designist/5.png." class="example-pic" />
+                    <img src="/img/designist/5.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/6.png." class="fancybox">
-                    <img src="/img/designist/6.png." class="example-pic" />
+                    <img src="/img/designist/6.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/8.png." class="fancybox">
-                    <img src="/img/designist/8.png." class="example-pic" />
+                    <img src="/img/designist/8.png" class="example-pic" />
                 </a>
                 <a href="/img/designist/9.png." class="fancybox">
-                    <img src="/img/designist/9.png." class="example-pic" />
+                    <img src="/img/designist/9.png" class="example-pic" />
                 </a>
             </div>
         </div>

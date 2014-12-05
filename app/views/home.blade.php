@@ -45,7 +45,7 @@
     </div>
     <div class="row background-red">
         <div class="col-xs-2 margins">
-            <a href="#" class="align-center link-white">Regulament</a>
+            <a href="/img/Regulamentul-campaniei-Stiu-o-poveste.pdf" class="align-center link-white">Regulament</a>
         </div>
     </div>
     <div class="row background-red">

@@ -43,7 +43,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Despre Romania mea</h4>
+                <h4 class="eg-second-title">Am întâlnit omul care învinge spaima</h4>
             </div>
         </div>
         <div class="row background-grey">
@@ -109,7 +109,7 @@
             </div>
             <div class="col-xs-8">
                 <h4 class="eg-second-title">Video</h4>
-                <h4 class="eg-second-title video-title">Am întâlnit omul care învinge spaima</h4>
+                <h4 class="eg-second-title video-title"></h4>
             </div>
             <div class="col-xs-6 eg-example-vid">
                 <iframe width="470" height="263" src="//www.youtube.com/embed/-_C7mmFFTeM" frameborder="0" allowfullscreen></iframe>
@@ -148,7 +148,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Despre Romania mea</h4>
+                <h4 class="eg-second-title">Hanul Balaban</h4>
             </div>
         </div>
         <div class="row background-grey">
@@ -220,7 +220,7 @@
             </div>
             <div class="col-xs-8">
                 <h4 class="eg-second-title">Video</h4>
-                <h4 class="eg-second-title video-title video-title2">Hanul Balaban</h4>
+                <h4 class="eg-second-title video-title video-title2"></h4>
             </div>
             <div class="col-xs-6 eg-example-vid">
                 <iframe width="470" height="263" src="//www.youtube.com/embed/OfikPZ0sSJY?list=UUu7GfIyU1dCFTHrEGnfHsuQ" frameborder="0" allowfullscreen></iframe>
@@ -259,7 +259,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Despre Romania mea</h4>
+                <h4 class="eg-second-title">Un sat retras</h4>
             </div>
         </div>
         <div class="row background-grey">
@@ -322,7 +322,7 @@
             </div>
             <div class="col-xs-8">
                 <h4 class="eg-second-title">Video</h4>
-                <h4 class="eg-second-title video-title video-title2">Un sat retras</h4>
+                <h4 class="eg-second-title video-title video-title2"></h4>
             </div>
             <div class="col-xs-6 eg-example-vid">
                 <iframe width="470" height="263" src="//www.youtube.com/embed/djxNSWNW2gQ?list=UUu7GfIyU1dCFTHrEGnfHsuQ" frameborder="0" allowfullscreen></iframe>

@@ -292,20 +292,20 @@
         </div>
         <div class="row background-grey">
             <div class="col-xs-12 hand margins">
-                <a href="/img/dorupanaitescu/2.jpg" class="fancybox">
-                    <img src="/img/dorupanaitescu/2.jpg" class="example-pic" />
+                <a href="img/dorupanaitescu/2.jpg" class="fancybox">
+                    <img src="img/dorupanaitescu/2.jpg" class="example-pic" />
                 </a>
-                <a href="/img/dorupanaitescu/3.jpg" class="fancybox">
-                    <img src="/img/dorupanaitescu/3.jpg" class="example-pic" />
+                <a href="img/dorupanaitescu/3.jpg" class="fancybox">
+                    <img src="img/dorupanaitescu/3.jpg" class="example-pic" />
                 </a>
-                <a href="/img/dorupanaitescu/1.jpg" class="fancybox">
-                    <img src="/img/dorupanaitescu/1.jpg" class="example-pic" />
+                <a href="img/dorupanaitescu/1.jpg" class="fancybox">
+                    <img src="img/dorupanaitescu/1.jpg" class="example-pic" />
                 </a>
-                <a href="/img/dorupanaitescu/5.jpg" class="fancybox">
-                    <img src="/img/dorupanaitescu/5.jpg" class="example-pic" />
+                <a href="img/dorupanaitescu/5.jpg" class="fancybox">
+                    <img src="img/dorupanaitescu/5.jpg" class="example-pic" />
                 </a>
-                <a href="/img/dorupanaitescu/4.jpg" class="fancybox">
-                    <img src="/img/dorupanaitescu/4.jpg" class="example-pic" />
+                <a href="img/dorupanaitescu/4.jpg" class="fancybox">
+                    <img src="img/dorupanaitescu/4.jpg" class="example-pic" />
                 </a>
             </div>
         </div>

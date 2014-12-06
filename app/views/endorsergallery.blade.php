@@ -148,7 +148,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Hanul Balaban</h4>
+                <h4 class="eg-second-title">Un han autentic în vârf de deal.</h4>
             </div>
         </div>
         <div class="row background-grey">
@@ -259,7 +259,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Un sat retras</h4>
+                <h4 class="eg-second-title">Un colt de tara, un colt de rai.</h4>
             </div>
         </div>
         <div class="row background-grey">

@@ -259,7 +259,7 @@
                 <span class="eg-glyph glyphicon glyphicon-pencil"></span>
             </div>
             <div class="col-xs-8">
-                <h4 class="eg-second-title">Un colt de tara, un colt de rai.</h4>
+                <h4 class="eg-second-title">Un colt de tara, un colt de rai. Nume de cod: Octogon. </h4>
             </div>
         </div>
         <div class="row background-grey">

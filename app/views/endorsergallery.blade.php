@@ -135,7 +135,7 @@
                 </div>
             </div>
 
-            <h3 class="col-xs-4 eg-username-title">Mădălina şi Elis</h3>
+            <h3 class="col-xs-4 eg-username-title">Mădălina Georgescu şi Elis Popescu</h3>
 
         </div>
         <div class="row background-grey">

@@ -147,7 +147,11 @@ p{
 }
    
 .blog-link2{
-    top: -10;
+    position:relative; 
+    clear:both;
+    margin-left:120px;
+    font-size:16px;
+    top:-10px;
 }
 
 .hand{

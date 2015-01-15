@@ -140,7 +140,7 @@
 
         </div>
         <div class="row background-grey">
-            <a href="http://designist.ro/" class="link-black hand blog-link blog-link2">http://designist.ro/</a>
+            <a href="http://designist.ro/" class="link-black hand blog-link2">http://designist.ro/</a>
         </div>
 
 

@@ -7,14 +7,9 @@
                 <p class="content-second-nb">Alături de alţi exploratori dornici să descopere, am pornit şi noi în căutarea unor destinaţii frumoase, în căutarea unor oameni speciali. Indiferent că am mers înspre vest sau est sau de la nord la sud, am găsit în orice loc în care am ajuns oameni deosebiţi, cu iniţiative pe care ne dorim să le facem auzite. Iată descoperirile noastre!</p>
                 <p class="content-second">Acum este rândul vostru!</p>
             </div>
-            <!--
-	        <div class="col-xs-4 align-center">
-	            <a href="/entry" class="btn btn-danger button-arata-ne-eg text-white eg-vertical">încărcaţi poveştile voastre!</a> -->
             
-            <!--
-                <p class="marginz eg-horizontal">Şi poţi câştiga un Canon PowerShot G7X</p>
-            -->
-	            <a href="/gallery" class="margin marginz btn btn-default text-white">Poveştile celor înscrişi</a>
+	        <div class="col-xs-4 align-center">
+	       	            <a href="/gallery" class="margin marginz btn btn-default text-white">Poveştile celor înscrişi</a>
 	        </div>
     	</div>
     	<!-- Line Break -->
